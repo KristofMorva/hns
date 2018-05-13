@@ -1,0 +1,203 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           HNS
+LANG_ENGLISH        "HNS."
+
+REFERENCE           HNS1
+LANG_ENGLISH        "Experienced HNS Player"
+
+REFERENCE           HNS2
+LANG_ENGLISH        "Very-Experienced HNS Player"
+
+REFERENCE           HNS3
+LANG_ENGLISH        "Famous HNS Player"
+
+REFERENCE           HNS4
+LANG_ENGLISH        "Very-Famous HNS Player"
+
+REFERENCE           HNS5
+LANG_ENGLISH        "HNS Pirate"
+
+REFERENCE           HNS6
+LANG_ENGLISH        "HNS Pirate+"
+
+REFERENCE           HNS7
+LANG_ENGLISH        "HNS Animal"
+
+REFERENCE           HNS8
+LANG_ENGLISH        "HNS Emperor"
+
+REFERENCE           HNS9
+LANG_ENGLISH        "HNS King"
+
+REFERENCE           HNS10
+LANG_ENGLISH        "HNS 1337 Player"
+
+REFERENCE           HNS11
+LANG_ENGLISH        "HNS Brute"
+
+REFERENCE           HNS12
+LANG_ENGLISH        "HNS Old Stager"
+
+REFERENCE           HNS13
+LANG_ENGLISH        "HNS Pro"
+
+REFERENCE           HNS14
+LANG_ENGLISH        "HNS Pro+"
+
+REFERENCE           HNS15
+LANG_ENGLISH        "HNS Pro++"
+
+REFERENCE           HNS16
+LANG_ENGLISH        "HNS Extra-Pro"
+
+REFERENCE           HNS17
+LANG_ENGLISH        "HNS Extreme-Pro"
+
+REFERENCE           HNS18
+LANG_ENGLISH        "HNS Ultra-Pro"
+
+REFERENCE           HNS19
+LANG_ENGLISH        "HNS Mega-Pro"
+
+REFERENCE           HNS20
+LANG_ENGLISH        "HNS Giga-Pro"
+
+REFERENCE           HNS21
+LANG_ENGLISH        "HNS Super-Pro"
+
+REFERENCE           HNS22
+LANG_ENGLISH        "HNS Ultimate-Pro"
+
+REFERENCE           HNS23
+LANG_ENGLISH        "HNS Hyper-Pro"
+
+REFERENCE           HNS24
+LANG_ENGLISH        "HNS Uber-Pro"
+
+REFERENCE           HNS25
+LANG_ENGLISH        "HNS Expert"
+
+REFERENCE           HNS26
+LANG_ENGLISH        "HNS Expert+"
+
+REFERENCE           HNS27
+LANG_ENGLISH        "HNS Expert++"
+
+REFERENCE           HNS28
+LANG_ENGLISH        "HNS Super-Expert"
+
+REFERENCE           HNS29
+LANG_ENGLISH        "HNS Master"
+
+REFERENCE           HNS30
+LANG_ENGLISH        "HNS Master+"
+
+REFERENCE           HNS31
+LANG_ENGLISH        "HNS Master++"
+
+REFERENCE           HNS32
+LANG_ENGLISH        "HNS Super-Master"
+
+REFERENCE           HNS33
+LANG_ENGLISH        "HNS Hero"
+
+REFERENCE           HNS34
+LANG_ENGLISH        "HNS Hero+"
+
+REFERENCE           HNS35
+LANG_ENGLISH        "HNS Hero++"
+
+REFERENCE           HNS36
+LANG_ENGLISH        "HNS Super-Hero"
+
+REFERENCE           HNS37
+LANG_ENGLISH        "HNS Veteran"
+
+REFERENCE           HNS38
+LANG_ENGLISH        "HNS Super-Veteran"
+
+REFERENCE           HNS39
+LANG_ENGLISH        "HNS Expert-Veteran"
+
+REFERENCE           HNS40
+LANG_ENGLISH        "HNS Master-Veteran"
+
+REFERENCE           HNS41
+LANG_ENGLISH        "HNS Hero-Veteran"
+
+REFERENCE           HNS42
+LANG_ENGLISH        "HNS Super-Hero-Veteran"
+
+REFERENCE           HNS43
+LANG_ENGLISH        "HNS Super-Expert-Hero-Veteran"
+
+REFERENCE           HNS44
+LANG_ENGLISH        "HNS Super-Expert-Master-Hero-Veteran"
+
+REFERENCE           HNS45
+LANG_ENGLISH        "HNS Nerd"
+
+REFERENCE           HNS46
+LANG_ENGLISH        "HNS Super-Nerd"
+
+REFERENCE           HNS47
+LANG_ENGLISH        "HNS Uber-Nerd"
+
+REFERENCE           HNS48
+LANG_ENGLISH        "HNS Addict"
+
+REFERENCE           HNS49
+LANG_ENGLISH        "HNS Super-Addict"
+
+REFERENCE           HNS50
+LANG_ENGLISH        "HNS Uber-Addict"
+
+REFERENCE           HNS51
+LANG_ENGLISH        "HNS Geek"
+
+REFERENCE           HNS52
+LANG_ENGLISH        "HNS Super-Geek"
+
+REFERENCE           HNS53
+LANG_ENGLISH        "HNS Uber-Geek"
+
+REFERENCE           HNS54
+LANG_ENGLISH        "HNS Awesome"
+
+REFERENCE           HNS55
+LANG_ENGLISH        "HNS Idol"
+
+REFERENCE           HNS56
+LANG_ENGLISH        "HNS Legend"
+
+REFERENCE           HNS57
+LANG_ENGLISH        "HNS God"
+
+REFERENCE           HNS58
+LANG_ENGLISH        "HNS Nolifer"
+
+REFERENCE           HNS59
+LANG_ENGLISH        "HNS Unforgettable"
+
+REFERENCE           HNS60
+LANG_ENGLISH        "HNS Badass"
+
+REFERENCE           HNS61
+LANG_ENGLISH        "HNS Caesar"
+
+ENDMARKER

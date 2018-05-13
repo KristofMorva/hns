@@ -1,0 +1,30 @@
+// ----------------------------------------------------- //
+// Call of Duty 4: Hide 'n Seek (Prop hunt) mod by iCore //
+// ----------------------------------------------------- //
+
+E-mail: kristof92@gmail.com
+Steam: jk3editor
+
+ModDB Profile: http://www.moddb.com/members/icore
+ModDB Mod: http://www.moddb.com/mods/hide-n-seek-mod
+
+Please do not modify the credits, or use the files of the mod for other projects without asking us first, since all of them are our own work.
+
+If you have any ideas or bug reports, please contact me!
+
+INSTALLATION
+-------------
+Just move the files from the archive to your CoD4/mods/hns directory (create it if it does not exist), in addition, you can install some custom maps on your server (by downloading, and placing them in the usermaps folder). Supported as default:
+	Backyard: http://cfgfactory.com/skins/show/4d83ca37af46e
+	Cluster 1.5: http://www.cybergamer.com/files/2722/
+	Favela Final: http://files.gamebanana.com/maps/cod4_favelaf.zip
+
+Available variables, and their usage are described in the config file.
+For starting a server, you MUST change the 'stat' dvar there, and if you don't want rank hackers, then you will change the 'code' dvar too (these shouldn't be modifier later, so set them properly!).
+
+If you want to create a new map, please check the Tutorials section of the mod on ModDB.
+If you want to use a downloaded (non-HNS map), you have to specify dvars for it. Description in the server.cfg file.
+
+You can write your own plugin by editing the maps/_hns.gsc file. It is better than rewriting the mod itself, since you will be able to implement it easily to a new version. In addition, if you have your own sounds, skins, etc, then put them in Mod.IWD please, so that players won't get invalid reference error.
+
+If download gets stucked usually when downloading map IWDs, place their content in Maps.IWD, and remove the IWDs from the folder of the maps.

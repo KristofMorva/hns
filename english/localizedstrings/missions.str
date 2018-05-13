@@ -1,0 +1,1108 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION				"1"
+CONFIG				"C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES			""
+
+REFERENCE			CLOSE_HR
+LANG_ENGLISH		"U zadnji tren"
+
+REFERENCE			CLOSE_DESC_HR
+LANG_ENGLISH		"Uhvati zadnjeg skrivaca u zadnjih 10 sekundi."
+
+REFERENCE			FAST_HR
+LANG_ENGLISH		"Duplo ubojstvo"
+
+REFERENCE			FAST_DESC_HR
+LANG_ENGLISH		"Ubij 2 neprijatelja u roku od 2 sekunde."
+
+REFERENCE			FIRST_HR
+LANG_ENGLISH		"Dominator"
+
+REFERENCE			FIRST_DESC_HR
+LANG_ENGLISH		"Budi na vrhu ljestvice u jednoj rundi sa vise od 55 boda."
+
+REFERENCE			HIDE_HR
+LANG_ENGLISH		"Savrseno skroviste"
+
+REFERENCE			HIDE_DESC_HR
+LANG_ENGLISH		"Pobijedi rundu kao skrivac bez micanja za vrijeme trazenja."
+
+REFERENCE			KILL_HR
+LANG_ENGLISH		"Hardcore"
+
+REFERENCE			KILL_DESC_HR
+LANG_ENGLISH		"Napravi sve ukupno 100 kilova."
+
+REFERENCE			KNIFE_HR
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_HR
+LANG_ENGLISH		"Ubij 25 igraca kao skrivac."
+
+REFERENCE			LAST_HR
+LANG_ENGLISH		"Posljednji prezivio"
+
+REFERENCE			LAST_DESC_HR
+LANG_ENGLISH		"Budi zadnji skrivac i prezivi."
+
+REFERENCE			MAP_HR
+LANG_ENGLISH		"Istrazivac"
+
+REFERENCE			MAP_DESC_HR
+LANG_ENGLISH		"Igraj na svakoj mapi.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_HR
+LANG_ENGLISH		"Osveta"
+
+REFERENCE			REV_DESC_HR
+LANG_ENGLISH		"Ubij igraca koji je tebe u prosloj rundi ubio dok si bio zadnji skrivac."
+
+REFERENCE			ROCK_HR
+LANG_ENGLISH		"Neunistiv"
+
+REFERENCE			ROCK_DESC_HR
+LANG_ENGLISH		"Ulovi skrivaca dok si osamucen."
+
+REFERENCE			STREAK_HR
+LANG_ENGLISH		"Terminator"
+
+REFERENCE			STREAK_DESC_HR
+LANG_ENGLISH		"Ubij 5 neprijatelja u 1 rundi bez smrti."
+
+REFERENCE			STUN_HR
+LANG_ENGLISH		"Osamutilac"
+
+REFERENCE			STUN_DESC_HR
+LANG_ENGLISH		"Ubiji tragaca dok je osamucen."
+
+REFERENCE			TIME_HR
+LANG_ENGLISH		"Ukradeno vrijeme"
+
+REFERENCE			TIME_DESC_HR
+LANG_ENGLISH		"Potrosi jedan tjedan svog zivota na ovaj mod."
+
+REFERENCE			VIS_HR
+LANG_ENGLISH		"Nevidljivi"
+
+REFERENCE			VIS_DESC_HR
+LANG_ENGLISH		"Sakupi 100000 bodova vidljivosti."
+
+REFERENCE			CLOSE_CS
+LANG_ENGLISH		"Únik o vlásek"
+
+REFERENCE			CLOSE_DESC_CS
+LANG_ENGLISH		"Najdi posleního skrytého v posledních\n10ti sekundách."
+
+REFERENCE			FAST_CS
+LANG_ENGLISH		"Dvojité zabití"
+
+REFERENCE			FAST_DESC_CS
+LANG_ENGLISH		"Zabí 2 nepratele ve 2 sekundach."
+
+REFERENCE			FIRST_CS
+LANG_ENGLISH		"Dominuj"
+
+REFERENCE			FIRST_DESC_CS
+LANG_ENGLISH		"Bud na vrchole herního zebrícku s více nez\n55 bodu."
+
+REFERENCE			HIDE_CS
+LANG_ENGLISH		"Perfektní skrýs"
+
+REFERENCE			HIDE_DESC_CS
+LANG_ENGLISH		"Vyhraj bez toho, aby jsi se pohl pri case hledání."
+
+REFERENCE			KILL_CS
+LANG_ENGLISH		"Vrah"
+
+REFERENCE			KILL_DESC_CS
+LANG_ENGLISH		"Nasbírej dohromady 100 zabití."
+
+REFERENCE			KNIFE_CS
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_CS
+LANG_ENGLISH		"Zabí 25 hracu jako skrytý."
+
+REFERENCE			LAST_CS
+LANG_ENGLISH		"Poslední"
+
+REFERENCE			LAST_DESC_CS
+LANG_ENGLISH		"Schovej se a prezí jako poslední."
+
+REFERENCE			MAP_CS
+LANG_ENGLISH		"Pruzkumnik"
+
+REFERENCE			MAP_DESC_CS
+LANG_ENGLISH		"Hraj na vsech mapach.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_CS
+LANG_ENGLISH		"Pomsta"
+
+REFERENCE			REV_DESC_CS
+LANG_ENGLISH		"Zabi hráce, který te nasel v predcházejícím\nkole, kdyz jsi byl objeven jako poslední."
+
+REFERENCE			ROCK_CS
+LANG_ENGLISH		"Neznicitelný"
+
+REFERENCE			ROCK_DESC_CS
+LANG_ENGLISH		"Zabij skrytého, kdyz jsi omrácen"
+
+REFERENCE			STREAK_CS
+LANG_ENGLISH		"Terminátor"
+
+REFERENCE			STREAK_DESC_CS
+LANG_ENGLISH		"Zabij 5 neprátel v jednom kole bez umírání."
+
+REFERENCE			STUN_CS
+LANG_ENGLISH		"Omracovac"
+
+REFERENCE			STUN_DESC_CS
+LANG_ENGLISH		"Zabí hladajícího, kdyz je omrácený."
+
+REFERENCE			TIME_CS
+LANG_ENGLISH		"Stolen Time"
+
+REFERENCE			TIME_DESC_CS
+LANG_ENGLISH		"Waste one week of your\nlife on this mod."
+
+REFERENCE			VIS_CS
+LANG_ENGLISH		"The Invisible"
+
+REFERENCE			VIS_DESC_CS
+LANG_ENGLISH		"Collect 100000 visibility\npoints in total."
+
+REFERENCE			CLOSE_NL
+LANG_ENGLISH		"Rakelings"
+
+REFERENCE			CLOSE_DESC_NL
+LANG_ENGLISH		"Vind de laatste verstopper in de laatste\n10 seconden."
+
+REFERENCE			FAST_NL
+LANG_ENGLISH		"Dubbele moord"
+
+REFERENCE			FAST_DESC_NL
+LANG_ENGLISH		"Breng 2 vijanden om in 2 seconden."
+
+REFERENCE			FIRST_NL
+LANG_ENGLISH		"Overheerser"
+
+REFERENCE			FIRST_DESC_NL
+LANG_ENGLISH		"Sta bovenaan het scorebord aan het einde \nvan de wedstrijd met meer dan 55 punten."
+
+REFERENCE			HIDE_NL
+LANG_ENGLISH		"Perfecte Plek"
+
+REFERENCE			HIDE_DESC_NL
+LANG_ENGLISH		"Win een ronde als zoeker zonder \nte bewegen in de zoektocht tijd."
+
+REFERENCE			KILL_NL
+LANG_ENGLISH		"Hardcore"
+
+REFERENCE			KILL_DESC_NL
+LANG_ENGLISH		"100 moorden in totaal verzamelen."
+
+REFERENCE			KNIFE_NL
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_NL
+LANG_ENGLISH		"Breng 25 spelers om als zoeker."
+
+REFERENCE			LAST_NL
+LANG_ENGLISH		"Laatste"
+
+REFERENCE			LAST_DESC_NL
+LANG_ENGLISH		"De laatste verstopper zijn en overleven."
+
+REFERENCE			MAP_NL
+LANG_ENGLISH		"Verkenner"
+
+REFERENCE			MAP_DESC_NL
+LANG_ENGLISH		"Speel op elke map.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_NL
+LANG_ENGLISH		"Wraak"
+
+REFERENCE			REV_DESC_NL
+LANG_ENGLISH		"Vind de speler die jou gevonden had in de\nvorige ronde wanneer je de laatste\nverstopper was."
+
+REFERENCE			ROCK_NL
+LANG_ENGLISH		"Onverwoestbaar"
+
+REFERENCE			ROCK_DESC_NL
+LANG_ENGLISH		"Vind een vestopper wanneer je \noverdonderd bent."
+
+REFERENCE			STREAK_NL
+LANG_ENGLISH		"Stopzetter"
+
+REFERENCE			STREAK_DESC_NL
+LANG_ENGLISH		"Breng 5 vijanden om in een ronde zonder\nzelf dood te gaan."
+
+REFERENCE			STUN_NL
+LANG_ENGLISH		"Overdonderaar"
+
+REFERENCE			STUN_DESC_NL
+LANG_ENGLISH		"Steek een zoeker om die overdonderd is."
+
+REFERENCE			TIME_NL
+LANG_ENGLISH		"Gestolen Tijd"
+
+REFERENCE			TIME_DESC_NL
+LANG_ENGLISH		"Verspil een week van je leven in deze mod."
+
+REFERENCE			VIS_NL
+LANG_ENGLISH		"De Onzichtbare"
+
+REFERENCE			VIS_DESC_NL
+LANG_ENGLISH		"Verzamel 100000 zichtbaarheid punten in totaal. "
+
+REFERENCE			CLOSE
+LANG_ENGLISH		"Close Shave"
+
+REFERENCE			CLOSE_DESC
+LANG_ENGLISH		"Catch the last hider in the last 10 seconds."
+
+REFERENCE			FAST
+LANG_ENGLISH		"Double Kill"
+
+REFERENCE			FAST_DESC
+LANG_ENGLISH		"Kill 2 enemies within 2 seconds."
+
+REFERENCE			FIRST
+LANG_ENGLISH		"Dominator"
+
+REFERENCE			FIRST_DESC
+LANG_ENGLISH		"Be on the top of the scoreboard for a match\nwith more than 55 points."
+
+REFERENCE			HIDE
+LANG_ENGLISH		"Perfect Hideout"
+
+REFERENCE			HIDE_DESC
+LANG_ENGLISH		"Win a round as a hider without\nmoving in seeking time."
+
+REFERENCE			KILL
+LANG_ENGLISH		"Hardcore"
+
+REFERENCE			KILL_DESC
+LANG_ENGLISH		"Accumulate 100 kills in total."
+
+REFERENCE			KNIFE
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC
+LANG_ENGLISH		"Kill 25 players as a hider."
+
+REFERENCE			LAST
+LANG_ENGLISH		"Last One"
+
+REFERENCE			LAST_DESC
+LANG_ENGLISH		"Be the last hider and survive."
+
+REFERENCE			MAP
+LANG_ENGLISH		"Explorer"
+
+REFERENCE			MAP_DESC
+LANG_ENGLISH		"Play on every maps.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV
+LANG_ENGLISH		"Revenge"
+
+REFERENCE			REV_DESC
+LANG_ENGLISH		"Catch the player who found you in the\nprevious round when you were the last hider."
+
+REFERENCE			ROCK
+LANG_ENGLISH		"Indestructible"
+
+REFERENCE			ROCK_DESC
+LANG_ENGLISH		"Catch a hider while you are stunned."
+
+REFERENCE			STREAK
+LANG_ENGLISH		"Terminator"
+
+REFERENCE			STREAK_DESC
+LANG_ENGLISH		"Kill 5 enemies in one round without dying."
+
+REFERENCE			STUN
+LANG_ENGLISH		"Stunner"
+
+REFERENCE			STUN_DESC
+LANG_ENGLISH		"Knife a seeker while he is stunned."
+
+REFERENCE			TIME
+LANG_ENGLISH		"Stolen Time"
+
+REFERENCE			TIME_DESC
+LANG_ENGLISH		"Waste one week of your\nlife on this mod."
+
+REFERENCE			VIS
+LANG_ENGLISH		"The Invisible"
+
+REFERENCE			VIS_DESC
+LANG_ENGLISH		"Collect 100000 visibility\npoints in total."
+
+REFERENCE			CLOSE_FR
+LANG_ENGLISH		"De justesse"
+
+REFERENCE			CLOSE_DESC_FR
+LANG_ENGLISH		"Attraper le dernier hider dans les 10 dernieres secondes."
+
+REFERENCE			FAST_FR
+LANG_ENGLISH		"Double Kill"
+
+REFERENCE			FAST_DESC_FR
+LANG_ENGLISH		"Tuer 2 ennemis en moins de 2 secondes."
+
+REFERENCE			FIRST_FR
+LANG_ENGLISH		"Dominateur"
+
+REFERENCE			FIRST_DESC_FR
+LANG_ENGLISH		"Etre en haut du classement pour un match avec plus de 55 points."
+
+REFERENCE			HIDE_FR
+LANG_ENGLISH		"La planque Parfaite"
+
+REFERENCE			HIDE_DESC_FR
+LANG_ENGLISH		"Remporter une partie comme une hider sans bouger pendant le temps de Recherche."
+
+REFERENCE			KILL_FR
+LANG_ENGLISH		"Hardcore"
+
+REFERENCE			KILL_DESC_FR
+LANG_ENGLISH		"Accumulez 100 tués au total."
+
+REFERENCE			KNIFE_FR
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_FR
+LANG_ENGLISH		"Tuer 25 joueurs en tant que hider."
+
+REFERENCE			LAST_FR
+LANG_ENGLISH		"Dernier"
+
+REFERENCE			LAST_DESC_FR
+LANG_ENGLISH		"Soyez le dernier hider et survivre."
+
+REFERENCE			MAP_FR
+LANG_ENGLISH		"Explorateur"
+
+REFERENCE			MAP_DESC_FR
+LANG_ENGLISH		"Jouez sur chaque carte.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_FR
+LANG_ENGLISH		"Revanche"
+
+REFERENCE			REV_DESC_FR
+LANG_ENGLISH		"Attrapez le joueur qui vous a trouvé dans le tour précédent quand vous étiez le dernier hider."
+
+REFERENCE			ROCK_FR
+LANG_ENGLISH		"Indestructible"
+
+REFERENCE			ROCK_DESC_FR
+LANG_ENGLISH		"Attraper un hider pendant que vous etes étourdi."
+
+REFERENCE			STREAK_FR
+LANG_ENGLISH		"Terminator"
+
+REFERENCE			STREAK_DESC_FR
+LANG_ENGLISH		"Tuez 5 ennemis en un tour sans mourir."
+
+REFERENCE			STUN_FR
+LANG_ENGLISH		"Étourdisseur"
+
+REFERENCE			STUN_DESC_FR
+LANG_ENGLISH		"Poignarder un chercheur alors qu'il est étourdi."
+
+REFERENCE			TIME_FR
+LANG_ENGLISH		"temps volé"
+
+REFERENCE			TIME_DESC_FR
+LANG_ENGLISH		"perdez une semaine de votre vie sur ce mod."
+
+REFERENCE			VIS_FR
+LANG_ENGLISH		"l'invisible"
+
+REFERENCE			VIS_DESC_FR
+LANG_ENGLISH		"rassamblez 100000 points de visibilité au total."
+
+REFERENCE			CLOSE_DE
+LANG_ENGLISH		"Letzte Sekunde"
+
+REFERENCE			CLOSE_DESC_DE
+LANG_ENGLISH		"Fange den letzten Verstecker in den letzten 10 Sekunden."
+
+REFERENCE			FAST_DE
+LANG_ENGLISH		"Doppelte Vernichtung"
+
+REFERENCE			FAST_DESC_DE
+LANG_ENGLISH		"Töte 2 Gegner innerhalb von 2 Sekunden."
+
+REFERENCE			FIRST_DE
+LANG_ENGLISH		"Herrscher"
+
+REFERENCE			FIRST_DESC_DE
+LANG_ENGLISH		"Sei einer der Besten in der Highscoreliste\nmit mehr als 55 Punkten."
+
+REFERENCE			HIDE_DE
+LANG_ENGLISH		"Perfektes Versteck"
+
+REFERENCE			HIDE_DESC_DE
+LANG_ENGLISH		"Gewinne eine Runde als Verstecker ohne\ndich zu bewegen."
+
+REFERENCE			KILL_DE
+LANG_ENGLISH		"Hardcore"
+
+REFERENCE			KILL_DESC_DE
+LANG_ENGLISH		"Sammle 100 Kills insgesamt."
+
+REFERENCE			KNIFE_DE
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_DE
+LANG_ENGLISH		"Töte 25 Spieler als Verstecker."
+
+REFERENCE			LAST_DE
+LANG_ENGLISH		"Der Letzte"
+
+REFERENCE			LAST_DESC_DE
+LANG_ENGLISH		"Sei der letzte Verstecker und überlebe."
+
+REFERENCE			MAP_DE
+LANG_ENGLISH		"Forscher"
+
+REFERENCE			MAP_DESC_DE
+LANG_ENGLISH		"Spiel auf jeder Karte.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_DE
+LANG_ENGLISH		"Rache"
+
+REFERENCE			REV_DESC_DE
+LANG_ENGLISH		"Fange den Spieler der dich in der letzten\nRunde als letzten Verstecker gefunden hat."
+
+REFERENCE			ROCK_DE
+LANG_ENGLISH		"Unzerstörbar"
+
+REFERENCE			ROCK_DESC_DE
+LANG_ENGLISH		"Fange einen Verstecker, während du betäubt bist."
+
+REFERENCE			STREAK_DE
+LANG_ENGLISH		"Terminator"
+
+REFERENCE			STREAK_DESC_DE
+LANG_ENGLISH		"Töte 5 Feinde in einer Runde ohne zu sterben."
+
+REFERENCE			STUN_DE
+LANG_ENGLISH		"Betäuber"
+
+REFERENCE			STUN_DESC_DE
+LANG_ENGLISH		"Messere einen Sucher, während er betäubt ist."
+
+REFERENCE			TIME_DE
+LANG_ENGLISH		"Gestohlene Zeit"
+
+REFERENCE			TIME_DESC_DE
+LANG_ENGLISH		"Eine Woche deines Lebens, mit diesem Mod verschwendet."
+
+REFERENCE			VIS_DE
+LANG_ENGLISH		"Der Unsichtbare"
+
+REFERENCE			VIS_DESC_DE
+LANG_ENGLISH		"Sammle insgesamt 100000 Sichtbarkeitspunkte."
+
+REFERENCE			CLOSE_HU
+LANG_ENGLISH		"Meleg Helyzet"
+
+REFERENCE			CLOSE_DESC_HU
+LANG_ENGLISH		"Kapd el az utolsó bújót az utolsó\n10 másodpercben."
+
+REFERENCE			FAST_HU
+LANG_ENGLISH		"Kettõs Gyilkosság"
+
+REFERENCE			FAST_DESC_HU
+LANG_ENGLISH		"Ölj meg 2 ellenséget 2 másodpercen belül."
+
+REFERENCE			FIRST_HU
+LANG_ENGLISH		"Vezér"
+
+REFERENCE			FIRST_DESC_HU
+LANG_ENGLISH		"Legyél elsõ a meccs végén több, mint 55 ponttal."
+
+REFERENCE			HIDE_HU
+LANG_ENGLISH		"Tökéletes Rejtekhely"
+
+REFERENCE			HIDE_DESC_HU
+LANG_ENGLISH		"Nyerj egy kört bújóként anélkül, hogy\nmozognál a keresési idõben."
+
+REFERENCE			KILL_HU
+LANG_ENGLISH		"Hardcore"
+
+REFERENCE			KILL_DESC_HU
+LANG_ENGLISH		"Ölj meg 100 embert."
+
+REFERENCE			KNIFE_HU
+LANG_ENGLISH		"Nindzsa"
+
+REFERENCE			KNIFE_DESC_HU
+LANG_ENGLISH		"Ölj meg 25 játékost bújóként."
+
+REFERENCE			LAST_HU
+LANG_ENGLISH		"Az Egyetlen"
+
+REFERENCE			LAST_DESC_HU
+LANG_ENGLISH		"Nyerj meccset egyedüli bújóként."
+
+REFERENCE			MAP_HU
+LANG_ENGLISH		"Felfedezõ"
+
+REFERENCE			MAP_DESC_HU
+LANG_ENGLISH		"Játsz minden pályán.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_HU
+LANG_ENGLISH		"Bosszú"
+
+REFERENCE			REV_DESC_HU
+LANG_ENGLISH		"Kapd el azt a játékost, aki az elõzõ körben\nelkapott téged utolsó bújóként."
+
+REFERENCE			ROCK_HU
+LANG_ENGLISH		"Elpusztíthatatlan"
+
+REFERENCE			ROCK_DESC_HU
+LANG_ENGLISH		"Kapj el egy bújót, miközben el vagy kábítva."
+
+REFERENCE			STREAK_HU
+LANG_ENGLISH		"Terminátor"
+
+REFERENCE			STREAK_DESC_HU
+LANG_ENGLISH		"Ölj meg 5 embert anélkül, hogy meghalnál."
+
+REFERENCE			STUN_HU
+LANG_ENGLISH		"Kábító"
+
+REFERENCE			STUN_DESC_HU
+LANG_ENGLISH		"Késelj le egy keresõt, miközben el van kábítva."
+
+REFERENCE			TIME_HU
+LANG_ENGLISH		"Lopott Idõ"
+
+REFERENCE			TIME_DESC_HU
+LANG_ENGLISH		"Pazarolj el egy hetet az\néletedbõl erre a modra."
+
+REFERENCE			VIS_HU
+LANG_ENGLISH		"A Láthatatlan"
+
+REFERENCE			VIS_DESC_HU
+LANG_ENGLISH		"Gyûjts össze összesen 100000\nláthatósági pontot."
+
+REFERENCE			CLOSE_PL
+LANG_ENGLISH		"O ma³y w³os"
+
+REFERENCE			CLOSE_DESC_PL
+LANG_ENGLISH		"ZnajdŸ ostatniego chowaj¹cego w 10\nostatnich sekundach."
+
+REFERENCE			FAST_PL
+LANG_ENGLISH		"Podwójne zabicie"
+
+REFERENCE			FAST_DESC_PL
+LANG_ENGLISH		"Zabij 2 wrogów w ci¹gu 2 sekund."
+
+REFERENCE			FIRST_PL
+LANG_ENGLISH		"Dominator"
+
+REFERENCE			FIRST_DESC_PL
+LANG_ENGLISH		"B¹dŸ pierwszy w tabeli, maj¹c wiêcej ni¿\n55 punktów."
+
+REFERENCE			HIDE_PL
+LANG_ENGLISH		"Idealna kryjówka"
+
+REFERENCE			HIDE_DESC_PL
+LANG_ENGLISH		"Wygraj rundê chowaj¹c siê. Pozostañ bez ruchu,\ngdy szukaj¹cy Ciê próbuj¹ znaleœæ."
+
+REFERENCE			KILL_PL
+LANG_ENGLISH		"Hardkor"
+
+REFERENCE			KILL_DESC_PL
+LANG_ENGLISH		"Uzbieraj 100 zabiæ."
+
+REFERENCE			KNIFE_PL
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_PL
+LANG_ENGLISH		"Zabij 25 wrogów, bêd¹c chowaj¹cym."
+
+REFERENCE			LAST_PL
+LANG_ENGLISH		"Ostatni"
+
+REFERENCE			LAST_DESC_PL
+LANG_ENGLISH		"Przetrwaj do koñca bêd¹c ostatnim ukrywaj¹cym siê."
+
+REFERENCE			MAP_PL
+LANG_ENGLISH		"Odkrywca"
+
+REFERENCE			MAP_DESC_PL
+LANG_ENGLISH		"Zagraj na ka¿dej mapie.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_PL
+LANG_ENGLISH		"Zemsta"
+
+REFERENCE			REV_DESC_PL
+LANG_ENGLISH		"ZnajdŸ gracza, który znalaz³ Ciê w poprzedniej\nrundzie, gdy by³eœ chowaj¹cym."
+
+REFERENCE			ROCK_PL
+LANG_ENGLISH		"Niezniszczalny"
+
+REFERENCE			ROCK_DESC_PL
+LANG_ENGLISH		"Z³ap chowaj¹cego siê, gdy jesteœ og³uszony."
+
+REFERENCE			STREAK_PL
+LANG_ENGLISH		"Terminator"
+
+REFERENCE			STREAK_DESC_PL
+LANG_ENGLISH		"Zabij 5 wrogów w jednej rundzie nie gin¹c."
+
+REFERENCE			STUN_PL
+LANG_ENGLISH		"Og³uszony"
+
+REFERENCE			STUN_DESC_PL
+LANG_ENGLISH		"Zabij szukaj¹cego no¿em, gdy jest og³uszony."
+
+REFERENCE			TIME_PL
+LANG_ENGLISH		"Skradziony czas"
+
+REFERENCE			TIME_DESC_PL
+LANG_ENGLISH		"Marnuj jeden tydzieñ twojego ¿ycia na tego moda."
+
+REFERENCE			VIS_PL
+LANG_ENGLISH		"Niewidoczny"
+
+REFERENCE			VIS_DESC_PL
+LANG_ENGLISH		"Zebraæ 100000 punktów widocznoœci w sumie."
+
+REFERENCE			CLOSE_RU
+LANG_ENGLISH		"Pochti neminuyemaya gibel' "
+
+REFERENCE			CLOSE_DESC_RU
+LANG_ENGLISH		"Poyman posledniy Hider v posledniye 10 sekund."
+
+REFERENCE			FAST_RU
+LANG_ENGLISH		"Dvoinoe ubiystvo"
+
+REFERENCE			FAST_DESC_RU
+LANG_ENGLISH		"Ubit' 2 protivnikov v techenii 2 sekund."
+
+REFERENCE			FIRST_RU
+LANG_ENGLISH		"Dominirovanie"
+
+REFERENCE			FIRST_DESC_RU
+LANG_ENGLISH		"Byt' na vershine turnirnoy tablitse v matche\n s boleye chem 55 ballov ."
+
+REFERENCE			HIDE_RU
+LANG_ENGLISH		"Ideal'noe skritnost'"
+
+REFERENCE			HIDE_DESC_RU
+LANG_ENGLISH		"Vyigrayte raund kak Hider bez\nperemeshcheniya vo vremya poiska."
+
+REFERENCE			KILL_RU
+LANG_ENGLISH		"Slozhnii rejim"
+
+REFERENCE			KILL_DESC_RU
+LANG_ENGLISH		"Nakopit' 100 ubiystv"
+
+REFERENCE			KNIFE_RU
+LANG_ENGLISH		"Nindzya"
+
+REFERENCE			KNIFE_DESC_RU
+LANG_ENGLISH		"Ubit' 25 igrokov za Hider."
+
+REFERENCE			LAST_RU
+LANG_ENGLISH		"Posledniy"
+
+REFERENCE			LAST_DESC_RU
+LANG_ENGLISH		"Byt' poslednim Hider i vyzhit'."
+
+REFERENCE			MAP_RU
+LANG_ENGLISH		"Issledovatel' "
+
+REFERENCE			MAP_DESC_RU
+LANG_ENGLISH		"Igrat' na kazhdoy karte.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_RU
+LANG_ENGLISH		"Mest' "
+
+REFERENCE			REV_DESC_RU
+LANG_ENGLISH		"Ubit' igroka, kotoryy nashel vas v\npredydushchem raunde, kogda vy byli posledniy Hider."
+
+REFERENCE			ROCK_RU
+LANG_ENGLISH		"Nerazrushimiy"
+
+REFERENCE			ROCK_DESC_RU
+LANG_ENGLISH		"Ubit' Hidera v to vremya kak vy oglusheny."
+
+REFERENCE			STREAK_RU
+LANG_ENGLISH		"Terminator"
+
+REFERENCE			STREAK_DESC_RU
+LANG_ENGLISH		"Ubeyte 5 vragov za odin raund, ne umiraya."
+
+REFERENCE			STUN_RU
+LANG_ENGLISH		"Stunner"
+
+REFERENCE			STUN_DESC_RU
+LANG_ENGLISH		"Ubit' seeker poka on oshelomlen."
+
+REFERENCE			TIME_RU
+LANG_ENGLISH		"Potrachennoe vremya"
+
+REFERENCE			TIME_DESC_RU
+LANG_ENGLISH		"Potrat'te nedelu svoei real'noy zhizni na HNS mod"
+
+REFERENCE			VIS_RU
+LANG_ENGLISH		"Nevedimka"
+
+REFERENCE			VIS_DESC_RU
+LANG_ENGLISH		"Naberine 100 000 ochkov vidimosti"
+
+REFERENCE			CLOSE_ES
+LANG_ENGLISH		"Salvarse Por un Pelo"
+
+REFERENCE			CLOSE_DESC_ES
+LANG_ENGLISH		"Encuentra el Ultimo Hider en los últimos\n10 segundos."
+
+REFERENCE			FAST_ES
+LANG_ENGLISH		"Baja Doble"
+
+REFERENCE			FAST_DESC_ES
+LANG_ENGLISH		"Mata a 2 enemigos antes de 2 segundos."
+
+REFERENCE			FIRST_ES
+LANG_ENGLISH		"Dominante"
+
+REFERENCE			FIRST_DESC_ES
+LANG_ENGLISH		"Estar Primero en en la tabla de escore en\nuna partida con mas de 55 puntos."
+
+REFERENCE			HIDE_ES
+LANG_ENGLISH		"Escondite Perfecto"
+
+REFERENCE			HIDE_DESC_ES
+LANG_ENGLISH		"Gana una ronda como un Hider sin\nmoverse en la búsqueda de tiempo."
+
+REFERENCE			KILL_ES
+LANG_ENGLISH		"Duro"
+
+REFERENCE			KILL_DESC_ES
+LANG_ENGLISH		"Acumula 100 bajas en total."
+
+REFERENCE			KNIFE_ES
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_ES
+LANG_ENGLISH		"Mata 25 Jugadores como un Hider."
+
+REFERENCE			LAST_ES
+LANG_ENGLISH		"Ultimo"
+
+REFERENCE			LAST_DESC_ES
+LANG_ENGLISH		"Se el ultimo hider y sobrevive."
+
+REFERENCE			MAP_ES
+LANG_ENGLISH		"Explorador"
+
+REFERENCE			MAP_DESC_ES
+LANG_ENGLISH		"Juega en todos los mapas.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_ES
+LANG_ENGLISH		"Venganza"
+
+REFERENCE			REV_DESC_ES
+LANG_ENGLISH		"Coger el jugador que usted encuentra en la\nronda anterior cuando era el último Hider."
+
+REFERENCE			ROCK_ES
+LANG_ENGLISH		"Indestructible"
+
+REFERENCE			ROCK_DESC_ES
+LANG_ENGLISH		"Atrapa a un hider mientras está aturdido."
+
+REFERENCE			STREAK_ES
+LANG_ENGLISH		"Terminador"
+
+REFERENCE			STREAK_DESC_ES
+LANG_ENGLISH		"Mata a 5 enemigos en una ronda sin morir."
+
+REFERENCE			STUN_ES
+LANG_ENGLISH		"Stunner"
+
+REFERENCE			STUN_DESC_ES
+LANG_ENGLISH		"Acuchilla a un seeker mientras está aturdido."
+
+REFERENCE			TIME_ES
+LANG_ENGLISH		"Stolen Time"
+
+REFERENCE			TIME_DESC_ES
+LANG_ENGLISH		"Waste one week of your life\non this mod."
+
+REFERENCE			VIS_ES
+LANG_ENGLISH		"The Invisible"
+
+REFERENCE			VIS_DESC_ES
+LANG_ENGLISH		"Collect 100000 visibility\npoints in total."
+
+REFERENCE			CLOSE_SK
+LANG_ENGLISH		"Tesnotka"
+
+REFERENCE			CLOSE_DESC_SK
+LANG_ENGLISH		"Nájdi posleného skrytého poslednych 10 sekúnd."
+
+REFERENCE			FAST_SK
+LANG_ENGLISH		"Rychlost"
+
+REFERENCE			FAST_DESC_SK
+LANG_ENGLISH		"Zabi 2 nepriate¾ov pocas 2 sekúnd"
+
+REFERENCE			FIRST_SK
+LANG_ENGLISH		"Prevládni"
+
+REFERENCE			FIRST_DESC_SK
+LANG_ENGLISH		"Bud na vrchole herného rebrícka s viac ako 55 bodmi."
+
+REFERENCE			HIDE_SK
+LANG_ENGLISH		"Perfektná skrýsa"
+
+REFERENCE			HIDE_DESC_SK
+LANG_ENGLISH		"Schovaj sa bez toho, aby si sa pohol."
+
+REFERENCE			KILL_SK
+LANG_ENGLISH		"Vrah"
+
+REFERENCE			KILL_DESC_SK
+LANG_ENGLISH		"Nahromad dokopy 100 zabití."
+
+REFERENCE			KNIFE_SK
+LANG_ENGLISH		"Nindza"
+
+REFERENCE			KNIFE_DESC_SK
+LANG_ENGLISH		"Skry sa a zabi 25 hladajúcich."
+
+REFERENCE			LAST_SK
+LANG_ENGLISH		"Posledny"
+
+REFERENCE			LAST_DESC_SK
+LANG_ENGLISH		"Schovaj sa a prezi ako posledny."
+
+REFERENCE			MAP_SK
+LANG_ENGLISH		"Prieskumník"
+
+REFERENCE			MAP_DESC_SK
+LANG_ENGLISH		"Hraj na kazdej mape.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_SK
+LANG_ENGLISH		"Pomsta"
+
+REFERENCE			REV_DESC_SK
+LANG_ENGLISH		"Zabi hráca, ktory ta nasiel v predchádzajúcom kole, ked si sa schoval ako posledny."
+
+REFERENCE			ROCK_SK
+LANG_ENGLISH		"Neznicitelny"
+
+REFERENCE			ROCK_DESC_SK
+LANG_ENGLISH		"Ked ta skryvac omráci, zabi ho."
+
+REFERENCE			STREAK_SK
+LANG_ENGLISH		"Terminátor"
+
+REFERENCE			STREAK_DESC_SK
+LANG_ENGLISH		"Zabi 5 protivníkov poèas jedného kola, bez toho aby si zomrel."
+
+REFERENCE			STUN_SK
+LANG_ENGLISH		"Prekvapenie"
+
+REFERENCE			STUN_DESC_SK
+LANG_ENGLISH		"Zabi hladajúceho, ked je omráceny."
+
+REFERENCE			TIME_SK
+LANG_ENGLISH		"Zabitý cas"
+
+REFERENCE			TIME_DESC_SK
+LANG_ENGLISH		"Zabil si týzden hraním tohto módu."
+
+REFERENCE			VIS_SK
+LANG_ENGLISH		"Neviditelný"
+
+REFERENCE			VIS_DESC_SK
+LANG_ENGLISH		"Nazbieraj celkovo 100000 bodov viditelnosti."
+
+REFERENCE			CLOSE_SL
+LANG_ENGLISH		"Skoraj"
+
+REFERENCE			CLOSE_DESC_SL
+LANG_ENGLISH		"Ujemi zadnjega skrivalca v zadnjih desetih sekundah."
+
+REFERENCE			FAST_SL
+LANG_ENGLISH		"Dvojni uboj"
+
+REFERENCE			FAST_DESC_SL
+LANG_ENGLISH		"Ubij dva sovraznika v dveh sekundah."
+
+REFERENCE			FIRST_SL
+LANG_ENGLISH		"Dominator"
+
+REFERENCE			FIRST_DESC_SL
+LANG_ENGLISH		"Bodi na vrhu lestvice celo igro z vec kot 55 tockami."
+
+REFERENCE			HIDE_SL
+LANG_ENGLISH		"Perfektno skrivalisce"
+
+REFERENCE			HIDE_DESC_SL
+LANG_ENGLISH		"Zmagaj krog kot skrivalec brez, da bi se premaknil v casu iskanja."
+
+REFERENCE			KILL_SL
+LANG_ENGLISH		"Trdoziv"
+
+REFERENCE			KILL_DESC_SL
+LANG_ENGLISH		"Zberi skupno 100 ubojev."
+
+REFERENCE			KNIFE_SL
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_SL
+LANG_ENGLISH		"Ubij 25 igralcev kot skrivalec."
+
+REFERENCE			LAST_SL
+LANG_ENGLISH		"Zadnji"
+
+REFERENCE			LAST_DESC_SL
+LANG_ENGLISH		"Bodi zadnji skrivalec in prezivi."
+
+REFERENCE			MAP_SL
+LANG_ENGLISH		"Raziskovalec"
+
+REFERENCE			MAP_DESC_SL
+LANG_ENGLISH		"Igraj na vseh mapah.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_SL
+LANG_ENGLISH		"Mascevanje"
+
+REFERENCE			REV_DESC_SL
+LANG_ENGLISH		"Ujemi igralca, kateri te je nasel med prejsnim krogom\nv katerem si bil zadnji skrivalec."
+
+REFERENCE			ROCK_SL
+LANG_ENGLISH		"Neunicljiv"
+
+REFERENCE			ROCK_DESC_SL
+LANG_ENGLISH		"Ujemi skrivalca med tem, ko si paraliziran."
+
+REFERENCE			STREAK_SL
+LANG_ENGLISH		"Terminator"
+
+REFERENCE			STREAK_DESC_SL
+LANG_ENGLISH		"Ubij 5 sovraznikov v enem krogu brez da umres."
+
+REFERENCE			STUN_SL
+LANG_ENGLISH		"Paralizator"
+
+REFERENCE			STUN_DESC_SL
+LANG_ENGLISH		"Z nozem ubij iskalca med tem, ko je paraliziran."
+
+REFERENCE			TIME_SL
+LANG_ENGLISH		"Ukraden cas"
+
+REFERENCE			TIME_DESC_SL
+LANG_ENGLISH		"Zapravi en teden svojega zivljenja na tem modu."
+
+REFERENCE			VIS_SL
+LANG_ENGLISH		"Nevidni"
+
+REFERENCE			VIS_DESC_SL
+LANG_ENGLISH		"Skupaj zberi 100000 tock vidnosti."
+
+REFERENCE			CLOSE_TR
+LANG_ENGLISH		"Yakin kesim"
+
+REFERENCE			CLOSE_DESC_TR
+LANG_ENGLISH		"Son 10 saniyede son saklanani yakala."
+
+REFERENCE			FAST_TR
+LANG_ENGLISH		"Çifte Vurus"
+
+REFERENCE			FAST_DESC_TR
+LANG_ENGLISH		"2 saniye içinde 2 kisiyi öldür."
+
+REFERENCE			FIRST_TR
+LANG_ENGLISH		"Ezici"
+
+REFERENCE			FIRST_DESC_TR
+LANG_ENGLISH		"Bir oyunda 55 puandan daha fazla\nkazanarak birinci ol."
+
+REFERENCE			HIDE_TR
+LANG_ENGLISH		"Mükemmel saklanma"
+
+REFERENCE			HIDE_DESC_TR
+LANG_ENGLISH		"Bir raundu saklanan iken arama süresince\nhiç hareket etmeden kazan."
+
+REFERENCE			KILL_TR
+LANG_ENGLISH		"Hardcore"
+
+REFERENCE			KILL_DESC_TR
+LANG_ENGLISH		"Toplam 100 oyuncu öldür."
+
+REFERENCE			KNIFE_TR
+LANG_ENGLISH		"Ninja"
+
+REFERENCE			KNIFE_DESC_TR
+LANG_ENGLISH		"Saklanan iken 25 oyuncu öldür."
+
+REFERENCE			LAST_TR
+LANG_ENGLISH		"Sona kalan"
+
+REFERENCE			LAST_DESC_TR
+LANG_ENGLISH		"Son saklanan ol ve kurtul."
+
+REFERENCE			MAP_TR
+LANG_ENGLISH		"Kâsif"
+
+REFERENCE			MAP_DESC_TR
+LANG_ENGLISH		"Her haritada oyna.\n^8/openScriptmenu ingame maps"
+
+REFERENCE			REV_TR
+LANG_ENGLISH		"Intikam"
+
+REFERENCE			REV_DESC_TR
+LANG_ENGLISH		"Sen bir önceki raundda son saklanan iken\nseni bulan oyuncuyu yakala."
+
+REFERENCE			ROCK_TR
+LANG_ENGLISH		"Yok edilemez"
+
+REFERENCE			ROCK_DESC_TR
+LANG_ENGLISH		"Sersemlemisken bir saklanan yakala."
+
+REFERENCE			STREAK_TR
+LANG_ENGLISH		"Terminatör"
+
+REFERENCE			STREAK_DESC_TR
+LANG_ENGLISH		"Bir raundda 5 kisiyi ölmeden öldür."
+
+REFERENCE			STUN_TR
+LANG_ENGLISH		"Sersemletici"
+
+REFERENCE			STUN_DESC_TR
+LANG_ENGLISH		"Bir arayiciyi sersemlemisken biçakla."
+
+REFERENCE			TIME_TR
+LANG_ENGLISH		"Calinti zaman"
+
+REFERENCE			TIME_DESC_TR
+LANG_ENGLISH		"Hayatinin bir haftasini bu mod'da harca."
+
+REFERENCE			VIS_TR
+LANG_ENGLISH		"Gorunmez"
+
+REFERENCE			VIS_DESC_TR
+LANG_ENGLISH		"Toplam 100000 gorunurluk puani topla."
+
+ENDMARKER

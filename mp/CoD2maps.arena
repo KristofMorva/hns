@@ -1,0 +1,142 @@
+{
+	map			"mp_convoy"
+	longname	"MPUI_CONVOY"
+	gametype	"hns"
+}
+
+{
+	map			"mp_backlot"
+	longname	"MPUI_BACKLOT"
+	gametype	"hns"
+}
+
+{
+	map			"mp_bloc"
+	longname	"MPUI_BLOC"
+	gametype	"hns"
+}
+
+{
+	map			"mp_bog"
+	longname	"MPUI_BOG"
+	gametype	"hns"
+}
+
+{
+	map			"mp_countdown"
+	longname	"MPUI_COUNTDOWN"
+	gametype	"hns"
+}
+
+{
+	map			"mp_crash"
+	longname	"MPUI_CRASH"
+	gametype	"hns"
+}
+
+{
+	map			"mp_crossfire"
+	longname	"MPUI_CROSSFIRE"
+	gametype	"hns"
+}
+
+{
+	map			"mp_citystreets"
+	longname	"MPUI_CITYSTREETS"
+	gametype	"hns"
+}
+{
+	map			"mp_farm"
+	longname	"MPUI_FARM"
+	gametype	"hns"
+}
+
+{
+	map			"mp_overgrown"
+	longname	"MPUI_OVERGROWN"
+	gametype	"hns"
+}
+
+{
+	map			"mp_pipeline"
+	longname	"MPUI_PIPELINE"
+	gametype	"hns"
+}
+
+{
+	map			"mp_shipment"
+	longname	"MPUI_SHIPMENT"
+	gametype	"hns"
+}
+
+{
+	map			"mp_showdown"
+	longname	"MPUI_SHOWDOWN"
+	gametype	"hns"
+}
+
+{
+	map			"mp_strike"
+	longname	"MPUI_STRIKE"
+	gametype	"hns"
+}
+
+{
+	map			"mp_vacant"
+	longname	"MPUI_VACANT"
+	gametype	"hns"
+}
+
+{
+	map			"mp_cargoship"
+	longname	"MPUI_CARGOSHIP"
+	gametype	"hns"
+}
+
+{
+	map			"mp_killhouse"
+	longname	"MPUI_KILLHOUSE"
+	gametype	"hns"
+}
+
+{
+	map			"mp_carentan"
+	longname	"MPUI_CARENTAN"
+	gametype	"hns"
+}
+
+{
+	map			"mp_broadcast"
+	longname	"MPUI_BROADCAST"
+	gametype	"hns"
+}
+
+{
+	map			"mp_creek"
+	longname	"MPUI_CREEK"
+	gametype	"hns"
+}
+
+{
+	map			"mp_crash_snow"
+	longname	"MPUI_CRASH_SNOW"
+	gametype	"hns"
+}
+
+{
+	map			"mp_cluster"
+	longname	"MAPS_CLUSTER"
+	gametype	"hns"
+}
+
+{
+	map			"mp_backyard"
+	longname	"MAPS_BACKYARD"
+	gametype	"hns"
+}
+
+{
+	map			"mp_fav"
+	longname	"MAPS_FAV"
+	gametype	"hns"
+}

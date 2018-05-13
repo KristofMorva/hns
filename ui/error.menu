@@ -1,0 +1,151 @@
+#include "ui/menudef.h"
+
+{
+	menuDef
+	{
+		name			"error_popmenu"
+		visible			0
+		fullscreen		1
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_FILLED
+		border			1
+		onClose
+		{
+			uiScript clearError
+		}
+#ifdef CONSOLE
+		onOpen
+		{
+			// execnow "xstopprivateparty; xstopparty";
+		}
+#endif // #ifdef CONSOLE
+		onESC
+		{
+			uiScript clearError;
+			close error_popmenu;
+			open main;
+		}
+#ifdef CONSOLE
+		execKeyInt 27
+		{
+			uiScript clearError;
+			close error_popmenu;
+			open main;
+		}
+#endif // #ifdef CONSOLE
+		onClose { setDvar hns_reason "" } // HNS
+
+		itemDef
+		{
+			name			backimage2fade
+			style			WINDOW_STYLE_SHADER
+			rect			-128 0 896 480
+			background		"white"
+			forecolor		0 0 0 0.3
+			backcolor		0 0 0 0.3
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name			backimage2fade
+			style			WINDOW_STYLE_SHADER
+			rect			50 177 535 200
+			background		"popmenu_bg"
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name			confirm
+			dvar			"com_errorTitle"
+			style			WINDOW_STYLE_EMPTY
+			textscale		TEXTSIZE_TITLE
+			rect			326 200 110 20
+			textalign		ITEM_ALIGN_CENTER
+			textalignx		-62
+			textaligny		5
+			decoration
+			forecolor		COLOR_TITLE
+			visible			1
+		}
+
+		itemDef
+		{
+			name			confirm
+			dvar			"com_errorTitle"
+			style			WINDOW_STYLE_EMPTY
+			textscale		TEXTSIZE_TITLE
+			rect			326 200 110 20
+			textalign		ITEM_ALIGN_CENTER
+			textalignx		-62
+			textaligny		5
+			decoration
+			forecolor		COLOR_TITLE
+			visible			1
+		}
+
+		itemDef
+		{
+			name			errorinfo
+			rect			120 210 400 255
+			type			ITEM_TYPE_TEXT
+			style			WINDOW_STYLE_FILLED
+			autowrapped
+			dvar			"com_errorMessage"
+			textalign		ITEM_ALIGN_CENTER
+			textaligny		23
+			textscale		.35
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+
+		// HNS
+		itemDef
+		{
+			name			reason
+			rect			120 232 400 255
+			type			ITEM_TYPE_TEXT
+			style			WINDOW_STYLE_FILLED
+			autowrapped
+			dvar			"hns_reason"
+			hideDvar		{ "" }
+			textalign		ITEM_ALIGN_CENTER
+			textaligny		23
+			textscale		.35
+			forecolor		1 0.8 0.8 1
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name			back
+			text			"@MENU_EXIT"
+			type			ITEM_TYPE_BUTTON
+			textscale		.3
+			style			WINDOW_STYLE_FILLED
+			textfont		UI_FONT_NORMAL
+			rect			270 360 100 17
+			textalign		ITEM_ALIGN_CENTER
+			textaligny		13
+			forecolor		COLOR_UNFOCUSED
+			visible			1
+			onFocus
+			{
+				play "mouse_over";
+			}
+			action
+			{
+				play "mouse_click";
+				uiScript clearError;
+				close error_popmenu;
+				open main
+			}
+		}
+	}
+}

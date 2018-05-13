@@ -1,0 +1,107 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\trees\cod3\cod3\bin\StringEd_PC.cfg"
+FILENOTES           ""
+
+REFERENCE           EOG_PRESS_ESC
+LANG_ENGLISH        "Welcome to our ^1Hide ^7'n ^2Seek ^7server - Mod by iCore"
+
+REFERENCE           DYK_MSG1
+LANG_ENGLISH        "Gain XP to level up and unlock content! You receive experience points for killing someone, completing challenges, or winning a round."
+
+REFERENCE           DYK_MSG2
+LANG_ENGLISH        "Level up! As you gain XP, you earn promotions and unlock special content."
+
+REFERENCE           DYK_MSG3
+LANG_ENGLISH        "Watch your HUD! If there is only one hider left, you can see which object he is hiding as."
+
+REFERENCE           DYK_MSG4
+LANG_ENGLISH        "Keep an eye on the radar! You can check where the seekers are shooting and find yourself an escape route. If you are level 20 or above, seekers are always visible on the radar."
+
+REFERENCE           DYK_MSG5
+LANG_ENGLISH        "Hiders: use teamwork! Hiding in a way to compliment each other will make finding both of you a lot harder."
+
+REFERENCE           DYK_MSG6
+LANG_ENGLISH        "Seekers: use teamwork! If you have a search strategy, you can cover more ground in less time and find hiders faster."
+
+REFERENCE           DYK_MSG7
+LANG_ENGLISH        "Glitching is not allowed! Not only is it unfair to seekers, but it makes the games long and boring."
+
+REFERENCE           DYK_MSG8
+LANG_ENGLISH        "Don't cheat! It's a fun mod, cheating just isn't worth it."
+
+REFERENCE           DYK_MSG9
+LANG_ENGLISH        "Be creative! Every map lets you hide as different objects. Explore your options and choose the best ones."
+
+REFERENCE           DYK_MSG10
+LANG_ENGLISH        "Conserve ammo! Lower levels have less ammunition. Instead, memorize the maps and look for objects that are out of place."
+
+REFERENCE           DYK_MSG11
+LANG_ENGLISH        "You don't need to glitch to win! Usually the best spots are the ones in plain sight."
+
+REFERENCE           DYK_MSG12
+LANG_ENGLISH        "Use seeker camouflage as a hider! You can mingle with the crowd if you are in danger."
+
+REFERENCE           DYK_MSG13
+LANG_ENGLISH        "Switch your third person view! You can do it as a seeker, and as a hider. It is especially useful for seeing the entire area."
+
+REFERENCE           DYK_MSG14
+LANG_ENGLISH        "Rotate your object! The environment is always different. Lean to better blend in."
+
+REFERENCE           DYK_MSG15
+LANG_ENGLISH        "Don't try to shoot through walls under level 111! You must be able to see someone to shoot them."
+
+REFERENCE           DYK_MSG16
+LANG_ENGLISH        "Move around! If you hide near another person and that person is caught, he may know where you are. You should leave before he can find you."
+
+REFERENCE           DYK_MSG17
+LANG_ENGLISH        "Seekers: Watch your back! Once a hider is level 40, he can knife when standing up."
+
+REFERENCE           DYK_MSG18
+LANG_ENGLISH        "Check your radar! If a hider exceeds a given rank, he can see the all seekers on his radar."
+
+REFERENCE           DYK_MSG19
+LANG_ENGLISH        "Rotate! You can rotate your object to adjust to the environment."
+
+REFERENCE           DYK_MSG20
+LANG_ENGLISH        "Complete challenges! You receive an XP bonus for each challenge you complete."
+
+REFERENCE           DYK_MSG21
+LANG_ENGLISH        "Set third person camera! You can optimize it for models in the quick menu."
+
+REFERENCE           DYK_MSG22
+LANG_ENGLISH        "Watch for the knife sign! When a red sign with a knife pops up, it means a hider has killed a seeker in that area."
+
+REFERENCE           DYK_MSG23
+LANG_ENGLISH        "Choose your language! There are different languages available for different countries."
+
+REFERENCE           DYK_MSG24
+LANG_ENGLISH        "Watch the version number! Every time it changes, check to see what is new."
+
+REFERENCE           DYK_MSG25
+LANG_ENGLISH        "Don't be afraid about the number of hiders! Every time you find someone, your ammo is restored."
+
+REFERENCE           DYK_MSG26
+LANG_ENGLISH        "Don't be afraid to give me feedback! If you have any ideas for or questions about the mod, add me on Steam: jk3editor"
+
+REFERENCE           DYK_MSG27
+LANG_ENGLISH        "Report things! If you find a bug, a glitch, a hacker, or a cheater, report it to me via Steam: jk3editor"
+
+REFERENCE           DYK_MSG28
+LANG_ENGLISH        "Always read the Intel! There are a lot of important messages here."
+
+REFERENCE           DYK_MSG29
+LANG_ENGLISH        "HNS Mod by iCore, check my projects at moddb.com/members/icore"
+
+
+ENDMARKER

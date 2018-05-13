@@ -1,0 +1,250 @@
+#include "ui_mp/attachments.inc"
+
+// attachment menus can be easily merged by making one image, much less buttons, and making a csv with the exp rect of the image, etc etc... but that's much work
+{
+	menuDef
+	{
+		name			"attachments"
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		onEsc
+		{
+			scriptMenuResponse "back";
+		}
+
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.75 //0 0.05 0.15 0.5
+			visible			1
+			decoration
+		}
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name			"stove"
+			style			WINDOW_STYLE_SHADER
+			rect			450 125 64 64
+			background		"stove"
+			dvartest		"model"
+			showdvar
+			{
+				"com_stove";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"lid"
+			style			WINDOW_STYLE_SHADER
+			rect			305 125 512 128
+			background		"trashcan"
+			dvartest		"model"
+			showDvar
+			{
+				"com_trashcan_metal";
+				"com_trashcan_metal_with_trash";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"trashbag"
+			style			WINDOW_STYLE_SHADER
+			rect			425 125 128 128
+			background		"trashbag"
+			dvartest		"model"
+			showDvar
+			{
+				"com_trashcan_metal";
+				"com_trashcan_metal_with_trash";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"case"
+			style			WINDOW_STYLE_SHADER
+			rect			425 125 128 128
+			background		"case"
+			dvartest		"model"
+			showDvar
+			{
+				"com_plasticcase_beige_big";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"crate"
+			style			WINDOW_STYLE_SHADER
+			rect			425 125 128 256
+			background		"crate"
+			dvartest		"model"
+			showDvar
+			{
+				"ch_crate48x64";
+				"ch_crate64x64";
+				"ch_crate32x48";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"woodtable"
+			style			WINDOW_STYLE_SHADER
+			rect			350 250 256 64
+			background		"woodtable"
+			dvartest		"model"
+			showDvar
+			{
+				"bc_militarytent_wood_table";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"woodtable2"
+			style			WINDOW_STYLE_SHADER
+			rect			335 225 256 128
+			background		"woodtable2"
+			dvartest		"model"
+			showDvar
+			{
+				"bc_militarytent_wood_table";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"base"
+			style			WINDOW_STYLE_SHADER
+			rect			425 125 128 128
+			background		"lion"
+			dvartest		"model"
+			showDvar
+			{
+				"ct_statue_chineselionstonebase";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"rockets"
+			style			WINDOW_STYLE_SHADER
+			rect			425 125 128 128
+			background		"rockets"
+			dvartest		"model"
+			showDvar
+			{
+				"ch_missle_rack";
+			}
+			visible			0
+			decoration
+		}
+
+		// ------------------ TREE TITLE ------------------
+
+		CHOICE_MENU_TITLE("@MENUS_EDIT_MODEL" + dvarString("lang"))
+
+		// ------------------ buttons ---------------------
+		#define BACK_OPEN;
+		#include "ui_mp/navcontrols.inc"
+
+		CHOICE_SECTION_TITLE(1, dvarString(dvarString("modelid") + "_title"))
+
+		//title("TRASHCAN", "com_trashcan_metal")
+		list(2, "LID", "lid", a b c, "com_trashcan_metal", "lid")
+		list(4, "TRASHBAG", "trashbag", a, "com_trashcan_metal", "trashbag")
+		rotate(5, "trashbag", "com_trashcan_metal", "trashbag")
+
+		//title("TRASHCAN_FULL", "com_trashcan_metal_with_trash")
+		list(2, "LID", "lid", a b c, "com_trashcan_metal_with_trash", "lid")
+		list(4, "TRASHBAG", "trashbag", a, "com_trashcan_metal_with_trash", "trashbag")
+		rotate(5, "trashbag", "com_trashcan_metal_with_trash", "trashbag")
+
+		//title("STOVE", "com_stove")
+		list(2, "PAN_METAL", "pan", a b c d, "com_stove", "stove")
+		rotate(3, "pan", "com_stove", "stove")
+		list(5, "PAN_COPPER", "pan2", a b c d, "com_stove", "stove")
+		rotate(6, "pan2", "com_stove", "stove")
+
+		//title("CASE", "com_plasticcase_beige_big")
+		list(2, "CASE2", "case", a, "com_plasticcase_beige_big", "case")
+		rotate(3, "case", "com_plasticcase_beige_big", "case")
+
+		////title("CRATE", "ch_crate48x64")
+		list(2, "CRATE2", "crate", a, "ch_crate48x64", "crate")
+		rotate(3, "crate", "ch_crate48x64", "crate")
+
+		//title("CRATE", "ch_crate64x64")
+		list(2, "CRATE2", "crate", a, "ch_crate64x64", "crate")
+		rotate(3, "crate", "ch_crate64x64", "crate")
+
+		//title("CRATE", "ch_crate32x48")
+		list(2, "CRATE2", "crate", a, "ch_crate32x48", "crate")
+		rotate(3, "crate", "ch_crate32x48", "crate")
+
+		//title("TABLE", "bc_militarytent_wood_table")
+		list(2, "PAINTCAN", "paintcan2", a b c d e f g h, "bc_militarytent_wood_table", "woodtable")
+		rotate(3, "paintcan2", "bc_militarytent_wood_table", "woodtable")
+		list(5, "PROPANE", "propane", a b c d e f g h, "bc_militarytent_wood_table", "woodtable")
+		rotate(6, "propane", "bc_militarytent_wood_table", "woodtable")
+		list(8, "PLASTICCRATE", "plasticcrate", a b c d e f g h, "bc_militarytent_wood_table", "woodtable")
+		rotate(9, "plasticcrate", "bc_militarytent_wood_table", "woodtable")
+		list(11, "TIRE", "tire2", a b c d e f g h, "bc_militarytent_wood_table", "woodtable")
+		rotate(12, "tire2", "bc_militarytent_wood_table", "woodtable")
+		list(22, "BOX_DOWN", "box2", a b, "bc_militarytent_wood_table", "woodtable2")
+		rotate(23, "box2", "bc_militarytent_wood_table", "woodtable2")
+		list(25, "PROPANE_DOWN", "propane2", a b, "bc_militarytent_wood_table", "woodtable2")
+		rotate(26, "propane2", "bc_militarytent_wood_table", "woodtable2")
+
+		list(2, "STATUE", "statue", a, "ct_statue_chineselionstonebase", "base")
+		rotate(3, "statue", "ct_statue_chineselionstonebase", "base")
+
+		list(2, "ROCKETS", "rockets", a, "ch_missle_rack", "rockets")
+
+		CHOICE_BUTTON_VIS(34, "@MENUS_APPLY" + dvarString("lang"), close self; scriptMenuResponse "apply", when (allowedModel))
+		CHOICE_BUTTON_VIS(35, "@MENUS_REMOVE" + dvarString("lang"), close self; scriptMenuResponse "remove", when (allowedModel))
+	}
+}

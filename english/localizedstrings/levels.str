@@ -1,0 +1,1420 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION				"1"
+CONFIG				"C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES			""
+
+REFERENCE			ANGRY_HR
+LANG_ENGLISH		"Bez milosti"
+
+REFERENCE			ANGRY_DESC_HR
+LANG_ENGLISH		"Tragac - Desert Eagle i novi efekt"
+
+REFERENCE			COMPASS_HR
+LANG_ENGLISH		"Radar"
+
+REFERENCE			COMPASS_DESC_HR
+LANG_ENGLISH		"Skrivac - Tragaci vidljivi na radaru"
+
+REFERENCE			FASTRELOAD_HR
+LANG_ENGLISH		"Brzo Punjenje"
+
+REFERENCE			FASTRELOAD_DESC_HR
+LANG_ENGLISH		"Mozes Puniti Oruzije Brze"
+
+REFERENCE			FLASH_HR
+LANG_ENGLISH		"Fosforna Granata"
+
+REFERENCE			FLASH_DESC_HR
+LANG_ENGLISH		"Tragac - Imati ces fosfornu granatu"
+
+REFERENCE			KNIFEKILL_HR
+LANG_ENGLISH		"Lovac Na Tragace"
+
+REFERENCE			KNIFEKILL_DESC_HR
+LANG_ENGLISH		"Skrivac - Ubij tragace nozem dok stojis"
+
+REFERENCE			M1014_HR
+LANG_ENGLISH		"Brza Vatra"
+
+REFERENCE			M1014_DESC_HR
+LANG_ENGLISH		"Tragac - Imat cete M1014 pusku"
+
+REFERENCE			PENETRATION_HR
+LANG_ENGLISH		"Prodiranje"
+
+REFERENCE			PENETRATION_DESC_HR
+LANG_ENGLISH		"Tragac - Moci ces pucati kroz zidove\nSkrivac - Mogucnost ubijanja kao pas"
+
+REFERENCE			QUIET_HR
+LANG_ENGLISH		"Tiho Hodanje"
+
+REFERENCE			QUIET_DESC_HR
+LANG_ENGLISH		"Skrivac - Tih si"
+
+REFERENCE			RUN_HR
+LANG_ENGLISH		"Brzi Bijeg"
+
+REFERENCE			RUN_DESC_HR
+LANG_ENGLISH		"Skrivac - Dok drzis lijevu tipku misa moci ces trcati 10 sekundi"
+
+REFERENCE			SECONDARY_HR
+LANG_ENGLISH		"Sporedno Oruzije"
+
+REFERENCE			SECONDARY_DESC_HR
+LANG_ENGLISH		"Tragac - Kao sporednu pusku imati ces pumpericu"
+
+REFERENCE			SMOKE_HR
+LANG_ENGLISH		"Dimna Granata"
+
+REFERENCE			SMOKE_DESC_HR
+LANG_ENGLISH		"Skrivac - Imati ces dimnu granatu"
+
+REFERENCE			SNEAKER_HR
+LANG_ENGLISH		"Tenisica"
+
+REFERENCE			SNEAKER_DESC_HR
+LANG_ENGLISH		"Skrivac - Bit ces nevidljiv za radar i ometac"
+
+REFERENCE			SNIPER2_HR
+LANG_ENGLISH		"Poboljsani Snajper"
+
+REFERENCE			SNIPER2_DESC_HR
+LANG_ENGLISH		"Tragac - 5 metaka * 8 isjecaka"
+
+REFERENCE			SNIPER3_HR
+LANG_ENGLISH		"Najbolji Snajper"
+
+REFERENCE			SNIPER3_DESC_HR
+LANG_ENGLISH		"Tragac - 6 metaka * 8 isjecaka"
+
+REFERENCE			SPRINT_HR
+LANG_ENGLISH		"Trcanje"
+
+REFERENCE			SPRINT_DESC_HR
+LANG_ENGLISH		"Tragac - Mozes trcati vise"
+
+REFERENCE			STUN_HR
+LANG_ENGLISH		"Pistolj Za Omamljivanje"
+
+REFERENCE			STUN_DESC_HR
+LANG_ENGLISH		"Skrivac - Imat ces pistolj za omamljivanje sa 1 metkom"
+
+REFERENCE			TELEPORT_HR
+LANG_ENGLISH		"Teleport"
+
+REFERENCE			TELEPORT_DESC_HR
+LANG_ENGLISH		"Skrivaci - Mozete se teleportirati na\nneko mjesto mape"
+
+REFERENCE			WAY_HR
+LANG_ENGLISH		"Put Zla"
+
+REFERENCE			WAY_DESC_HR
+LANG_ENGLISH		"Tragac - Iza Tebe ce se Prasiti"
+
+REFERENCE			ANGRY_CS
+LANG_ENGLISH		"No mercy"
+
+REFERENCE			ANGRY_DESC_CS
+LANG_ENGLISH		"Seeker - Desert Eagle and new effect"
+
+REFERENCE			COMPASS_CS
+LANG_ENGLISH		"UAV pruzkum"
+
+REFERENCE			COMPASS_DESC_CS
+LANG_ENGLISH		"Skryt˝ - Na radaru uvidÌs hledajÌcÌ"
+
+REFERENCE			FASTRELOAD_CS
+LANG_ENGLISH		"RychlÈ prebÌjenÌ"
+
+REFERENCE			FASTRELOAD_DESC_CS
+LANG_ENGLISH		"PrebÌjÌs rychleji"
+
+REFERENCE			FLASH_CS
+LANG_ENGLISH		"Ohniv˝ gran·t"
+
+REFERENCE			FLASH_DESC_CS
+LANG_ENGLISH		"HledajÌcÌ - Dostanes ohniv˝ gran·t"
+
+REFERENCE			KNIFEKILL_CS
+LANG_ENGLISH		"HledajÌcÌ lovec"
+
+REFERENCE			KNIFEKILL_DESC_CS
+LANG_ENGLISH		"Skryt˝ - Pokud stojÌs, muzes podrezat\nhledajÌcÌ"
+
+REFERENCE			M1014_CS
+LANG_ENGLISH		"Rychl· palba"
+
+REFERENCE			M1014_DESC_CS
+LANG_ENGLISH		"HledajÌcÌ - Budete mÌt M1014 brokovnici"
+
+REFERENCE			PENETRATION_CS
+LANG_ENGLISH		"Prunik"
+
+REFERENCE			PENETRATION_DESC_CS
+LANG_ENGLISH		"HledajÌcÌ - Muzes strÌlet pres steny\nHider - Ability to kill as a dog"
+
+REFERENCE			QUIET_CS
+LANG_ENGLISH		"⁄plnÈ ticho"
+
+REFERENCE			QUIET_DESC_CS
+LANG_ENGLISH		"Skryt˝ - ChodÌs potichu"
+
+REFERENCE			RUN_CS
+LANG_ENGLISH		"Rychl˝ ˙nik"
+
+REFERENCE			RUN_DESC_CS
+LANG_ENGLISH		"Skryt˝ - PodrzenÌm tlacÌtka strelby budes\nmoct bezet na 10 sekund rychleji"
+
+REFERENCE			SECONDARY_CS
+LANG_ENGLISH		"Druh· zbran"
+
+REFERENCE			SECONDARY_DESC_CS
+LANG_ENGLISH		"HledajÌcÌ - Jako druhou zbran dostanes\nbrokovnici"
+
+REFERENCE			SMOKE_CS
+LANG_ENGLISH		"D˝movnice"
+
+REFERENCE			SMOKE_DESC_CS
+LANG_ENGLISH		"Skryt˝ - Budes mÌt dymovnici"
+
+REFERENCE			SNEAKER_CS
+LANG_ENGLISH		"Teniska"
+
+REFERENCE			SNEAKER_DESC_CS
+LANG_ENGLISH		"Skryt˝ - Senzor a rusicka imunita"
+
+REFERENCE			SNIPER2_CS
+LANG_ENGLISH		"Vylepsen˝ odstrelovac"
+
+REFERENCE			SNIPER2_DESC_CS
+LANG_ENGLISH		"HledajÌcÌ - 5 naboju * 8 z·sobniku"
+
+REFERENCE			SNIPER3_CS
+LANG_ENGLISH		"NejlepsÌ odstrelovac"
+
+REFERENCE			SNIPER3_DESC_CS
+LANG_ENGLISH		"HledajÌcÌ - 6 n·boju* 8 z·sobnÌku"
+
+REFERENCE			SPRINT_CS
+LANG_ENGLISH		"ExtrÈmnÌ v˝drz"
+
+REFERENCE			SPRINT_DESC_CS
+LANG_ENGLISH		"HledajÌcÌ - VydrzÌs behat dÈle"
+
+REFERENCE			STUN_CS
+LANG_ENGLISH		"OslepovacÌ zbran"
+
+REFERENCE			STUN_DESC_CS
+LANG_ENGLISH		"Skryt˝ - Budes mÌt oslepovacÌ zbran s\njednÌm n·bojem"
+
+REFERENCE			TELEPORT_CS
+LANG_ENGLISH		"Teleport"
+
+REFERENCE			TELEPORT_DESC_CS
+LANG_ENGLISH		"Skryt˝ - Muzete se teleportovat na n·hodnÈ mÌsto na mape."
+
+REFERENCE			WAY_CS
+LANG_ENGLISH		"Cesta zla"
+
+REFERENCE			WAY_DESC_CS
+LANG_ENGLISH		"HledajÌcÌ - Vaöe cesta bude pln· mur"
+
+REFERENCE			ANGRY_NL
+LANG_ENGLISH		"Geen genade"
+
+REFERENCE			ANGRY_DESC_NL
+LANG_ENGLISH		"Zoeker: Desert Eagle en nieuw effect"
+
+REFERENCE			COMPASS_NL
+LANG_ENGLISH		"UAV Verkenner"
+
+REFERENCE			COMPASS_DESC_NL
+LANG_ENGLISH		"Verstopper - Zoekers zijn zichtbaar op de radar"
+
+REFERENCE			FASTRELOAD_NL
+LANG_ENGLISH		"Snel Herladen"
+
+REFERENCE			FASTRELOAD_DESC_NL
+LANG_ENGLISH		"Je kan sneller herladen"
+
+REFERENCE			FLASH_NL
+LANG_ENGLISH		"Fosfor granaat"
+
+REFERENCE			FLASH_DESC_NL
+LANG_ENGLISH		"Zoeker - Je hebt een fosfor granaat"
+
+REFERENCE			KNIFEKILL_NL
+LANG_ENGLISH		"Zoeker Jager"
+
+REFERENCE			KNIFEKILL_DESC_NL
+LANG_ENGLISH		"Verstopper - Zoekers neersteken als/nje verstopt als zoeker bent"
+
+REFERENCE			M1014_NL
+LANG_ENGLISH		"Snelvuur"
+
+REFERENCE			M1014_DESC_NL
+LANG_ENGLISH		"Zoeker - Jullie krijgen een M1014 shotgun"
+
+REFERENCE			PENETRATION_NL
+LANG_ENGLISH		"Doordringen"
+
+REFERENCE			PENETRATION_DESC_NL
+LANG_ENGLISH		"Zoeker - Je kan door muren schieten\nVerstopper - Mogelijkheid om te vermoorden als hond"
+
+REFERENCE			QUIET_NL
+LANG_ENGLISH		"Muisstil"
+
+REFERENCE			QUIET_DESC_NL
+LANG_ENGLISH		"Verstopper - Je maakt geen geluid"
+
+REFERENCE			RUN_NL
+LANG_ENGLISH		"Snel Ontsnappen"
+
+REFERENCE			RUN_DESC_NL
+LANG_ENGLISH		"Verstopper - Houd de schietknop ingedrukt om\n10 seconden te sprinten"
+
+REFERENCE			SECONDARY_NL
+LANG_ENGLISH		"Secundair Wapen"
+
+REFERENCE			SECONDARY_DESC_NL
+LANG_ENGLISH		"Zoeker - Als secundair wapen heb je\neen shotgun"
+
+REFERENCE			SMOKE_NL
+LANG_ENGLISH		"Rook granaat"
+
+REFERENCE			SMOKE_DESC_NL
+LANG_ENGLISH		"Verstopper - Je hebt een rook granaat"
+
+REFERENCE			SNEAKER_NL
+LANG_ENGLISH		"Schuivelaar"
+
+REFERENCE			SNEAKER_DESC_NL
+LANG_ENGLISH		"Verstopper - Je bent immuun voor een sensor en voor een stoorzender"
+
+REFERENCE			SNIPER2_NL
+LANG_ENGLISH		"Beste sluipschutter geweer"
+
+REFERENCE			SNIPER2_DESC_NL
+LANG_ENGLISH		"Zoeker - 5 Kogels * 8 magazijnen"
+
+REFERENCE			SNIPER3_NL
+LANG_ENGLISH		"Best sluipschutter geweer"
+
+REFERENCE			SNIPER3_DESC_NL
+LANG_ENGLISH		"Zoeker - 6 Kogels * 8 magazijnen"
+
+REFERENCE			SPRINT_NL
+LANG_ENGLISH		"Extreme conditie"
+
+REFERENCE			SPRINT_DESC_NL
+LANG_ENGLISH		"Zoeker - Je kan langer sprinten"
+
+REFERENCE			STUN_NL
+LANG_ENGLISH		"Elektroschokwapen"
+
+REFERENCE			STUN_DESC_NL
+LANG_ENGLISH		"Verstopper - Je hebt een elektroschokwapen\nmet ÈÈn kogel"
+
+REFERENCE			TELEPORT_NL
+LANG_ENGLISH		"Teleporteer"
+
+REFERENCE			TELEPORT_DESC_NL
+LANG_ENGLISH		"Verstoppers - Je kunt teleporteren naar een\nwillekeurige plek op de map"
+
+REFERENCE			WAY_NL
+LANG_ENGLISH		"Weg van de Duivel"
+
+REFERENCE			WAY_DESC_NL
+LANG_ENGLISH		"Zoeker - Jullie zullen onderweg geteisterd\nworden door motten"
+
+REFERENCE			ANGRY
+LANG_ENGLISH		"No mercy"
+
+REFERENCE			ANGRY_DESC
+LANG_ENGLISH		"Seeker - Desert Eagle and new effect"
+
+REFERENCE			COMPASS
+LANG_ENGLISH		"UAV Recon"
+
+REFERENCE			COMPASS_DESC
+LANG_ENGLISH		"Hider - Seekers visible on radar"
+
+REFERENCE			FASTRELOAD
+LANG_ENGLISH		"Fast Reload"
+
+REFERENCE			FASTRELOAD_DESC
+LANG_ENGLISH		"You can reload faster"
+
+REFERENCE			FLASH
+LANG_ENGLISH		"Phosphorus grenade"
+
+REFERENCE			FLASH_DESC
+LANG_ENGLISH		"Seekers - You will have phosphorus grenade"
+
+REFERENCE			KNIFEKILL
+LANG_ENGLISH		"Seeker Hunter"
+
+REFERENCE			KNIFEKILL_DESC
+LANG_ENGLISH		"Hider - Kill seekers with knife when\nstanding"
+
+REFERENCE			M1014
+LANG_ENGLISH		"Rapid Fire"
+
+REFERENCE			M1014_DESC
+LANG_ENGLISH		"Seekers - You will have an M1014 shotgun"
+
+REFERENCE			PENETRATION
+LANG_ENGLISH		"Penetration"
+
+REFERENCE			PENETRATION_DESC
+LANG_ENGLISH		"Seekers - You can shoot through the walls\nHider - Ability to kill as a dog"
+
+REFERENCE			QUIET
+LANG_ENGLISH		"Dead Silence"
+
+REFERENCE			QUIET_DESC
+LANG_ENGLISH		"Hider - You are quiet"
+
+REFERENCE			RUN
+LANG_ENGLISH		"Fast Escape"
+
+REFERENCE			RUN_DESC
+LANG_ENGLISH		"Hider - By holding the attack button, you\ncan have a speed burst for 10 seconds"
+
+REFERENCE			SECONDARY
+LANG_ENGLISH		"Secondary Weapon"
+
+REFERENCE			SECONDARY_DESC
+LANG_ENGLISH		"Seekers - As a secondary weapon, you\nwill have shotgun"
+
+REFERENCE			SMOKE
+LANG_ENGLISH		"Smoke grenade"
+
+REFERENCE			SMOKE_DESC
+LANG_ENGLISH		"Hiders - You will have smoke grenade"
+
+REFERENCE			SNEAKER
+LANG_ENGLISH		"Sneaker"
+
+REFERENCE			SNEAKER_DESC
+LANG_ENGLISH		"Hider - You will be immune to sensor\nand jammer"
+
+REFERENCE			SNIPER2
+LANG_ENGLISH		"Improved Sniper"
+
+REFERENCE			SNIPER2_DESC
+LANG_ENGLISH		"Seeker - 5 bullets * 8 clips"
+
+REFERENCE			SNIPER3
+LANG_ENGLISH		"Best Sniper"
+
+REFERENCE			SNIPER3_DESC
+LANG_ENGLISH		"Seeker - 6 bullets * 8 clips"
+
+REFERENCE			SPRINT
+LANG_ENGLISH		"Extreme Conditioning"
+
+REFERENCE			SPRINT_DESC
+LANG_ENGLISH		"Seeker - You can sprint more"
+
+REFERENCE			STUN
+LANG_ENGLISH		"Stun Pistol"
+
+REFERENCE			STUN_DESC
+LANG_ENGLISH		"Hider - You will have stun pistol with\none bullet"
+
+REFERENCE			TELEPORT
+LANG_ENGLISH		"Teleport"
+
+REFERENCE			TELEPORT_DESC
+LANG_ENGLISH		"Hiders - You can teleport to a random\npoint of the map"
+
+REFERENCE			WAY
+LANG_ENGLISH		"Path of Evil"
+
+REFERENCE			WAY_DESC
+LANG_ENGLISH		"Seekers - Your way will be full of moths"
+
+REFERENCE			ANGRY_FR
+LANG_ENGLISH		"pas de pitiÈ"
+
+REFERENCE			ANGRY_DESC_FR
+LANG_ENGLISH		"Chercheur - DÈsert Aigle et nouvel effet"
+
+REFERENCE			COMPASS_FR
+LANG_ENGLISH		"Drone de Reconnaissance"
+
+REFERENCE			COMPASS_DESC_FR
+LANG_ENGLISH		"Hider - Chercheurs visibles sur le radar"
+
+REFERENCE			FASTRELOAD_FR
+LANG_ENGLISH		"Rechargement Rapide"
+
+REFERENCE			FASTRELOAD_DESC_FR
+LANG_ENGLISH		"Vous pouvez recharger plus vite"
+
+REFERENCE			FLASH_FR
+LANG_ENGLISH		"Grenade au Phosphore"
+
+REFERENCE			FLASH_DESC_FR
+LANG_ENGLISH		"Chercheur - Vous aurez une grenade au phosphore"
+
+REFERENCE			KNIFEKILL_FR
+LANG_ENGLISH		"Tueur de Chercheur"
+
+REFERENCE			KNIFEKILL_DESC_FR
+LANG_ENGLISH		"Hider - Vous disposerez du couteau pour tuer les Chercheurs"
+
+REFERENCE			M1014_FR
+LANG_ENGLISH		"Double coup"
+
+REFERENCE			M1014_DESC_FR
+LANG_ENGLISH		"Chercheur - Vous aurez le fusil a pompe M1014"
+
+REFERENCE			PENETRATION_FR
+LANG_ENGLISH		"Impact Lourd"
+
+REFERENCE			PENETRATION_DESC_FR
+LANG_ENGLISH		"Chercheur - Vous pouvez tirer a travers les murs\nHider - CapacitÈ de tuer un chien"
+
+REFERENCE			QUIET_FR
+LANG_ENGLISH		"Silence de Mort"
+
+REFERENCE			QUIET_DESC_FR
+LANG_ENGLISH		"Hider - Silence de Mort"
+
+REFERENCE			RUN_FR
+LANG_ENGLISH		"…vasion rapide"
+
+REFERENCE			RUN_DESC_FR
+LANG_ENGLISH		"Hider - En maintenant le bouton d'attaque,vous pouvez avoir un sprint pendant 10 secondes"
+
+REFERENCE			SECONDARY_FR
+LANG_ENGLISH		"Arme Secondaire"
+
+REFERENCE			SECONDARY_DESC_FR
+LANG_ENGLISH		"Chercheur - Comme arme secondaire, vous aurez un fusil a pompe"
+
+REFERENCE			SMOKE_FR
+LANG_ENGLISH		"Grenade Fumigene"
+
+REFERENCE			SMOKE_DESC_FR
+LANG_ENGLISH		"Hiders - Vous aurez une grenade Fumigene"
+
+REFERENCE			SNEAKER_FR
+LANG_ENGLISH		"rÙdeur"
+
+REFERENCE			SNEAKER_DESC_FR
+LANG_ENGLISH		"Hider - Vous serez a l'abri de \ncapteur et brouilleur"
+
+REFERENCE			SNIPER2_FR
+LANG_ENGLISH		"AmÈlioration du Sniper"
+
+REFERENCE			SNIPER2_DESC_FR
+LANG_ENGLISH		"Chercheur - 5 balles * 8 Chargeurs"
+
+REFERENCE			SNIPER3_FR
+LANG_ENGLISH		"Meilleur Sniper"
+
+REFERENCE			SNIPER3_DESC_FR
+LANG_ENGLISH		"Chercheur - 6 balles * 8 Chargeurs"
+
+REFERENCE			SPRINT_FR
+LANG_ENGLISH		"Conditions extremes"
+
+REFERENCE			SPRINT_DESC_FR
+LANG_ENGLISH		"Chercheur - Vous pouvez sprinter plus"
+
+REFERENCE			STUN_FR
+LANG_ENGLISH		"Pistolet Paralysant"
+
+REFERENCE			STUN_DESC_FR
+LANG_ENGLISH		"Hider - Vous aurez un pistolet paralysant avec une balle"
+
+REFERENCE			TELEPORT_FR
+LANG_ENGLISH		"TÈlÈportation"
+
+REFERENCE			TELEPORT_DESC_FR
+LANG_ENGLISH		"Hiders - Vous pouvez vous tÈlÈporter a un endroit alÈatoire sur la carte"
+
+REFERENCE			WAY_FR
+LANG_ENGLISH		"Le Chemin du mal"
+
+REFERENCE			WAY_DESC_FR
+LANG_ENGLISH		"Chercheur - Des papillons suiveront les checheurs"
+
+REFERENCE			ANGRY_DE
+LANG_ENGLISH		"Keine Gnade"
+
+REFERENCE			ANGRY_DESC_DE
+LANG_ENGLISH		"Sucher - Desert Eagle und neuer Effekt"
+
+REFERENCE			COMPASS_DE
+LANG_ENGLISH		"UAV Aufkl‰rer"
+
+REFERENCE			COMPASS_DESC_DE
+LANG_ENGLISH		"Verstecker - Sucher sichtbar auf dem Radar"
+
+REFERENCE			FASTRELOAD_DE
+LANG_ENGLISH		"Schnelles Nachladen"
+
+REFERENCE			FASTRELOAD_DESC_DE
+LANG_ENGLISH		"Du kannst schneller nachladen"
+
+REFERENCE			FLASH_DE
+LANG_ENGLISH		"Phosphor Granate"
+
+REFERENCE			FLASH_DESC_DE
+LANG_ENGLISH		"Sucher - Du bekommst eine Phosphorgranate"
+
+REFERENCE			KNIFEKILL_DE
+LANG_ENGLISH		"J‰ger"
+
+REFERENCE			KNIFEKILL_DESC_DE
+LANG_ENGLISH		"Verstecker- Erledige einen Sucher mit Messer im\nstehen"
+
+REFERENCE			M1014_DE
+LANG_ENGLISH		"Schnellfeuer"
+
+REFERENCE			M1014_DESC_DE
+LANG_ENGLISH		"Sucher - Du bekommst eine M1014 Flinte"
+
+REFERENCE			PENETRATION_DE
+LANG_ENGLISH		"Tiefenwirkung"
+
+REFERENCE			PENETRATION_DESC_DE
+LANG_ENGLISH		"Sucher - Du kannst durch W‰nde schiessen\nVerstecker - Die F‰higkeit, als Hund zu tˆten"
+
+REFERENCE			QUIET_DE
+LANG_ENGLISH		"Totenstille"
+
+REFERENCE			QUIET_DESC_DE
+LANG_ENGLISH		"Verstecker - Du bist leiser"
+
+REFERENCE			RUN_DE
+LANG_ENGLISH		"Schnelle Flucht"
+
+REFERENCE			RUN_DESC_DE
+LANG_ENGLISH		"Beim gedr¸ckthalten der Angriffstaste, erh‰lst du\neinen Geschwindigkeitsschub f¸r 10 Sekuden"
+
+REFERENCE			SECONDARY_DE
+LANG_ENGLISH		"Sekund‰re Waffe"
+
+REFERENCE			SECONDARY_DESC_DE
+LANG_ENGLISH		"Sucher - Du bekommst eine Schrotflinte\nals Sekund‰re Waffe"
+
+REFERENCE			SMOKE_DE
+LANG_ENGLISH		"Rauchgranate"
+
+REFERENCE			SMOKE_DESC_DE
+LANG_ENGLISH		"Verstecker - Du bekommst eine Rauchgranate"
+
+REFERENCE			SNEAKER_DE
+LANG_ENGLISH		"Schleicher"
+
+REFERENCE			SNEAKER_DESC_DE
+LANG_ENGLISH		"Verstecker - Du bist immun gegen Sensoren\nund Stˆrsender"
+
+REFERENCE			SNIPER2_DE
+LANG_ENGLISH		"Scharfsch¸tze"
+
+REFERENCE			SNIPER2_DESC_DE
+LANG_ENGLISH		"Sucher - 5 Kugeln * 8 Magazine"
+
+REFERENCE			SNIPER3_DE
+LANG_ENGLISH		"Scharfsch¸tzenmeister"
+
+REFERENCE			SNIPER3_DESC_DE
+LANG_ENGLISH		"Sucher - 6 Kugeln * 8 Magazine"
+
+REFERENCE			SPRINT_DE
+LANG_ENGLISH		"Extreme Kondition"
+
+REFERENCE			SPRINT_DESC_DE
+LANG_ENGLISH		"Sucher - Du kannst l‰nger sprinten"
+
+REFERENCE			STUN_DE
+LANG_ENGLISH		"Bet‰ubungspistole"
+
+REFERENCE			STUN_DESC_DE
+LANG_ENGLISH		"Verstecker - Zus‰tzliche Bet‰ubungspistole\n(Eine Kugel)"
+
+REFERENCE			TELEPORT_DE
+LANG_ENGLISH		"Teleport"
+
+REFERENCE			TELEPORT_DESC_DE
+LANG_ENGLISH		"Verstecker - Du kannst dich zu einem zuf‰lligen\nOrt auf der Karte teleportieren"
+
+REFERENCE			WAY_DE
+LANG_ENGLISH		"Pfad des Bˆsen"
+
+REFERENCE			WAY_DESC_DE
+LANG_ENGLISH		"Sucher - Dein Weg wird voller Motten sein"
+
+REFERENCE			ANGRY_HU
+LANG_ENGLISH		"Nincs kegyelem"
+
+REFERENCE			ANGRY_DESC_HU
+LANG_ENGLISH		"Keresı - Desert Eagle Ès ˙j effekt"
+
+REFERENCE			COMPASS_HU
+LANG_ENGLISH		"FelderÌtÈs"
+
+REFERENCE			COMPASS_DESC_HU
+LANG_ENGLISH		"B˙jÛ - Keresık l·thatÛak a radaron"
+
+REFERENCE			FASTRELOAD_HU
+LANG_ENGLISH		"Gyors TˆltÈs"
+
+REFERENCE			FASTRELOAD_DESC_HU
+LANG_ENGLISH		"Keresı - Gyorsabban tudsz tˆlteni"
+
+REFERENCE			FLASH_HU
+LANG_ENGLISH		"Foszfor gr·n·t"
+
+REFERENCE			FLASH_DESC_HU
+LANG_ENGLISH		"Keresı - Lesz foszfor gr·n·tod"
+
+REFERENCE			KNIFEKILL_HU
+LANG_ENGLISH		"Keresı Vad·sz"
+
+REFERENCE			KNIFEKILL_DESC_HU
+LANG_ENGLISH		"B˙jÛ - LekÈselheted a keresıket ha ·llsz"
+
+REFERENCE			M1014_HU
+LANG_ENGLISH		"Gyorst¸zelı"
+
+REFERENCE			M1014_DESC_HU
+LANG_ENGLISH		"Keresı - Lesz M1014 shotgunod"
+
+REFERENCE			PENETRATION_HU
+LANG_ENGLISH		"MÈly benyom·s"
+
+REFERENCE			PENETRATION_DESC_HU
+LANG_ENGLISH		"Keresı - Tudsz sebezni falon kereszt¸l\nB˙jÛ - KutyakÈnt tudsz t·madni"
+
+REFERENCE			QUIET_HU
+LANG_ENGLISH		"SÌri Csˆnd"
+
+REFERENCE			QUIET_DESC_HU
+LANG_ENGLISH		"B˙jÛ -  Halkak lesznek a lÈpteid"
+
+REFERENCE			RUN_HU
+LANG_ENGLISH		"Gyors Menek¸lÈs"
+
+REFERENCE			RUN_DESC_HU
+LANG_ENGLISH		"B˙jÛ - A bal gombot nyomva tartva 10\nm·sodpercre gyorsabb leszel"
+
+REFERENCE			SECONDARY_HU
+LANG_ENGLISH		"M·sodlagos fegyver"
+
+REFERENCE			SECONDARY_DESC_HU
+LANG_ENGLISH		"Keresı - M·sodlagos fegyverkÈnt lesz\nshotgunod"
+
+REFERENCE			SMOKE_HU
+LANG_ENGLISH		"F¸st gr·n·t"
+
+REFERENCE			SMOKE_DESC_HU
+LANG_ENGLISH		"B˙jÛ - Lesz f¸st gr·n·tod"
+
+REFERENCE			SNEAKER_HU
+LANG_ENGLISH		"Settenkedı"
+
+REFERENCE			SNEAKER_DESC_HU
+LANG_ENGLISH		"B˙jÛ - Immunis leszel a szenzorra\nÈs a zavarÛra"
+
+REFERENCE			SNIPER2_HU
+LANG_ENGLISH		"Fejlett Puska"
+
+REFERENCE			SNIPER2_DESC_HU
+LANG_ENGLISH		"Keresı - 5 tˆltÈnyed lesz * 8 t·r"
+
+REFERENCE			SNIPER3_HU
+LANG_ENGLISH		"Legjobb puska"
+
+REFERENCE			SNIPER3_DESC_HU
+LANG_ENGLISH		"Keresı - 6 tˆltÈnyed lesz * 8 t·r"
+
+REFERENCE			SPRINT_HU
+LANG_ENGLISH		"ExtrÈm Kitart·s"
+
+REFERENCE			SPRINT_DESC_HU
+LANG_ENGLISH		"Keresı - Tˆbbet tudsz futni"
+
+REFERENCE			STUN_HU
+LANG_ENGLISH		"K·bÌtÛ Pisztoly"
+
+REFERENCE			STUN_DESC_HU
+LANG_ENGLISH		"B˙jÛ - Lesz k·bÌtÛ pisztolyod egy tˆltÈnnyel"
+
+REFERENCE			TELEPORT_HU
+LANG_ENGLISH		"Teleport"
+
+REFERENCE			TELEPORT_DESC_HU
+LANG_ENGLISH		"B˙jÛ - A p·lya egy vÈletlenszer˚ pontj·ra\nteleport·lhatsz"
+
+REFERENCE			WAY_HU
+LANG_ENGLISH		"A vÈgzet ˙tja"
+
+REFERENCE			WAY_DESC_HU
+LANG_ENGLISH		"Keresı - Minden lÈpÈseddel molyokat hagysz\nmagad ut·n"
+
+REFERENCE			ANGRY_PL
+LANG_ENGLISH		"Nie ma zmi≥uj"
+
+REFERENCE			ANGRY_DESC_PL
+LANG_ENGLISH		"Szukajπcy - Desert Eagle i nowy efekt"
+
+REFERENCE			COMPASS_PL
+LANG_ENGLISH		"Rozpoznanie UAV"
+
+REFERENCE			COMPASS_DESC_PL
+LANG_ENGLISH		"Chowajπcy - Szukajπcy widoczni na radarze"
+
+REFERENCE			FASTRELOAD_PL
+LANG_ENGLISH		"Szybkie prze≥adowanie"
+
+REFERENCE			FASTRELOAD_DESC_PL
+LANG_ENGLISH		"Szybsze prze≥adowanie"
+
+REFERENCE			FLASH_PL
+LANG_ENGLISH		"Granat oúlepiajπcy"
+
+REFERENCE			FLASH_DESC_PL
+LANG_ENGLISH		"Szukajπcy - Moøesz mieÊ granaty og≥uszjπce"
+
+REFERENCE			KNIFEKILL_PL
+LANG_ENGLISH		"£owca szukajπcych"
+
+REFERENCE			KNIFEKILL_DESC_PL
+LANG_ENGLISH		"Chowajπcy - Moøesz zabijaÊ szukajπcych noøem, gdy stoisz"
+
+REFERENCE			M1014_PL
+LANG_ENGLISH		"SzybkostrzelnoúÊ"
+
+REFERENCE			M1014_DESC_PL
+LANG_ENGLISH		"Szukajπcy - Zostaniecie wyposarzeni w M1014"
+
+REFERENCE			PENETRATION_PL
+LANG_ENGLISH		"G≥Íbokie uderzenie"
+
+REFERENCE			PENETRATION_DESC_PL
+LANG_ENGLISH		"Szukajπcy - Moøesz strzelaÊ przez úciany\nChowajπcy - MoøliwoúÊ zabijania jako pies"
+
+REFERENCE			QUIET_PL
+LANG_ENGLISH		"Martwa cisza"
+
+REFERENCE			QUIET_DESC_PL
+LANG_ENGLISH		"Chowajπcy - Bπdü cicho"
+
+REFERENCE			RUN_PL
+LANG_ENGLISH		"Szybka ucieczka"
+
+REFERENCE			RUN_DESC_PL
+LANG_ENGLISH		"Chowajπcy - Przytrzymujπc LPM, moøesz biec szybciej przez 10 sekund"
+
+REFERENCE			SECONDARY_PL
+LANG_ENGLISH		"BroÒ dodatkowa"
+
+REFERENCE			SECONDARY_DESC_PL
+LANG_ENGLISH		"Szukajπcy - Moøesz mieÊ strzelbÍ jako drugπ broÒ"
+
+REFERENCE			SMOKE_PL
+LANG_ENGLISH		"Granat dymny"
+
+REFERENCE			SMOKE_DESC_PL
+LANG_ENGLISH		"Chowajπcy - Moøesz mieÊ granaty dymne"
+
+REFERENCE			SNEAKER_PL
+LANG_ENGLISH		"TenisÛwka"
+
+REFERENCE			SNEAKER_DESC_PL
+LANG_ENGLISH		"Chowajπcy - BÍdziesz odporny na czujnik i zak≥Ûcacz"
+
+REFERENCE			SNIPER2_PL
+LANG_ENGLISH		"Zdolny snajper"
+
+REFERENCE			SNIPER2_DESC_PL
+LANG_ENGLISH		"Szukajπcy - 5 naboi * 8 magazynkÛw"
+
+REFERENCE			SNIPER3_PL
+LANG_ENGLISH		"Najlepszy snajper"
+
+REFERENCE			SNIPER3_DESC_PL
+LANG_ENGLISH		"Szukajπcy - 6 naboi * 8 magazynkÛw"
+
+REFERENCE			SPRINT_PL
+LANG_ENGLISH		"Ekstremalna kondycja"
+
+REFERENCE			SPRINT_DESC_PL
+LANG_ENGLISH		"Szukajπcy - Moøesz biec d≥uøej"
+
+REFERENCE			STUN_PL
+LANG_ENGLISH		"Og≥uszacz"
+
+REFERENCE			STUN_DESC_PL
+LANG_ENGLISH		"Chowajπcy - Dostajesz og≥uszajπcy pistolet z jednym nabojem"
+
+REFERENCE			TELEPORT_PL
+LANG_ENGLISH		"Teleport"
+
+REFERENCE			TELEPORT_DESC_PL
+LANG_ENGLISH		"Chowajπcy - moøesz przeteleportowaÊ siÍ do losowego miejsca na mapie"
+
+REFERENCE			WAY_PL
+LANG_ENGLISH		"åcieøka z≥a"
+
+REFERENCE			WAY_DESC_PL
+LANG_ENGLISH		"Szukajπcy - ∆my zape≥niπ twojπ úcieøkÍ"
+
+REFERENCE			ANGRY_RU
+LANG_ENGLISH		"Nikakoi poshyadi"
+
+REFERENCE			ANGRY_DESC_RU
+LANG_ENGLISH		"Seeker - Desert Eagle i novii effect"
+
+REFERENCE			COMPASS_RU
+LANG_ENGLISH		"Bespilotnik"
+
+REFERENCE			COMPASS_DESC_RU
+LANG_ENGLISH		"Hider - Seekeri vidimye na ekrane radara"
+
+REFERENCE			FASTRELOAD_RU
+LANG_ENGLISH		"Bistraya perezaryadka"
+
+REFERENCE			FASTRELOAD_DESC_RU
+LANG_ENGLISH		"Vy mozhete perezagruzit' bystreye"
+
+REFERENCE			FLASH_RU
+LANG_ENGLISH		"Fosfornaya granata"
+
+REFERENCE			FLASH_DESC_RU
+LANG_ENGLISH		"Seekers - Vy budete imet' fosfornuyu granatu"
+
+REFERENCE			KNIFEKILL_RU
+LANG_ENGLISH		"Seeker ohotnik"
+
+REFERENCE			KNIFEKILL_DESC_RU
+LANG_ENGLISH		"Hider - Ubit' seeker s nozhom, kogda \non stoit"
+
+REFERENCE			M1014_RU
+LANG_ENGLISH		"Bistraya strel'ba"
+
+REFERENCE			M1014_DESC_RU
+LANG_ENGLISH		"Seekers - Vy budete imet' M1014 drobovik"
+
+REFERENCE			PENETRATION_RU
+LANG_ENGLISH		"Proniknovenie"
+
+REFERENCE			PENETRATION_DESC_RU
+LANG_ENGLISH		"Seekers - Vy mozhete strelyat' cherez steny\nHider - sposobnost' ubivat' za sobaky"
+
+REFERENCE			QUIET_RU
+LANG_ENGLISH		"Mertvaya tishina"
+
+REFERENCE			QUIET_DESC_RU
+LANG_ENGLISH		"Hider - Vy master maskirovki"
+
+REFERENCE			RUN_RU
+LANG_ENGLISH		"Bistriy vihod"
+
+REFERENCE			RUN_DESC_RU
+LANG_ENGLISH		"Hider - Uderzhivaya knopku ataki, vy\nmozhet bistro bezhat' v techeniye 10 sekund"
+
+REFERENCE			SECONDARY_RU
+LANG_ENGLISH		"Dopolnitel'noye oruzhiye"
+
+REFERENCE			SECONDARY_DESC_RU
+LANG_ENGLISH		"Seekers - Vy budete imet' drobovik"
+
+REFERENCE			SMOKE_RU
+LANG_ENGLISH		"Dimovaya granata"
+
+REFERENCE			SMOKE_DESC_RU
+LANG_ENGLISH		"Hiders - Vy budete imet' dimovuyu granatu"
+
+REFERENCE			SNEAKER_RU
+LANG_ENGLISH		"Sneaker"
+
+REFERENCE			SNEAKER_DESC_RU
+LANG_ENGLISH		"Hider - Vy neuyazvimi dlya sensora i jammera"
+
+REFERENCE			SNIPER2_RU
+LANG_ENGLISH		"Uluchshenniy snaiper"
+
+REFERENCE			SNIPER2_DESC_RU
+LANG_ENGLISH		"Seeker - 5 pul' * 8 clips"
+
+REFERENCE			SNIPER3_RU
+LANG_ENGLISH		"Luchshiy snayper"
+
+REFERENCE			SNIPER3_DESC_RU
+LANG_ENGLISH		"Seeker - 6 pul' * 8 clips"
+
+REFERENCE			SPRINT_RU
+LANG_ENGLISH		"Ekstremal'naya podgotovka"
+
+REFERENCE			SPRINT_DESC_RU
+LANG_ENGLISH		"Seeker - Vy mojete bejat' dol'she"
+
+REFERENCE			STUN_RU
+LANG_ENGLISH		"Oshelomlyaushiy pistolet"
+
+REFERENCE			STUN_DESC_RU
+LANG_ENGLISH		"Hider - Vy budete imet' pistolet s odnoy stanovoy puley"
+
+REFERENCE			TELEPORT_RU
+LANG_ENGLISH		"Teleport"
+
+REFERENCE			TELEPORT_DESC_RU
+LANG_ENGLISH		"Hiders - Vy mojete teleportirovat'sya v sluchainuyu tochku na karte"
+
+REFERENCE			WAY_RU
+LANG_ENGLISH		"Put' zla"
+
+REFERENCE			WAY_DESC_RU
+LANG_ENGLISH		"Seekers - Za vami budut sledovat' motil'ki"
+
+REFERENCE			ANGRY_ES
+LANG_ENGLISH		"Sin piedad"
+
+REFERENCE			ANGRY_DESC_ES
+LANG_ENGLISH		"Seeker - Desert Eagle and new effect"
+
+REFERENCE			COMPASS_ES
+LANG_ENGLISH		"Reconocimiento UAV"
+
+REFERENCE			COMPASS_DESC_ES
+LANG_ENGLISH		"Hider - Seekers Visibles en el radar"
+
+REFERENCE			FASTRELOAD_ES
+LANG_ENGLISH		"Recarga Rapida"
+
+REFERENCE			FASTRELOAD_DESC_ES
+LANG_ENGLISH		"Tu Puedes recargar Rapido"
+
+REFERENCE			FLASH_ES
+LANG_ENGLISH		"Granada De FragmentaciÛn"
+
+REFERENCE			FLASH_DESC_ES
+LANG_ENGLISH		"Seekers - Tu Tendr·s una Granada de FragmentaciÛn"
+
+REFERENCE			KNIFEKILL_ES
+LANG_ENGLISH		"Seeker Cazador"
+
+REFERENCE			KNIFEKILL_DESC_ES
+LANG_ENGLISH		"Hider - Mata a los Seekers con el\ncuchillo cuando est·n de pie"
+
+REFERENCE			M1014_ES
+LANG_ENGLISH		"Fuego Rapido"
+
+REFERENCE			M1014_DESC_ES
+LANG_ENGLISH		"Seekers - Tu tendr·s una escopeta M1014"
+
+REFERENCE			PENETRATION_ES
+LANG_ENGLISH		"PenetraciÛn"
+
+REFERENCE			PENETRATION_DESC_ES
+LANG_ENGLISH		"Seekers - Tu puedes disparar AtravÈz de las paredes\nHider - Ability to kill as a dog"
+
+REFERENCE			QUIET_ES
+LANG_ENGLISH		"Muerte Silenciosa"
+
+REFERENCE			QUIET_DESC_ES
+LANG_ENGLISH		"Hider - Usted esta quieto"
+
+REFERENCE			RUN_ES
+LANG_ENGLISH		"Escape Rapido"
+
+REFERENCE			RUN_DESC_ES
+LANG_ENGLISH		"Hider - Si mantiene el botÛn de ataque, puede hacer\nque una r·faga de velocidad durante 10 segundos"
+
+REFERENCE			SECONDARY_ES
+LANG_ENGLISH		"Arma Secundaria"
+
+REFERENCE			SECONDARY_DESC_ES
+LANG_ENGLISH		"Seekers - Como arma secundaria, tendr· escopeta"
+
+REFERENCE			SMOKE_ES
+LANG_ENGLISH		"Granada de Humo"
+
+REFERENCE			SMOKE_DESC_ES
+LANG_ENGLISH		"Hiders - Tu tendras una granada de Humo"
+
+REFERENCE			SNEAKER_ES
+LANG_ENGLISH		"Escabullir"
+
+REFERENCE			SNEAKER_DESC_ES
+LANG_ENGLISH		"Hider - Usted es inmune al sensor y al jammer"
+
+REFERENCE			SNIPER2_ES
+LANG_ENGLISH		"Mejora de francotirador"
+
+REFERENCE			SNIPER2_DESC_ES
+LANG_ENGLISH		"Seeker - 5 Balas * 8 Clips"
+
+REFERENCE			SNIPER3_ES
+LANG_ENGLISH		"Mejor francotirador"
+
+REFERENCE			SNIPER3_DESC_ES
+LANG_ENGLISH		"Seeker - 6 Balas * 8 Clips"
+
+REFERENCE			SPRINT_ES
+LANG_ENGLISH		"CondiciÛn Extrema"
+
+REFERENCE			SPRINT_DESC_ES
+LANG_ENGLISH		"Seeker - Tu puedes Correr mas"
+
+REFERENCE			STUN_ES
+LANG_ENGLISH		"Pistola Aturdidora"
+
+REFERENCE			STUN_DESC_ES
+LANG_ENGLISH		"Hider - Tu tendr·s una pistola aturdidora\ncon una bala"
+
+REFERENCE			TELEPORT_ES
+LANG_ENGLISH		"TeletransportaciÛn"
+
+REFERENCE			TELEPORT_DESC_ES
+LANG_ENGLISH		"Hiders - Usted se puede teletransportar\na un punto cualquiera del mapa"
+
+REFERENCE			WAY_ES
+LANG_ENGLISH		"Camino del Mal"
+
+REFERENCE			WAY_DESC_ES
+LANG_ENGLISH		"Seekers - Tu camino estar· lleno de polillas"
+
+REFERENCE			ANGRY_SK
+LANG_ENGLISH		"Nel˙tostn˝"
+
+REFERENCE			ANGRY_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - Desert Eagle a nov˝ efekt"
+
+REFERENCE			COMPASS_SK
+LANG_ENGLISH		"UAV priezkum"
+
+REFERENCE			COMPASS_DESC_SK
+LANG_ENGLISH		"Skryty - Na radare uvidÌs hladaj˙cich"
+
+REFERENCE			FASTRELOAD_SK
+LANG_ENGLISH		"Rychle prebÌjanie"
+
+REFERENCE			FASTRELOAD_DESC_SK
+LANG_ENGLISH		"PrebÌjas rychlejsie"
+
+REFERENCE			FLASH_SK
+LANG_ENGLISH		"Ohnivy gran·t"
+
+REFERENCE			FLASH_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - Dostanes ohnivy gran·t"
+
+REFERENCE			KNIFEKILL_SK
+LANG_ENGLISH		"Hladaj˙ci lovec"
+
+REFERENCE			KNIFEKILL_DESC_SK
+LANG_ENGLISH		"Skryty - Ak stojÌs, mÙûes podrezat hladaj˙cich"
+
+REFERENCE			M1014_SK
+LANG_ENGLISH		"R˝chla strelba"
+
+REFERENCE			M1014_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - Budes mat brokovnicu M1014"
+
+REFERENCE			PENETRATION_SK
+LANG_ENGLISH		"Penetr·cia"
+
+REFERENCE			PENETRATION_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - MÙzes strielat cez steny\nSkryt˝ - Schopnosù zabÌjania v roli psa"
+
+REFERENCE			QUIET_SK
+LANG_ENGLISH		"⁄plnÈ ticho"
+
+REFERENCE			QUIET_DESC_SK
+LANG_ENGLISH		"Skryty - ChodÌs potichu"
+
+REFERENCE			RUN_SK
+LANG_ENGLISH		"Rychly ˙nik"
+
+REFERENCE			RUN_DESC_SK
+LANG_ENGLISH		"Skryty - PodrzenÌm tlacÌtka strelby budes mÙct bezat na 10 sek˙nd"
+
+REFERENCE			SECONDARY_SK
+LANG_ENGLISH		"Sekund·rna zbran"
+
+REFERENCE			SECONDARY_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - Ku snajperke dostanes brokovnicu"
+
+REFERENCE			SMOKE_SK
+LANG_ENGLISH		"Dymovnica"
+
+REFERENCE			SMOKE_DESC_SK
+LANG_ENGLISH		"Skryty - Budes mat dymovnicu"
+
+REFERENCE			SNEAKER_SK
+LANG_ENGLISH		"SpiÛn"
+
+REFERENCE			SNEAKER_DESC_SK
+LANG_ENGLISH		"Skryt˝ - Budes im˙nny voci senzoru a rusicke"
+
+REFERENCE			SNIPER2_SK
+LANG_ENGLISH		"Vylepseny snajper"
+
+REFERENCE			SNIPER2_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - 5 n·bojov * 8 z·sobnÌkov"
+
+REFERENCE			SNIPER3_SK
+LANG_ENGLISH		"NajlepsÌ ostrelovac"
+
+REFERENCE			SNIPER3_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - 6 n·bojov * 8 z·sobnÌkov"
+
+REFERENCE			SPRINT_SK
+LANG_ENGLISH		"ExtrÈmna vydrz"
+
+REFERENCE			SPRINT_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - VydrzÌs behat dlhsie"
+
+REFERENCE			STUN_SK
+LANG_ENGLISH		"Oslepovacia zbran"
+
+REFERENCE			STUN_DESC_SK
+LANG_ENGLISH		"Skryty - Budes mat oslepovaciu zbran s jednym n·bojom"
+
+REFERENCE			TELEPORT_SK
+LANG_ENGLISH		"Premiestnenie"
+
+REFERENCE			TELEPORT_DESC_SK
+LANG_ENGLISH		"KrytÌ - Mozes sa premiestnit na n·hodn˝\nbod mapy"
+
+REFERENCE			WAY_SK
+LANG_ENGLISH		"Cesta zabijaka"
+
+REFERENCE			WAY_DESC_SK
+LANG_ENGLISH		"Hladaj˙ci - Vasa cesta bude pln· mory"
+
+REFERENCE			ANGRY_SL
+LANG_ENGLISH		"Brez milosti"
+
+REFERENCE			ANGRY_DESC_SL
+LANG_ENGLISH		"Iskalec - Desert Eagle in nov ucinek"
+
+REFERENCE			COMPASS_SL
+LANG_ENGLISH		"Prelet brezpilotnega letala"
+
+REFERENCE			COMPASS_DESC_SL
+LANG_ENGLISH		"Skrivalec - Iskalec viden na radarju"
+
+REFERENCE			FASTRELOAD_SL
+LANG_ENGLISH		"Hitra menjava nabojnikov"
+
+REFERENCE			FASTRELOAD_DESC_SL
+LANG_ENGLISH		"Sedaj lahko hitro zamenjas nabojnike"
+
+REFERENCE			FLASH_SL
+LANG_ENGLISH		"Fosforska grenata"
+
+REFERENCE			FLASH_DESC_SL
+LANG_ENGLISH		"Iskalci - Imel bos fosforske grenate"
+
+REFERENCE			KNIFEKILL_SL
+LANG_ENGLISH		"Lovec iskalcev"
+
+REFERENCE			KNIFEKILL_DESC_SL
+LANG_ENGLISH		"Skrivalec - Ubij iskalce med tem ko stojis"
+
+REFERENCE			M1014_SL
+LANG_ENGLISH		"Hitro streljanje"
+
+REFERENCE			M1014_DESC_SL
+LANG_ENGLISH		"Iskalci - Imel bos M1014 sibrovko"
+
+REFERENCE			PENETRATION_SL
+LANG_ENGLISH		"Penetracija"
+
+REFERENCE			PENETRATION_DESC_SL
+LANG_ENGLISH		"Iskalci - Lahko ustrelis skozi zidove\nSkrivalec - Sposobnost ubijanja kot pes"
+
+REFERENCE			QUIET_SL
+LANG_ENGLISH		"Mrtva tisina"
+
+REFERENCE			QUIET_DESC_SL
+LANG_ENGLISH		"Skrivalec - Si cisto tih"
+
+REFERENCE			RUN_SL
+LANG_ENGLISH		"Hitri pobeg"
+
+REFERENCE			RUN_DESC_SL
+LANG_ENGLISH		"Skrivalec - Ce drzis gumb za streljanje, lahko teces hitreje za 10 sekund"
+
+REFERENCE			SECONDARY_SL
+LANG_ENGLISH		"Drugo orozje"
+
+REFERENCE			SECONDARY_DESC_SL
+LANG_ENGLISH		"Iskalci - Kot drugo orozje bos imel sibrovko"
+
+REFERENCE			SMOKE_SL
+LANG_ENGLISH		"Dimna granata"
+
+REFERENCE			SMOKE_DESC_SL
+LANG_ENGLISH		"Skrivalec - Imel bos dimno granato"
+
+REFERENCE			SNEAKER_SL
+LANG_ENGLISH		"Potuhnjenec"
+
+REFERENCE			SNEAKER_DESC_SL
+LANG_ENGLISH		"Skrivalec - Odporen bos na senzor in motilec signala"
+
+REFERENCE			SNIPER2_SL
+LANG_ENGLISH		"Izboljsan ostrostrelec"
+
+REFERENCE			SNIPER2_DESC_SL
+LANG_ENGLISH		"Iskalec - 5 metkov * 8 nabojev"
+
+REFERENCE			SNIPER3_SL
+LANG_ENGLISH		"Najboljsi ostrostrelec"
+
+REFERENCE			SNIPER3_DESC_SL
+LANG_ENGLISH		"Iskalec - 6 metkov * 8 nabojev"
+
+REFERENCE			SPRINT_SL
+LANG_ENGLISH		"Ekstremna kondicija"
+
+REFERENCE			SPRINT_DESC_SL
+LANG_ENGLISH		"Iskalec - Omogoca daljsi sprint"
+
+REFERENCE			STUN_SL
+LANG_ENGLISH		"Paralizator"
+
+REFERENCE			STUN_DESC_SL
+LANG_ENGLISH		"Skrivalec - Imel bos paralizator z enim nabojem"
+
+REFERENCE			TELEPORT_SL
+LANG_ENGLISH		"Teleport"
+
+REFERENCE			TELEPORT_DESC_SL
+LANG_ENGLISH		"Skrivalci - Lahko se teleportiras na nakljucno mesto na mapi"
+
+REFERENCE			WAY_SL
+LANG_ENGLISH		"Pot zla"
+
+REFERENCE			WAY_DESC_SL
+LANG_ENGLISH		"Iskalci - Tvoja pot bo polna vesc"
+
+REFERENCE			ANGRY_TR
+LANG_ENGLISH		"Merhamet yok"
+
+REFERENCE			ANGRY_DESC_TR
+LANG_ENGLISH		"Ebe - Desert eagle ve yeni efekt  "
+
+REFERENCE			COMPASS_TR
+LANG_ENGLISH		"Radar"
+
+REFERENCE			COMPASS_DESC_TR
+LANG_ENGLISH		"Saklanan - Arayicilar radarda gˆr¸n¸r"
+
+REFERENCE			FASTRELOAD_TR
+LANG_ENGLISH		"Hizli Doldurma"
+
+REFERENCE			FASTRELOAD_DESC_TR
+LANG_ENGLISH		"Daha hizli sarjˆr degistirebilirsin"
+
+REFERENCE			FLASH_TR
+LANG_ENGLISH		"Fosfor Bombasi"
+
+REFERENCE			FLASH_DESC_TR
+LANG_ENGLISH		"Arayici - Fosfor bombasi alirsin"
+
+REFERENCE			KNIFEKILL_TR
+LANG_ENGLISH		"Arayici Avci"
+
+REFERENCE			KNIFEKILL_DESC_TR
+LANG_ENGLISH		"Saklanan - Arayicilari biÁakla\nˆld¸rebilirsin"
+
+REFERENCE			M1014_TR
+LANG_ENGLISH		"Hizli Atis"
+
+REFERENCE			M1014_DESC_TR
+LANG_ENGLISH		"Arayici - M1014 pompaliya sahip olacaksin"
+
+REFERENCE			PENETRATION_TR
+LANG_ENGLISH		"Delici Mermi"
+
+REFERENCE			PENETRATION_DESC_TR
+LANG_ENGLISH		"Arayici - Duvar arkasindan vurabilirsin\nGizlenen - Kopek olarak oldurme"
+
+REFERENCE			QUIET_TR
+LANG_ENGLISH		"÷l¸ Sessizligi"
+
+REFERENCE			QUIET_DESC_TR
+LANG_ENGLISH		"Saklanan - Sessiz"
+
+REFERENCE			RUN_TR
+LANG_ENGLISH		"Hizli Kacis"
+
+REFERENCE			RUN_DESC_TR
+LANG_ENGLISH		"Saklanan - Ates etme tusuna basili tutarak,\n10 saniyeligine hizli kosabilirsin"
+
+REFERENCE			SECONDARY_TR
+LANG_ENGLISH		"Kotuluk Yolu"
+
+REFERENCE			SECONDARY_DESC_TR
+LANG_ENGLISH		"Arayici - Ikincil silah olarak\npompali t¸fek alirsin"
+
+REFERENCE			SMOKE_TR
+LANG_ENGLISH		"Sis Bombasi"
+
+REFERENCE			SMOKE_DESC_TR
+LANG_ENGLISH		"Saklanan - Sis bombasi alirsin"
+
+REFERENCE			SNEAKER_TR
+LANG_ENGLISH		"Sinsi"
+
+REFERENCE			SNEAKER_DESC_TR
+LANG_ENGLISH		"Saklanan - Sensˆrlere ve jammerlara\nkarsi bagisiklik"
+
+REFERENCE			SNIPER2_TR
+LANG_ENGLISH		"Gelistirilmis T¸fek"
+
+REFERENCE			SNIPER2_DESC_TR
+LANG_ENGLISH		"Arayici - 5 mermi * 8 sarjˆr"
+
+REFERENCE			SNIPER3_TR
+LANG_ENGLISH		"En Iyi T¸fek"
+
+REFERENCE			SNIPER3_DESC_TR
+LANG_ENGLISH		"Arayici - 6 mermi * 8 sarjˆr"
+
+REFERENCE			SPRINT_TR
+LANG_ENGLISH		"Zor Kosullar"
+
+REFERENCE			SPRINT_DESC_TR
+LANG_ENGLISH		"Arayici - Daha fazla kosabilirsin"
+
+REFERENCE			STUN_TR
+LANG_ENGLISH		"Sersemletici Tabanca"
+
+REFERENCE			STUN_DESC_TR
+LANG_ENGLISH		"Saklanan - Tek mermili sersemletici\ntabancan olur"
+
+REFERENCE			TELEPORT_TR
+LANG_ENGLISH		"Isinlan"
+
+REFERENCE			TELEPORT_DESC_TR
+LANG_ENGLISH		"Saklananlar - Haritada herhangi bir yere isinlanabilirsiniz"
+
+REFERENCE			WAY_TR
+LANG_ENGLISH		"Path of Evil"
+
+REFERENCE			WAY_DESC_TR
+LANG_ENGLISH		"Arayici - Yolunuz g¸velerle dolu olacak"
+
+ENDMARKER

@@ -1,0 +1,678 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			40
+
+#define STYLE_PC	1
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/stats_info.inc"
+
+#define LOCAL_UNLOCK_COLOR 		0.31 0.31 0.33 0.55 //0.21 0.21 0.23 0.65
+
+#define SHOWDESC(lvl) \
+	play "mouse_click"; \
+	show "lvl"lvl \
+	show "lvl"lvl"_desc" \
+
+#define HIDEDESC(lvl) \
+	hide "lvl"lvl \
+	hide "lvl"lvl"_desc"
+
+#define ORIGIN_MTITLE 250 65 0 0
+#define ORIGIN_MDESC 250 85 0 0
+
+{
+	menuDef
+	{
+		name			"ranks"
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+
+		onESC 
+		{
+			close self;
+		}
+
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.75 //0 0.05 0.15 0.5
+			visible			1
+			decoration
+		}
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		itemDef 
+		{
+			name			lvl3
+			exp text		("@LEVELS_FASTRELOAD" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl3_desc
+			exp text		("@LEVELS_FASTRELOAD_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl5
+			exp text		("@LEVELS_QUIET" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl5_desc
+			exp text		("@LEVELS_QUIET_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl10
+			exp text		("@LEVELS_SNIPER2" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl10_desc
+			exp text		("@LEVELS_SNIPER2_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl15
+			exp text		("@LEVELS_RUN" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl15_desc
+			exp text		("@LEVELS_RUN_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl20
+			exp text		("@LEVELS_SPRINT" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl20_desc
+			exp text		("@LEVELS_SPRINT_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl25
+			exp text		("@LEVELS_COMPASS" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl25_desc
+			exp text		("@LEVELS_COMPASS_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl30
+			exp text		("@LEVELS_SNIPER3" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl30_desc
+			exp text		("@LEVELS_SNIPER3_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl40
+			exp text		("@LEVELS_KNIFEKILL" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl40_desc
+			exp text		("@LEVELS_KNIFEKILL_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl50
+			exp text		("@LEVELS_SECONDARY" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl50_desc
+			exp text		("@LEVELS_SECONDARY_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl56
+			exp text		("@LEVELS_STUN" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl56_desc
+			exp text		("@LEVELS_STUN_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl75
+			exp text		("@LEVELS_FLASH" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl75_desc
+			exp text		("@LEVELS_FLASH_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl100
+			exp text		("@LEVELS_SMOKE" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl100_desc
+			exp text		("@LEVELS_SMOKE_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl111
+			exp text		("@LEVELS_PENETRATION" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl111_desc
+			exp text		("@LEVELS_PENETRATION_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl112
+			exp text		("@LEVELS_M1014" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl112_desc
+			exp text		("@LEVELS_M1014_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl113
+			exp text		("@LEVELS_WAY" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl113_desc
+			exp text		("@LEVELS_WAY_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl114
+			exp text		("@LEVELS_TELEPORT" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl114_desc
+			exp text		("@LEVELS_TELEPORT_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl115
+			exp text		("@LEVELS_SNEAKER" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl115_desc
+			exp text		("@LEVELS_SNEAKER_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl116
+			exp text		("@LEVELS_ANGRY" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MTITLE
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		0.8 0.8 0.3 1
+			visible			0
+		}
+
+		itemDef 
+		{
+			name			lvl116_desc
+			exp text		("@LEVELS_ANGRY_DESC" + dvarString("lang"))
+			type			1
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			rect			ORIGIN_MDESC
+			textfont		UI_FONT_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		TEXTSIZE_SMALL
+			visible			0
+		}
+
+		// ------------------ TREE TITLE ------------------
+
+		CHOICE_MENU_TITLE( "@MENUS_RANKS" + dvarString("lang") )	
+
+		// ------------------ buttons ---------------------
+		#define BACK_OPEN;
+		#include "ui_mp/navcontrols.inc"
+
+		#undef CHOICE_SIZE_Y
+		#define CHOICE_SIZE_Y 20
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 1, "Level 3", ;, SHOWDESC("3"), HIDEDESC("3"), when(stat(252) >= 2), stat(252) >= 2)
+				CHOICE_BUTTON_BG( 1, when(stat(252) < 2) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 1, "Level 3", ;, SHOWDESC("3"), HIDEDESC("3"), when(stat(252) < 2); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 2, "Level 5", ;, SHOWDESC("5"), HIDEDESC("5"), when(stat(252) >= 4), stat(252) >= 4)
+				CHOICE_BUTTON_BG( 2, when(stat(252) < 4) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 2, "Level 5", ;, SHOWDESC("5"), HIDEDESC("5"), when(stat(252) < 4); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 3, "Level 10", ;, SHOWDESC("10"), HIDEDESC("10"), when(stat(252) >= 9), stat(252) >= 9)
+				CHOICE_BUTTON_BG( 3, when(stat(252) < 9) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 3, "Level 12", ;, SHOWDESC("10"), HIDEDESC("10"), when(stat(252) < 9); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 4, "Level 15", ;, SHOWDESC("15"), HIDEDESC("15"), when(stat(252) >= 14), stat(252) >= 14)
+				CHOICE_BUTTON_BG( 4, when(stat(252) < 14) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 4, "Level 15", ;, SHOWDESC("15"), HIDEDESC("15"), when(stat(252) < 14); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 5, "Level 20", ;, SHOWDESC("20"), HIDEDESC("20"), when(stat(252) >= 19), stat(252) >= 19)
+				CHOICE_BUTTON_BG( 5, when(stat(252) < 19) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 5, "Level 20", ;, SHOWDESC("20"), HIDEDESC("20"), when(stat(252) < 19); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 6, "Level 25", ;, SHOWDESC("25"), HIDEDESC("25"), when(stat(252) >= 24), stat(252) >= 24)
+				CHOICE_BUTTON_BG( 6, when(stat(252) < 24) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 6, "Level 25", ;, SHOWDESC("25"), HIDEDESC("25"), when(stat(252) < 24); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 7, "Level 30", ;, SHOWDESC("30"), HIDEDESC("30"), when(stat(252) >= 29), stat(252) >= 29)
+				CHOICE_BUTTON_BG( 7, when(stat(252) < 29) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 7, "Level 30", ;, SHOWDESC("30"), HIDEDESC("30"), when(stat(252) < 29); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 8, "Level 40", ;, SHOWDESC("40"), HIDEDESC("40"), when(stat(252) >= 39), stat(252) >= 39)
+				CHOICE_BUTTON_BG( 8, when(stat(252) < 39) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 8, "Level 40", ;, SHOWDESC("40"), HIDEDESC("40"), when(stat(252) < 39); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 9, "Level 50", ;, SHOWDESC("50"), HIDEDESC("50"), when(stat(252) >= 49), stat(252) >= 49)
+				CHOICE_BUTTON_BG( 9, when(stat(252) < 49) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 9, "Level 50", ;, SHOWDESC("50"), HIDEDESC("50"), when(stat(252) < 49); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 10, "Level 56", ;, SHOWDESC("56"), HIDEDESC("56"), when(stat(252) >= 55), stat(252) >= 55)
+				CHOICE_BUTTON_BG( 10, when(stat(252) < 55) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 10, "Level 56", ;, SHOWDESC("56"), HIDEDESC("56"), when(stat(252) < 55); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 11, "Level 75", ;, SHOWDESC("75"), HIDEDESC("75"), when(stat(252) >= 74), stat(252) >= 74)
+				CHOICE_BUTTON_BG( 11, when(stat(252) < 74) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 11, "Level 75", ;, SHOWDESC("75"), HIDEDESC("75"), when(stat(252) < 74); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 12, "Level 100", ;, SHOWDESC("100"), HIDEDESC("100"), when(stat(252) >= 99), stat(252) >= 99)
+				CHOICE_BUTTON_BG( 12, when(stat(252) < 99) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 12, "Level 100", ;, SHOWDESC("100"), HIDEDESC("100"), when(stat(252) < 99); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 13, "Level 111", ;, SHOWDESC("111"), HIDEDESC("111"), when(stat(252) >= 110), stat(252) >= 110)
+				CHOICE_BUTTON_BG( 13, when(stat(252) < 110) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 13, "Level 111", ;, SHOWDESC("111"), HIDEDESC("111"), when(stat(252) < 110); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 14, "Level 112", ;, SHOWDESC("112"), HIDEDESC("112"), when(stat(252) >= 111), stat(252) >= 111)
+				CHOICE_BUTTON_BG( 14, when(stat(252) < 111) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 14, "Level 112", ;, SHOWDESC("112"), HIDEDESC("112"), when(stat(252) < 111); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 15, "Level 113", ;, SHOWDESC("113"), HIDEDESC("113"), when(stat(252) >= 112), stat(252) >= 112)
+				CHOICE_BUTTON_BG( 15, when(stat(252) < 112) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 15, "Level 113", ;, SHOWDESC("113"), HIDEDESC("113"), when(stat(252) < 112); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 16, "VIP / Level 114", ;, SHOWDESC("114"), HIDEDESC("114"), when(stat(252) >= 113 || dvarBool("vip")), stat(252) >= 113)
+				CHOICE_BUTTON_BG( 16, when(stat(252) < 113 && !dvarBool("vip")) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 16, "VIP / Level 114", ;, SHOWDESC("114"), HIDEDESC("114"), when(stat(252) < 113 && !dvarBool("vip")); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 17, "Level 115", ;, SHOWDESC("115"), HIDEDESC("115"), when(stat(252) >= 114), stat(252) >= 114)
+				CHOICE_BUTTON_BG( 17, when(stat(252) < 114) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 17, "Level 115", ;, SHOWDESC("115"), HIDEDESC("115"), when(stat(252) < 114); forecolor LOCAL_UNLOCK_COLOR )
+
+		CHOICE_BUTTON_FOCUS_VIS_ADV( 18, "Level 116", ;, SHOWDESC("116"), HIDEDESC("116"), when(stat(252) >= 115), stat(252) >= 115)
+				CHOICE_BUTTON_BG( 18, when(stat(252) < 115) )
+				CHOICE_BUTTON_FOCUS_VIS_NOHI( 18, "Level 116", ;, SHOWDESC("116"), HIDEDESC("116"), when(stat(252) < 115); forecolor LOCAL_UNLOCK_COLOR )
+
+		// ====================== player stats =========================
+		#include "ui_mp/player_info.inc"
+	}
+}

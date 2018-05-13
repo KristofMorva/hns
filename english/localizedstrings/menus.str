@@ -1,0 +1,4611 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION				"1"
+CONFIG				"C:\trees\cod3\cod3\bin\StringEd.cfg"
+FILENOTES			""
+
+REFERENCE			HNS
+LANG_ENGLISH		"^1Hide ^7and ^2Seek ^5(Prop hunt)"
+
+REFERENCE			VERSION
+LANG_ENGLISH		"^1Hide ^7'n ^2Seek ^5(Prop hunt) ^3Mod 2016-07-25\n^5by iCore"
+
+REFERENCE			WOOF
+LANG_ENGLISH		"Woof!"
+
+REFERENCE			TUT1
+LANG_ENGLISH		"The concept of the mod is really simple. Hiders can disguise themselves as objects, and hide on the map (or use seeker camouflage). The first player connecting to the server will be the seeker, and at the beginning of each following round, one of the last hiders of the previous round will become the seeker.\n^7\nAs a hider, you can read your controls on the right side of the screen. You can rotate your object to adjust to the environment, switch fast between the last used object and seeker camouflage if you need to escape from your spot, and access many other features, depending on your rank. You can also change your object at any time in the main menu. During the hiding time, you are only visible to other hiders when you are using seeker camouflage. If you are not using seeker camouflage, other hiders won't be able to see you. When the seeking time starts, hiders will be able to see their teammates.\nThe image below shows a common example of hiding in this mod. The gift box on the left is actually a hider, while the rest are just stock objects."
+
+REFERENCE			TUT2
+LANG_ENGLISH		"After level 40, hiders are able to kill seekers with their knife while using seeker camouflage. Keep in mind, you have to stand to knife a seeker! You can't do it while crouching or proning. After a successful melee attack, the seeker respawns to a random point on the map, and an icon on the map will alert other seekers of the kill location.\n^7\nWhen a player gets killed, an item is dropped. Any player can pick up a dropped item. If you collect 4 of them, you are rewarded with a care package, which may contain points, ammo, etc. To call in a care package, switch to the weapon called \"Marker\", and drop it where you would like the care package to land. Do not throw the marker near obstacles! Your care package could get stuck on a roof or in a tree, rendering it useless. For 5 seconds, only the caller can pick it up. After 5 seconds have pased, the package becomes usable by any player on the caller's team."
+
+REFERENCE			TUT3
+LANG_ENGLISH		"Primarily, you will earn XP By finding a hider, knifing a seeker, or surviving longer than your teammates. You can see what you will unlock by obtaining each rank by viewing the ranks menu (accessible from the main menu). In addition, you can also unlock camos, weapons, death effects, and music with ranks, check these items in the Settings menu.\n^7\nThe main menu also contains challenges that you can complete. If you finish every challenge, and reach level 100, a fire icon will be displayed next to your name on the scoreboard.\n^7\nHiders can collect Visibility Points (VP) too. You earn it when seekers see you, so the more obvious spot and bigger object you choose, the more VP you will get. With these points, you can buy extra models if you switch to next page in the object selector menu. The purchased objects are only applied to the current map, but they are permanent. The left side of your screen lists the names of seekers who can see you."
+
+REFERENCE			TUT4
+LANG_ENGLISH		"Since the first 2014 winter update, some closed parts of the maps are playable. You can find new glowing areas, signaling that you can go to another part of the map by pressing the Use button (usually F) while standing near the middle of it, and looking in the direction of the other map part. These gateways can be doors, ladders, fences, barricades, etc. There is also a colorful dashed rotating circle around these areas. Inside these circles, the seekers cannot be knifed, to prevent camping to these spots."
+
+REFERENCE			TUT5
+LANG_ENGLISH		"You can find new commands in the quick menu (usually bound to B). You can see a preview of the quick menu below. Changing camera distance/angle can be helpful when you are a large object, or if you can't rotate your camera view due to prone blocking. Also, don't forget to try out the new sounds, and Schnappi ;)\n^7\nIf you have useful idea for a new area, you find a bug, or you just want to talk to me with any reason, contact me!\nProject page: moddb.com/mods/hide-n-seek-mod\nFacebook: facebook.com/morvak\nE-mail: kristof92@gmail.com\nSteam: jk3editor\n^7\nRegards, iCore"
+REFERENCE			ABOUT_HR
+LANG_ENGLISH		"Sto je ovaj mod zapravo?"
+
+REFERENCE			APPLY_HR
+LANG_ENGLISH		"^2Primijeni"
+
+REFERENCE			AS_HIDER_HR
+LANG_ENGLISH		"Kao Skrivac"
+
+REFERENCE			AS_SEEKER_HR
+LANG_ENGLISH		"Kao Tragac"
+
+REFERENCE			ASSAULT_HR
+LANG_ENGLISH		"Assault"
+
+REFERENCE			ASSAULT_LVL_HR
+LANG_ENGLISH		"Assault (Level 25)"
+
+REFERENCE			AXIS_HR
+LANG_ENGLISH		"^3[Shoot]^7: Postavi rotaciju osi"
+
+REFERENCE			BACK_HR
+LANG_ENGLISH		"Nazad"
+
+REFERENCE			BOX_DOWN_HR
+LANG_ENGLISH		"Sanduk Prema Dolje"
+
+REFERENCE			BOX2_HR
+LANG_ENGLISH		"Sporedna Kutija"
+
+REFERENCE			BUCKET_HR
+LANG_ENGLISH		"Kanta"
+
+REFERENCE			BUCKET_DOWN_HR
+LANG_ENGLISH		"Kanta Prema Dolje"
+
+REFERENCE			CAMO_HR
+LANG_ENGLISH		"Izgled"
+
+REFERENCE			CAMO_BLUETIGER_HR
+LANG_ENGLISH		"Plavi Tigar"
+
+REFERENCE			CAMO_BLUETIGER_LVL_HR
+LANG_ENGLISH		"Plavi Tigar (VIP)"
+
+REFERENCE			CAMO_DESERT_HR
+LANG_ENGLISH		"Pustinjski"
+
+REFERENCE			CAMO_DESERT_LVL_HR
+LANG_ENGLISH		"Pustinjski (Level 25)"
+
+REFERENCE			CAMO_DIGITAL_HR
+LANG_ENGLISH		"Digitalni"
+
+REFERENCE			CAMO_DIGITAL_LVL_HR
+LANG_ENGLISH		"Digitalni (Level 75)"
+
+REFERENCE			CAMO_REDTIGER_HR
+LANG_ENGLISH		"Crveni Tigar"
+
+REFERENCE			CAMO_REDTIGER_LVL_HR
+LANG_ENGLISH		"Crveni Tigar (Level 100)"
+
+REFERENCE			CAMO_WOODLAND_HR
+LANG_ENGLISH		"Sumski"
+
+REFERENCE			CAMO_WOODLAND_LVL_HR
+LANG_ENGLISH		"Sumski (Level 50)"
+
+REFERENCE			CASE2_HR
+LANG_ENGLISH		"Sporedni Predmet"
+
+REFERENCE			CHALLENGES_HR
+LANG_ENGLISH		"^5Izazovi"
+
+REFERENCE			CHOOSE_MODEL_HR
+LANG_ENGLISH		"^5Odaberite Predmet"
+
+REFERENCE			COMPS_HR
+LANG_ENGLISH		"Racunala"
+
+REFERENCE			CRATE2_HR
+LANG_ENGLISH		"Sporedni Sanduk"
+
+REFERENCE			DEATHFX_HR
+LANG_ENGLISH		"Efekt Smrti"
+
+REFERENCE			DEATHFX_BEAR_HR
+LANG_ENGLISH		"Medvjedici"
+
+REFERENCE			DEATHFX_BEAR_LVL_HR
+LANG_ENGLISH		"Medvjedici (VIP)"
+
+REFERENCE			DEATHFX_DUST_HR
+LANG_ENGLISH		"Prasina"
+
+REFERENCE			DEATHFX_DUST_LVL_HR
+LANG_ENGLISH		"Prasina (Level 25)"
+
+REFERENCE			DEATHFX_EXP_HR
+LANG_ENGLISH		"Eksplozija"
+
+REFERENCE			DEATHFX_EXP_LVL_HR
+LANG_ENGLISH		"Eksplozija (Level 50)"
+
+REFERENCE			DEATHFX_FLOWER_HR
+LANG_ENGLISH		"Cvijece"
+
+REFERENCE			DEATHFX_FLOWER_LVL_HR
+LANG_ENGLISH		"Cvijece (Level 75)"
+
+REFERENCE			DEATHFX_MONEY_HR
+LANG_ENGLISH		"Novac"
+
+REFERENCE			DEATHFX_MONEY_LVL_HR
+LANG_ENGLISH		"Novac (Level 100)"
+
+REFERENCE			DEATHS_HR
+LANG_ENGLISH		"Smrti"
+
+REFERENCE			DEFAULT_HR
+LANG_ENGLISH		"Zadana"
+
+REFERENCE			DOG_HR
+LANG_ENGLISH		"Pas"
+
+REFERENCE			DOG_LVL_HR
+LANG_ENGLISH		"Pas (VIP)"
+
+REFERENCE			EDIT_MODEL_HR
+LANG_ENGLISH		"^5Uredi Predmet"
+
+REFERENCE			ESC_HR
+LANG_ENGLISH		"ESC: Izlaz"
+
+REFERENCE			FASTMODEL_HR
+LANG_ENGLISH		"^32× [Toggle aim]^7: Iskljuci/Ukljuci Kamuflazu Tragaca"
+
+REFERENCE			FIRE_HR
+LANG_ENGLISH		"Vatra"
+
+REFERENCE			FIX_HR
+LANG_ENGLISH		"^3[Use]^7: Popravi kutove objekta"
+
+REFERENCE			INFO_HR
+LANG_ENGLISH		"5. Informacije"
+
+REFERENCE			KILLS_HR
+LANG_ENGLISH		"Ubojstva"
+
+REFERENCE			KILLSTREAK_HR
+LANG_ENGLISH		"&&1 Vas Niz Ubojstava!"
+
+REFERENCE			LAST_HR
+LANG_ENGLISH		"Zadnji Skrivac"
+
+REFERENCE			LID_HR
+LANG_ENGLISH		"Poklopac"
+
+REFERENCE			LOWBOX_HR
+LANG_ENGLISH		"Niska Kutija"
+
+REFERENCE			M14_LVL_HR
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_HR
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MUSIC_HR
+LANG_ENGLISH		"4. Glazba"
+
+REFERENCE			NEW_LVL_HR
+LANG_ENGLISH		"Nova (Level 50)"
+
+REFERENCE			NEXT_PAGE_HR
+LANG_ENGLISH		"Sljedeca stranica"
+
+REFERENCE			OPTIONS_HR
+LANG_ENGLISH		"^5Opcije"
+
+REFERENCE			PAINTCAN_HR
+LANG_ENGLISH		"Boja U Limenci"
+
+REFERENCE			PAN_COPPER_HR
+LANG_ENGLISH		"Bakrena Tava"
+
+REFERENCE			PAN_METAL_HR
+LANG_ENGLISH		"Metalna Tava"
+
+REFERENCE			PLASTICCRATE_HR
+LANG_ENGLISH		"Plasticni Sanduk"
+
+REFERENCE			PLAY_HR
+LANG_ENGLISH		"^5Igraj!"
+
+REFERENCE			PLAYERMODEL_HR
+LANG_ENGLISH		"Lik"
+
+REFERENCE			PREV_PAGE_HR
+LANG_ENGLISH		"Prethodna stranica"
+
+REFERENCE			PROPANE_HR
+LANG_ENGLISH		"Cisterna"
+
+REFERENCE			PROPANE_DOWN_HR
+LANG_ENGLISH		"Cisterna Prema Dolje"
+
+REFERENCE			QUICK_HR
+LANG_ENGLISH		"Brzi Izbornik"
+
+REFERENCE			RADARHACK_HR
+LANG_ENGLISH		"Iskljuci Svoj Hack Za Radar, Hackeru..."
+
+REFERENCE			RANKS_HR
+LANG_ENGLISH		"^5Rangovi"
+
+REFERENCE			READY_HR
+LANG_ENGLISH		"^3Drzi [Use]^7: Stanje mirovanja"
+
+REFERENCE			RECON_HR
+LANG_ENGLISH		"Oklopljeni"
+
+REFERENCE			RECON_LVL_HR
+LANG_ENGLISH		"Oklopljeni (Level 75)"
+
+REFERENCE			REMOVE_HR
+LANG_ENGLISH		"^1Vrati"
+
+REFERENCE			RESET_HR
+LANG_ENGLISH		"3. Vrati Na Zadano"
+
+REFERENCE			RESETMODEL_HR
+LANG_ENGLISH		"^3[Frag]^7: Resetiraj kutove objekta"
+
+REFERENCE			ROCKETS_HR
+LANG_ENGLISH		"Projektili"
+
+REFERENCE			ROTATE_HR
+LANG_ENGLISH		"Rotirati"
+
+REFERENCE			ROTATIONFIXED_HR
+LANG_ENGLISH		"Rotacija Osi: ^1Popravljena"
+
+REFERENCE			ROTATIONRX_HR
+LANG_ENGLISH		"Rotacija Osi: ^1-X"
+
+REFERENCE			ROTATIONRY_HR
+LANG_ENGLISH		"Rotacija Osi: ^1-Y"
+
+REFERENCE			ROTATIONX_HR
+LANG_ENGLISH		"Rotacija Osi: ^1X"
+
+REFERENCE			ROTATIONY_HR
+LANG_ENGLISH		"Rotacija Osi: ^1Y"
+
+REFERENCE			ROTATIONZ_HR
+LANG_ENGLISH		"Rotacija Osi: ^1Z"
+
+REFERENCE			RUN_HR
+LANG_ENGLISH		"^3Drzi [Shoot]^7: Trci 10 sekundi"
+
+REFERENCE			SEEKER_HR
+LANG_ENGLISH		"Tragac"
+
+REFERENCE			SET_ANG_HR
+LANG_ENGLISH		"2. Kut Kamere"
+
+REFERENCE			SET_DIS_HR
+LANG_ENGLISH		"1. Udaljenost Kamere"
+
+REFERENCE			SETS_HR
+LANG_ENGLISH		"4. HNS Opcije"
+
+REFERENCE			SETTINGS_HR
+LANG_ENGLISH		"HNS Opcije"
+
+REFERENCE			SHEEN_HR
+LANG_ENGLISH		"Sjaj"
+
+REFERENCE			SNIPER_HR
+LANG_ENGLISH		"Sniper"
+
+REFERENCE			SOUND_HR
+LANG_ENGLISH		"Glazba"
+
+REFERENCE			SPECOPS_HR
+LANG_ENGLISH		"SpecOps"
+
+REFERENCE			SPECOPS_LVL_HR
+LANG_ENGLISH		"SpecOps (Level 50)"
+
+REFERENCE			SPECTATOR_HR
+LANG_ENGLISH		"Posmatrac"
+
+REFERENCE			STATUE_HR
+LANG_ENGLISH		"Kip Lava"
+
+REFERENCE			STREAK_HR
+LANG_ENGLISH		"Streak"
+
+REFERENCE			SUPPORT_HR
+LANG_ENGLISH		"Podrska"
+
+REFERENCE			SUPPORT_LVL_HR
+LANG_ENGLISH		"Podrska (Level 100)"
+
+REFERENCE			TELEPORT_HR
+LANG_ENGLISH		"^3Drzi [Use]^7: Nasumican teleport"
+
+REFERENCE			THIRDPERSON_HR
+LANG_ENGLISH		"^3Drzi ^3[Frag]^7: Promijeni 3D pogled"
+
+REFERENCE			TIME_HR
+LANG_ENGLISH		"Odigrano Vrijeme"
+
+REFERENCE			TIRE_HR
+LANG_ENGLISH		"Kotac"
+
+REFERENCE			TOOLBOX_HR
+LANG_ENGLISH		"Kutija Za Alat"
+
+REFERENCE			TRASHBAG_HR
+LANG_ENGLISH		"Vreca Za Smece"
+
+REFERENCE			TV_HR
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX_HR
+LANG_ENGLISH		"^3[Use]^7: Olabavi kutove objekta"
+
+REFERENCE			USEROTATE_HR
+LANG_ENGLISH		"^3[Melee]^7: Rotiraj"
+
+REFERENCE			VIS_POINTS_HR
+LANG_ENGLISH		"Bodovi vidljivosti"
+
+REFERENCE			VOICES_HR
+LANG_ENGLISH		"5. HNS Glasovi"
+
+REFERENCE			VOICESOUNDS_HR
+LANG_ENGLISH		"HNS Glasovi"
+
+REFERENCE			VOTE_HR
+LANG_ENGLISH		"Glasanje"
+
+REFERENCE			WEAPON_HR
+LANG_ENGLISH		"Oruzije"
+
+REFERENCE			ABOUT_CS
+LANG_ENGLISH		"O cem je tento mod?"
+
+REFERENCE			APPLY_CS
+LANG_ENGLISH		"^2Pouzít"
+
+REFERENCE			AS_HIDER_CS
+LANG_ENGLISH		"Za skrytého"
+
+REFERENCE			AS_SEEKER_CS
+LANG_ENGLISH		"Za hledajícího"
+
+REFERENCE			ASSAULT_CS
+LANG_ENGLISH		"Útocník"
+
+REFERENCE			ASSAULT_LVL_CS
+LANG_ENGLISH		"Útocník (Level 25)"
+
+REFERENCE			AXIS_CS
+LANG_ENGLISH		"^3[Strelba]^7: Urcit osu otácení"
+
+REFERENCE			BACK_CS
+LANG_ENGLISH		"Back"
+
+REFERENCE			BOX_DOWN_CS
+LANG_ENGLISH		"Krabice na zemi"
+
+REFERENCE			BOX2_CS
+LANG_ENGLISH		"Druhá krabice"
+
+REFERENCE			BUCKET_CS
+LANG_ENGLISH		"Vedro"
+
+REFERENCE			BUCKET_DOWN_CS
+LANG_ENGLISH		"Vedro na zemi"
+
+REFERENCE			CAMO_CS
+LANG_ENGLISH		"Prevlek"
+
+REFERENCE			CAMO_BLUETIGER_CS
+LANG_ENGLISH		"Modrý tiger"
+
+REFERENCE			CAMO_BLUETIGER_LVL_CS
+LANG_ENGLISH		"Modrý tiger (VIP)"
+
+REFERENCE			CAMO_DESERT_CS
+LANG_ENGLISH		"Poustní"
+
+REFERENCE			CAMO_DESERT_LVL_CS
+LANG_ENGLISH		"Poustní (Level 25)"
+
+REFERENCE			CAMO_DIGITAL_CS
+LANG_ENGLISH		"Digitální"
+
+REFERENCE			CAMO_DIGITAL_LVL_CS
+LANG_ENGLISH		"Digitální (Level 75)"
+
+REFERENCE			CAMO_REDTIGER_CS
+LANG_ENGLISH		"Cervený tiger"
+
+REFERENCE			CAMO_REDTIGER_LVL_CS
+LANG_ENGLISH		"Cervený tiger (Level 100)"
+
+REFERENCE			CAMO_WOODLAND_CS
+LANG_ENGLISH		"Lesní"
+
+REFERENCE			CAMO_WOODLAND_LVL_CS
+LANG_ENGLISH		"Lesní (Level 50)"
+
+REFERENCE			CASE2_CS
+LANG_ENGLISH		"Druhé pouzdro"
+
+REFERENCE			CHALLENGES_CS
+LANG_ENGLISH		"^5Vyzvy"
+
+REFERENCE			CHOOSE_MODEL_CS
+LANG_ENGLISH		"^5Vybrat objekt"
+
+REFERENCE			COMPS_CS
+LANG_ENGLISH		"Pocitac"
+
+REFERENCE			CRATE2_CS
+LANG_ENGLISH		"Druhá bedna"
+
+REFERENCE			DEATHFX_CS
+LANG_ENGLISH		"Efekt smrti"
+
+REFERENCE			DEATHFX_BEAR_CS
+LANG_ENGLISH		"Plysoví medvídci"
+
+REFERENCE			DEATHFX_BEAR_LVL_CS
+LANG_ENGLISH		"Plysoví medvídci (VIP)"
+
+REFERENCE			DEATHFX_DUST_CS
+LANG_ENGLISH		"Prach"
+
+REFERENCE			DEATHFX_DUST_LVL_CS
+LANG_ENGLISH		"Prach (Level 25)"
+
+REFERENCE			DEATHFX_EXP_CS
+LANG_ENGLISH		"Výbuch"
+
+REFERENCE			DEATHFX_EXP_LVL_CS
+LANG_ENGLISH		"Výbuch (Level 50)"
+
+REFERENCE			DEATHFX_FLOWER_CS
+LANG_ENGLISH		"Kvetiny"
+
+REFERENCE			DEATHFX_FLOWER_LVL_CS
+LANG_ENGLISH		"Kvetiny (Level 75)"
+
+REFERENCE			DEATHFX_MONEY_CS
+LANG_ENGLISH		"Dolary"
+
+REFERENCE			DEATHFX_MONEY_LVL_CS
+LANG_ENGLISH		"Dolary (Level 100)"
+
+REFERENCE			DEATHS_CS
+LANG_ENGLISH		"Úmrtí"
+
+REFERENCE			DEFAULT_CS
+LANG_ENGLISH		"Predvolené"
+
+REFERENCE			DOG_CS
+LANG_ENGLISH		"Pes"
+
+REFERENCE			DOG_LVL_CS
+LANG_ENGLISH		"Pes (VIP)"
+
+REFERENCE			EDIT_MODEL_CS
+LANG_ENGLISH		"^5Editovat objekt"
+
+REFERENCE			ESC_CS
+LANG_ENGLISH		"ESC: Zavrít"
+
+REFERENCE			FASTMODEL_CS
+LANG_ENGLISH		"^32× [Zamírit]^7: Prepnout prevlek skrytého"
+
+REFERENCE			FIRE_CS
+LANG_ENGLISH		"Ohen"
+
+REFERENCE			FIX_CS
+LANG_ENGLISH		"^3[Pouzít]^7: Zafixovat úhly objektu"
+
+REFERENCE			INFO_CS
+LANG_ENGLISH		"5. Informace"
+
+REFERENCE			KILLS_CS
+LANG_ENGLISH		"Zabití"
+
+REFERENCE			KILLSTREAK_CS
+LANG_ENGLISH		"&&1 Série zabití!"
+
+REFERENCE			LAST_CS
+LANG_ENGLISH		"Poslední skrytý"
+
+REFERENCE			LID_CS
+LANG_ENGLISH		"Poklicka"
+
+REFERENCE			LOWBOX_CS
+LANG_ENGLISH		"Krabice na zemi"
+
+REFERENCE			M14_LVL_CS
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_CS
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MUSIC_CS
+LANG_ENGLISH		"4. Hudba"
+
+REFERENCE			NEW_LVL_CS
+LANG_ENGLISH		"Nová hudba (Level 50)"
+
+REFERENCE			NEXT_PAGE_CS
+LANG_ENGLISH		"Next page"
+
+REFERENCE			OPTIONS_CS
+LANG_ENGLISH		"^5Nastavení"
+
+REFERENCE			PAINTCAN_CS
+LANG_ENGLISH		"Plechovka s barvou"
+
+REFERENCE			PAN_COPPER_CS
+LANG_ENGLISH		"Medena pánev"
+
+REFERENCE			PAN_METAL_CS
+LANG_ENGLISH		"Kovová pánev"
+
+REFERENCE			PLASTICCRATE_CS
+LANG_ENGLISH		"Plastová bednicka"
+
+REFERENCE			PLAY_CS
+LANG_ENGLISH		"^5Hrát!"
+
+REFERENCE			PLAYERMODEL_CS
+LANG_ENGLISH		"Hrácský model"
+
+REFERENCE			PREV_PAGE_CS
+LANG_ENGLISH		"Previous page"
+
+REFERENCE			PROPANE_CS
+LANG_ENGLISH		"Plynová nádrz"
+
+REFERENCE			PROPANE_DOWN_CS
+LANG_ENGLISH		"Plynová láhev"
+
+REFERENCE			QUICK_CS
+LANG_ENGLISH		"Rychlé menu"
+
+REFERENCE			RADARHACK_CS
+LANG_ENGLISH		"Vypni si radarhack ty podvodníku!"
+
+REFERENCE			RANKS_CS
+LANG_ENGLISH		"^5Hodnosti"
+
+REFERENCE			READY_CS
+LANG_ENGLISH		"^3Podrz [Pouzít]^7: Pohotovostní stav"
+
+REFERENCE			RECON_CS
+LANG_ENGLISH		"Pruzkumník"
+
+REFERENCE			RECON_LVL_CS
+LANG_ENGLISH		"Pruzkumník (Level 75)"
+
+REFERENCE			REMOVE_CS
+LANG_ENGLISH		"^1Obnovit"
+
+REFERENCE			RESET_CS
+LANG_ENGLISH		"3. Obnovit predvolené"
+
+REFERENCE			RESETMODEL_CS
+LANG_ENGLISH		"^3[Granát]^7: Obnovit natocení objektu"
+
+REFERENCE			ROCKETS_CS
+LANG_ENGLISH		"Rockets"
+
+REFERENCE			ROTATE_CS
+LANG_ENGLISH		"Otocit"
+
+REFERENCE			ROTATIONFIXED_CS
+LANG_ENGLISH		"Osa otácení: ^1Zafixována"
+
+REFERENCE			ROTATIONRX_CS
+LANG_ENGLISH		"Osa otácení: ^1-X"
+
+REFERENCE			ROTATIONRY_CS
+LANG_ENGLISH		"Osa otácení: ^1-Y"
+
+REFERENCE			ROTATIONX_CS
+LANG_ENGLISH		"Osa otácení: ^1X"
+
+REFERENCE			ROTATIONY_CS
+LANG_ENGLISH		"Osa otácení: ^1Y"
+
+REFERENCE			ROTATIONZ_CS
+LANG_ENGLISH		"Osa otácení: ^1Z"
+
+REFERENCE			RUN_CS
+LANG_ENGLISH		"^3Podrz [Strelba]^7: Beh na 10 sekund rychleji"
+
+REFERENCE			SEEKER_CS
+LANG_ENGLISH		"Hledající"
+
+REFERENCE			SET_ANG_CS
+LANG_ENGLISH		"2. Úhel kamery"
+
+REFERENCE			SET_DIS_CS
+LANG_ENGLISH		"1. Vzdálenost kamery"
+
+REFERENCE			SETS_CS
+LANG_ENGLISH		"4. HNS Nastavení"
+
+REFERENCE			SETTINGS_CS
+LANG_ENGLISH		"HNS Nastavení"
+
+REFERENCE			SHEEN_CS
+LANG_ENGLISH		"Záre"
+
+REFERENCE			SNIPER_CS
+LANG_ENGLISH		"Odstrelovac"
+
+REFERENCE			SOUND_CS
+LANG_ENGLISH		"Hudba"
+
+REFERENCE			SPECOPS_CS
+LANG_ENGLISH		"Speciální jednotka"
+
+REFERENCE			SPECOPS_LVL_CS
+LANG_ENGLISH		"Speciální jednotka (Level 50)"
+
+REFERENCE			SPECTATOR_CS
+LANG_ENGLISH		"Pozorovatel"
+
+REFERENCE			STATUE_CS
+LANG_ENGLISH		"Socha lva"
+
+REFERENCE			STREAK_CS
+LANG_ENGLISH		"Série"
+
+REFERENCE			SUPPORT_CS
+LANG_ENGLISH		"Podpora"
+
+REFERENCE			SUPPORT_LVL_CS
+LANG_ENGLISH		"Podpora (Level 100)"
+
+REFERENCE			TELEPORT_CS
+LANG_ENGLISH		"^3Podrz [Pouzít]^7: Náhodný teleport"
+
+REFERENCE			THIRDPERSON_CS
+LANG_ENGLISH		"^3Podrz ^3[Granát]^7: Zmenit na pohled treti osoby"
+
+REFERENCE			TIME_CS
+LANG_ENGLISH		"Odehraný cas"
+
+REFERENCE			TIRE_CS
+LANG_ENGLISH		"Pneumatika"
+
+REFERENCE			TOOLBOX_CS
+LANG_ENGLISH		"Krabice s náradím"
+
+REFERENCE			TRASHBAG_CS
+LANG_ENGLISH		"Odpadky"
+
+REFERENCE			TV_CS
+LANG_ENGLISH		"Televize"
+
+REFERENCE			UNFIX_CS
+LANG_ENGLISH		"^3[Pouzít]^7: Odfixovat úhly objektu"
+
+REFERENCE			USEROTATE_CS
+LANG_ENGLISH		"^3[Nuz]^7: Otocit"
+
+REFERENCE			VIS_POINTS_CS
+LANG_ENGLISH		"Visibility points"
+
+REFERENCE			VOICES_CS
+LANG_ENGLISH		"5. HNS Hlasy"
+
+REFERENCE			VOICESOUNDS_CS
+LANG_ENGLISH		"HNS Hlasy"
+
+REFERENCE			VOTE_CS
+LANG_ENGLISH		"Hlasování"
+
+REFERENCE			WEAPON_CS
+LANG_ENGLISH		"Zbran"
+
+REFERENCE			ABOUT_NL
+LANG_ENGLISH		"Waar gaat deze mod over?"
+
+REFERENCE			APPLY_NL
+LANG_ENGLISH		"^2toepassen"
+
+REFERENCE			AS_HIDER_NL
+LANG_ENGLISH		"Als Verstopper"
+
+REFERENCE			AS_SEEKER_NL
+LANG_ENGLISH		"Als zoeker"
+
+REFERENCE			ASSAULT_NL
+LANG_ENGLISH		"Aanval"
+
+REFERENCE			ASSAULT_LVL_NL
+LANG_ENGLISH		"Aanval (Level 25)"
+
+REFERENCE			AXIS_NL
+LANG_ENGLISH		"^3[Schiet]^7: Rotatie-as kiezen"
+
+REFERENCE			BACK_NL
+LANG_ENGLISH		"Terug"
+
+REFERENCE			BOX_DOWN_NL
+LANG_ENGLISH		"Onderste doos"
+
+REFERENCE			BOX2_NL
+LANG_ENGLISH		"Tweede doos"
+
+REFERENCE			BUCKET_NL
+LANG_ENGLISH		"Emmer"
+
+REFERENCE			BUCKET_DOWN_NL
+LANG_ENGLISH		"Onderste emmer"
+
+REFERENCE			CAMO_NL
+LANG_ENGLISH		"Camouflage"
+
+REFERENCE			CAMO_BLUETIGER_NL
+LANG_ENGLISH		"Blauwe Tijger"
+
+REFERENCE			CAMO_BLUETIGER_LVL_NL
+LANG_ENGLISH		"Blauwe Tijger (VIP)"
+
+REFERENCE			CAMO_DESERT_NL
+LANG_ENGLISH		"Woestijn"
+
+REFERENCE			CAMO_DESERT_LVL_NL
+LANG_ENGLISH		"Woestijn (Level 25)"
+
+REFERENCE			CAMO_DIGITAL_NL
+LANG_ENGLISH		"Digitaal"
+
+REFERENCE			CAMO_DIGITAL_LVL_NL
+LANG_ENGLISH		"Digitaal (Level 75)"
+
+REFERENCE			CAMO_REDTIGER_NL
+LANG_ENGLISH		"Rode Tijger"
+
+REFERENCE			CAMO_REDTIGER_LVL_NL
+LANG_ENGLISH		"Rode Tijger (Level 100)"
+
+REFERENCE			CAMO_WOODLAND_NL
+LANG_ENGLISH		"Bossen"
+
+REFERENCE			CAMO_WOODLAND_LVL_NL
+LANG_ENGLISH		"Bossen (Level 50)"
+
+REFERENCE			CASE2_NL
+LANG_ENGLISH		"Tweede kist"
+
+REFERENCE			CHALLENGES_NL
+LANG_ENGLISH		"^5Uitdagingen"
+
+REFERENCE			CHOOSE_MODEL_NL
+LANG_ENGLISH		"^5Kies object"
+
+REFERENCE			COMPS_NL
+LANG_ENGLISH		"Computers"
+
+REFERENCE			CRATE2_NL
+LANG_ENGLISH		"Tweede Krat"
+
+REFERENCE			DEATHFX_NL
+LANG_ENGLISH		"Sterf effect"
+
+REFERENCE			DEATHFX_BEAR_NL
+LANG_ENGLISH		"Teddyberen"
+
+REFERENCE			DEATHFX_BEAR_LVL_NL
+LANG_ENGLISH		"Teddyberen (VIP)"
+
+REFERENCE			DEATHFX_DUST_NL
+LANG_ENGLISH		"Stof"
+
+REFERENCE			DEATHFX_DUST_LVL_NL
+LANG_ENGLISH		"Stof (Level 25)"
+
+REFERENCE			DEATHFX_EXP_NL
+LANG_ENGLISH		"Explosie"
+
+REFERENCE			DEATHFX_EXP_LVL_NL
+LANG_ENGLISH		"Explosie (Level 50)"
+
+REFERENCE			DEATHFX_FLOWER_NL
+LANG_ENGLISH		"Bloemen"
+
+REFERENCE			DEATHFX_FLOWER_LVL_NL
+LANG_ENGLISH		"Bloemen (Level 75)"
+
+REFERENCE			DEATHFX_MONEY_NL
+LANG_ENGLISH		"Geld"
+
+REFERENCE			DEATHFX_MONEY_LVL_NL
+LANG_ENGLISH		"Geld (Level 100)"
+
+REFERENCE			DEATHS_NL
+LANG_ENGLISH		"Deaths"
+
+REFERENCE			DEFAULT_NL
+LANG_ENGLISH		"Standaard"
+
+REFERENCE			DOG_NL
+LANG_ENGLISH		"Hond"
+
+REFERENCE			DOG_LVL_NL
+LANG_ENGLISH		"Hond (VIP)"
+
+REFERENCE			EDIT_MODEL_NL
+LANG_ENGLISH		"^5Bewerk object"
+
+REFERENCE			ESC_NL
+LANG_ENGLISH		"ESC: Verlaten"
+
+REFERENCE			FASTMODEL_NL
+LANG_ENGLISH		"^32× [Inzoomen]^7: Zoeker camouflage verwisselen"
+
+REFERENCE			FIRE_NL
+LANG_ENGLISH		"Brand"
+
+REFERENCE			FIX_NL
+LANG_ENGLISH		"^3[Gebruiken]^7: Hoek van object fixeren"
+
+REFERENCE			INFO_NL
+LANG_ENGLISH		"5. Informatie"
+
+REFERENCE			KILLS_NL
+LANG_ENGLISH		"Kills"
+
+REFERENCE			KILLSTREAK_NL
+LANG_ENGLISH		"&&1 Kill Streak!"
+
+REFERENCE			LAST_NL
+LANG_ENGLISH		"Laatste verstopper"
+
+REFERENCE			LID_NL
+LANG_ENGLISH		"Deksel"
+
+REFERENCE			LOWBOX_NL
+LANG_ENGLISH		"Lage doos"
+
+REFERENCE			M14_LVL_NL
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_NL
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MUSIC_NL
+LANG_ENGLISH		"4. Muziek"
+
+REFERENCE			NEW_LVL_NL
+LANG_ENGLISH		"Nieuw (Level 50)"
+
+REFERENCE			NEXT_PAGE_NL
+LANG_ENGLISH		"Volgende pagina"
+
+REFERENCE			OPTIONS_NL
+LANG_ENGLISH		"^5Instellingen"
+
+REFERENCE			PAINTCAN_NL
+LANG_ENGLISH		"Verfkan"
+
+REFERENCE			PAN_COPPER_NL
+LANG_ENGLISH		"Koperen pan"
+
+REFERENCE			PAN_METAL_NL
+LANG_ENGLISH		"Metalen pan"
+
+REFERENCE			PLASTICCRATE_NL
+LANG_ENGLISH		"Plastic krat"
+
+REFERENCE			PLAY_NL
+LANG_ENGLISH		"^5Speel!"
+
+REFERENCE			PLAYERMODEL_NL
+LANG_ENGLISH		"Karakter"
+
+REFERENCE			PREV_PAGE_NL
+LANG_ENGLISH		"Vorige pagina"
+
+REFERENCE			PROPANE_NL
+LANG_ENGLISH		"Propaan tank"
+
+REFERENCE			PROPANE_DOWN_NL
+LANG_ENGLISH		"Onderste propaan tank"
+
+REFERENCE			QUICK_NL
+LANG_ENGLISH		"Snelmenu"
+
+REFERENCE			RADARHACK_NL
+LANG_ENGLISH		"Zet je radarhack uit, cheater..."
+
+REFERENCE			RANKS_NL
+LANG_ENGLISH		"^5Rangen"
+
+REFERENCE			READY_NL
+LANG_ENGLISH		"^3Hold [Gebruiken]^7: Standby status"
+
+REFERENCE			RECON_NL
+LANG_ENGLISH		"Verkenner"
+
+REFERENCE			RECON_LVL_NL
+LANG_ENGLISH		"Verkenner (Level 75)"
+
+REFERENCE			REMOVE_NL
+LANG_ENGLISH		"^1terugzetten"
+
+REFERENCE			RESET_NL
+LANG_ENGLISH		"3. Standaardinstellingen herstellen"
+
+REFERENCE			RESETMODEL_NL
+LANG_ENGLISH		"^3[Granaat]^7: Reset object hoek"
+
+REFERENCE			ROCKETS_NL
+LANG_ENGLISH		"Raketten"
+
+REFERENCE			ROTATE_NL
+LANG_ENGLISH		"Roteren"
+
+REFERENCE			ROTATIONFIXED_NL
+LANG_ENGLISH		"Rotatie as: ^1Vast"
+
+REFERENCE			ROTATIONRX_NL
+LANG_ENGLISH		"Rotatie as: ^1-X"
+
+REFERENCE			ROTATIONRY_NL
+LANG_ENGLISH		"Rotatie as: ^1-Y"
+
+REFERENCE			ROTATIONX_NL
+LANG_ENGLISH		"Rotatie as: ^1X"
+
+REFERENCE			ROTATIONY_NL
+LANG_ENGLISH		"Rotatie as: ^1Y"
+
+REFERENCE			ROTATIONZ_NL
+LANG_ENGLISH		"Rotatie as: ^1Z"
+
+REFERENCE			RUN_NL
+LANG_ENGLISH		"^3Hold [Schiet]^7: sprint voor 10 seconden"
+
+REFERENCE			SEEKER_NL
+LANG_ENGLISH		"Zoeker"
+
+REFERENCE			SET_ANG_NL
+LANG_ENGLISH		"2. Camera hoek"
+
+REFERENCE			SET_DIS_NL
+LANG_ENGLISH		"1. Camera afstand"
+
+REFERENCE			SETS_NL
+LANG_ENGLISH		"4. HNS Instellingen"
+
+REFERENCE			SETTINGS_NL
+LANG_ENGLISH		"HNS Instellingen"
+
+REFERENCE			SHEEN_NL
+LANG_ENGLISH		"Gloed"
+
+REFERENCE			SNIPER_NL
+LANG_ENGLISH		"Scherpschutter"
+
+REFERENCE			SOUND_NL
+LANG_ENGLISH		"Muziek"
+
+REFERENCE			SPECOPS_NL
+LANG_ENGLISH		"Speciale eenheid"
+
+REFERENCE			SPECOPS_LVL_NL
+LANG_ENGLISH		"Speciale eenheid (Level 50)"
+
+REFERENCE			SPECTATOR_NL
+LANG_ENGLISH		"Toeschouwer"
+
+REFERENCE			STATUE_NL
+LANG_ENGLISH		"Leeuwen standbeeld"
+
+REFERENCE			STREAK_NL
+LANG_ENGLISH		"Streak"
+
+REFERENCE			SUPPORT_NL
+LANG_ENGLISH		"Ondersteuning"
+
+REFERENCE			SUPPORT_LVL_NL
+LANG_ENGLISH		"Ondersteuning (Level 100)"
+
+REFERENCE			TELEPORT_NL
+LANG_ENGLISH		"^3Houd Ingedrukt [Use]^7: Willekeurige teleportatie"
+
+REFERENCE			THIRDPERSON_NL
+LANG_ENGLISH		"^3Hold ^3[Granaat]^7: Wissel 3de persoons kijkpunt"
+
+REFERENCE			TIME_NL
+LANG_ENGLISH		"Aantal tijd gespeeld"
+
+REFERENCE			TIRE_NL
+LANG_ENGLISH		"Band"
+
+REFERENCE			TOOLBOX_NL
+LANG_ENGLISH		"Gereedschapskoffer"
+
+REFERENCE			TRASHBAG_NL
+LANG_ENGLISH		"Vuilniszak"
+
+REFERENCE			TV_NL
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX_NL
+LANG_ENGLISH		"^3[Gebruiken]^7: Hoek van object vrijstellen"
+
+REFERENCE			USEROTATE_NL
+LANG_ENGLISH		"^3[Mes]^7: Roteer"
+
+REFERENCE			VIS_POINTS_NL
+LANG_ENGLISH		"Zichtbaarheid punten"
+
+REFERENCE			VOICES_NL
+LANG_ENGLISH		"5. HNS Stemmen"
+
+REFERENCE			VOICESOUNDS_NL
+LANG_ENGLISH		"HNS Stemmen"
+
+REFERENCE			VOTE_NL
+LANG_ENGLISH		"Stem"
+
+REFERENCE			WEAPON_NL
+LANG_ENGLISH		"Wapen"
+
+REFERENCE			ABOUT
+LANG_ENGLISH		"What is this mod about?"
+
+REFERENCE			APPLY
+LANG_ENGLISH		"^2Apply"
+
+REFERENCE			AS_HIDER
+LANG_ENGLISH		"As hider"
+
+REFERENCE			AS_SEEKER
+LANG_ENGLISH		"As seeker"
+
+REFERENCE			ASSAULT
+LANG_ENGLISH		"Assault"
+
+REFERENCE			ASSAULT_LVL
+LANG_ENGLISH		"Assault (Level 25)"
+
+REFERENCE			AXIS
+LANG_ENGLISH		"^3[Shoot]^7: Set rotation axis"
+
+REFERENCE			BACK
+LANG_ENGLISH		"Back"
+
+REFERENCE			BIG
+LANG_ENGLISH		"Big"
+
+REFERENCE			BOX_DOWN
+LANG_ENGLISH		"Box down"
+
+REFERENCE			BOX2
+LANG_ENGLISH		"Second box"
+
+REFERENCE			BUCKET
+LANG_ENGLISH		"Bucket"
+
+REFERENCE			BUCKET_DOWN
+LANG_ENGLISH		"Bucket down"
+
+REFERENCE			CAMO
+LANG_ENGLISH		"Camo"
+
+REFERENCE			CAMO_BLUETIGER
+LANG_ENGLISH		"Blue Tiger"
+
+REFERENCE			CAMO_BLUETIGER_LVL
+LANG_ENGLISH		"Blue Tiger (VIP)"
+
+REFERENCE			CAMO_DESERT
+LANG_ENGLISH		"Desert"
+
+REFERENCE			CAMO_DESERT_LVL
+LANG_ENGLISH		"Desert (Level 25)"
+
+REFERENCE			CAMO_DIGITAL
+LANG_ENGLISH		"Digital"
+
+REFERENCE			CAMO_DIGITAL_LVL
+LANG_ENGLISH		"Digital (Level 75)"
+
+REFERENCE			CAMO_REDTIGER
+LANG_ENGLISH		"Red Tiger"
+
+REFERENCE			CAMO_REDTIGER_LVL
+LANG_ENGLISH		"Red Tiger (Level 100)"
+
+REFERENCE			CAMO_WOODLAND
+LANG_ENGLISH		"Woodland"
+
+REFERENCE			CAMO_WOODLAND_LVL
+LANG_ENGLISH		"Woodland (Level 50)"
+
+REFERENCE			CASE2
+LANG_ENGLISH		"Second case"
+
+REFERENCE			CHALLENGES
+LANG_ENGLISH		"^5Challenges"
+
+REFERENCE			CHOOSE_MODEL
+LANG_ENGLISH		"^5Choose object"
+
+REFERENCE			COMPS
+LANG_ENGLISH		"Computers"
+
+REFERENCE			CRATE2
+LANG_ENGLISH		"Second crate"
+
+REFERENCE			DEATHFX
+LANG_ENGLISH		"Death effect"
+
+REFERENCE			DEATHFX_BEAR
+LANG_ENGLISH		"Teddy Bears"
+
+REFERENCE			DEATHFX_BEAR_LVL
+LANG_ENGLISH		"Teddy Bears (VIP)"
+
+REFERENCE			DEATHFX_DUST
+LANG_ENGLISH		"Dust"
+
+REFERENCE			DEATHFX_DUST_LVL
+LANG_ENGLISH		"Dust (Level 25)"
+
+REFERENCE			DEATHFX_EXP
+LANG_ENGLISH		"Explosion"
+
+REFERENCE			DEATHFX_EXP_LVL
+LANG_ENGLISH		"Explosion (Level 50)"
+
+REFERENCE			DEATHFX_FLOWER
+LANG_ENGLISH		"Flowers"
+
+REFERENCE			DEATHFX_FLOWER_LVL
+LANG_ENGLISH		"Flowers (Level 75)"
+
+REFERENCE			DEATHFX_MONEY
+LANG_ENGLISH		"Money"
+
+REFERENCE			DEATHFX_MONEY_LVL
+LANG_ENGLISH		"Money (Level 100)"
+
+REFERENCE			DEATHS
+LANG_ENGLISH		"Deaths"
+
+REFERENCE			DEFAULT
+LANG_ENGLISH		"Default"
+
+REFERENCE			DOG
+LANG_ENGLISH		"Dog"
+
+REFERENCE			DOG_LVL
+LANG_ENGLISH		"Dog (VIP)"
+
+REFERENCE			EDIT_MODEL
+LANG_ENGLISH		"^5Edit object"
+
+REFERENCE			ESC
+LANG_ENGLISH		"ESC: Exit"
+
+REFERENCE			FASTMODEL
+LANG_ENGLISH		"^32× [Toggle aim]^7: Toggle seeker camouflage"
+
+REFERENCE			FIRE
+LANG_ENGLISH		"Fire"
+
+REFERENCE			FIX
+LANG_ENGLISH		"^3[Use]^7: Fix the angles of the object"
+
+REFERENCE			INFO
+LANG_ENGLISH		"5. Information"
+
+REFERENCE			KILLS
+LANG_ENGLISH		"Kills"
+
+REFERENCE			KILLSTREAK
+LANG_ENGLISH		"&&1 Kill Streak!"
+
+REFERENCE			LAST
+LANG_ENGLISH		"Last hider"
+
+REFERENCE			LID
+LANG_ENGLISH		"Lid"
+
+REFERENCE			LIGHT
+LANG_ENGLISH		"^5Light"
+
+REFERENCE			LOWBOX
+LANG_ENGLISH		"Low box"
+
+REFERENCE			M14_LVL
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MOTHS
+LANG_ENGLISH		"7. Moth effect"
+
+REFERENCE			MUSIC
+LANG_ENGLISH		"4. Music"
+
+REFERENCE			NEW_LVL
+LANG_ENGLISH		"New (Level 50)"
+
+REFERENCE			NEXT_PAGE
+LANG_ENGLISH		"Next page"
+
+REFERENCE			NONE
+LANG_ENGLISH		"None"
+
+REFERENCE			OPTIONS
+LANG_ENGLISH		"^5Settings"
+
+REFERENCE			PAINTCAN
+LANG_ENGLISH		"Paintcan"
+
+REFERENCE			PAN_COPPER
+LANG_ENGLISH		"Copper pan"
+
+REFERENCE			PAN_METAL
+LANG_ENGLISH		"Metal pan"
+
+REFERENCE			PLASTICCRATE
+LANG_ENGLISH		"Plastic crate"
+
+REFERENCE			PLAY
+LANG_ENGLISH		"^5Play!"
+
+REFERENCE			PLAYERMODEL
+LANG_ENGLISH		"Character"
+
+REFERENCE			PREV_PAGE
+LANG_ENGLISH		"Previous page"
+
+REFERENCE			PROPANE
+LANG_ENGLISH		"Propane tank"
+
+REFERENCE			PROPANE_DOWN
+LANG_ENGLISH		"Propane tank down"
+
+REFERENCE			QUICK
+LANG_ENGLISH		"Quick Menu"
+
+REFERENCE			RADARHACK
+LANG_ENGLISH		"Turn off your radarhack, cheater..."
+
+REFERENCE			RANKS
+LANG_ENGLISH		"^5Ranks"
+
+REFERENCE			READY
+LANG_ENGLISH		"^3Hold [Use]^7: Standby status"
+
+REFERENCE			RECON
+LANG_ENGLISH		"Recon"
+
+REFERENCE			RECON_LVL
+LANG_ENGLISH		"Recon (Level 75)"
+
+REFERENCE			REMOVE
+LANG_ENGLISH		"^1Restore"
+
+REFERENCE			RESET
+LANG_ENGLISH		"3. Reset to defaults"
+
+REFERENCE			RESETMODEL
+LANG_ENGLISH		"^3[Frag]^7: Reset object angles"
+
+REFERENCE			ROCKETS
+LANG_ENGLISH		"Rockets"
+
+REFERENCE			ROTATE
+LANG_ENGLISH		"Rotate"
+
+REFERENCE			ROTATIONFIXED
+LANG_ENGLISH		"Rotation axis: ^1Fixed"
+
+REFERENCE			ROTATIONRX
+LANG_ENGLISH		"Rotation axis: ^1-X"
+
+REFERENCE			ROTATIONRY
+LANG_ENGLISH		"Rotation axis: ^1-Y"
+
+REFERENCE			ROTATIONX
+LANG_ENGLISH		"Rotation axis: ^1X"
+
+REFERENCE			ROTATIONY
+LANG_ENGLISH		"Rotation axis: ^1Y"
+
+REFERENCE			ROTATIONZ
+LANG_ENGLISH		"Rotation axis: ^1Z"
+
+REFERENCE			RUN
+LANG_ENGLISH		"^3Hold [Shoot]^7: Run for 10 seconds"
+
+REFERENCE			SECONDARY
+LANG_ENGLISH		"Secondary weapon"
+
+REFERENCE			SEEKER
+LANG_ENGLISH		"Seeker"
+
+REFERENCE			SET_ANG
+LANG_ENGLISH		"2. Camera angle"
+
+REFERENCE			SET_DIS
+LANG_ENGLISH		"1. Camera distance"
+
+REFERENCE			SETS
+LANG_ENGLISH		"4. HNS Settings"
+
+REFERENCE			SETTINGS
+LANG_ENGLISH		"HNS Settings"
+
+REFERENCE			SHEEN
+LANG_ENGLISH		"Glow"
+
+REFERENCE			SMALL
+LANG_ENGLISH		"Small"
+
+REFERENCE			SNIPER
+LANG_ENGLISH		"Sniper"
+
+REFERENCE			SOUND
+LANG_ENGLISH		"Music"
+
+REFERENCE			SPECOPS
+LANG_ENGLISH		"SpecOps"
+
+REFERENCE			SPECOPS_LVL
+LANG_ENGLISH		"SpecOps (Level 50)"
+
+REFERENCE			SPECTATOR
+LANG_ENGLISH		"Spectator"
+
+REFERENCE			STATUE
+LANG_ENGLISH		"Lion statue"
+
+REFERENCE			STREAK
+LANG_ENGLISH		"Streak"
+
+REFERENCE			SUPPORT
+LANG_ENGLISH		"Support"
+
+REFERENCE			SUPPORT_LVL
+LANG_ENGLISH		"Support (Level 100)"
+
+REFERENCE			TELEPORT
+LANG_ENGLISH		"^3Hold [Use]^7: Random teleport"
+
+REFERENCE			THIRDPERSON
+LANG_ENGLISH		"^3Hold ^3[Frag]^7: Change third person view"
+
+REFERENCE			TIME
+LANG_ENGLISH		"Time played"
+
+REFERENCE			TIRE
+LANG_ENGLISH		"Tire"
+
+REFERENCE			TOOLBOX
+LANG_ENGLISH		"Toolbox"
+
+REFERENCE			TRASHBAG
+LANG_ENGLISH		"Trashbag"
+
+REFERENCE			TV
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX
+LANG_ENGLISH		"^3[Use]^7: Unfix the angles of the object"
+
+REFERENCE			USEROTATE
+LANG_ENGLISH		"^3[Melee]^7: Rotate"
+
+REFERENCE			VIS_POINTS
+LANG_ENGLISH		"Visibility points"
+
+REFERENCE			VOICES
+LANG_ENGLISH		"5. HNS Voices"
+
+REFERENCE			VOICESOUNDS
+LANG_ENGLISH		"HNS Voices"
+
+REFERENCE			VOTE
+LANG_ENGLISH		"Vote"
+
+REFERENCE			WEAPON
+LANG_ENGLISH		"Weapon"
+
+REFERENCE			WHITE
+LANG_ENGLISH		"White"
+
+REFERENCE			YELLOW
+LANG_ENGLISH		"Yellow"
+
+REFERENCE			ABOUT_FR
+LANG_ENGLISH		"Quel est le but de ce mod?"
+
+REFERENCE			APPLY_FR
+LANG_ENGLISH		"^2Appliquer"
+
+REFERENCE			AS_HIDER_FR
+LANG_ENGLISH		"En tant que hider"
+
+REFERENCE			AS_SEEKER_FR
+LANG_ENGLISH		"En tant que chercheur"
+
+REFERENCE			ASSAULT_FR
+LANG_ENGLISH		"Assaut"
+
+REFERENCE			ASSAULT_LVL_FR
+LANG_ENGLISH		"Assaut (Niveau 25)"
+
+REFERENCE			AXIS_FR
+LANG_ENGLISH		"^3[Tourner]^7: Régler axe de rotation"
+
+REFERENCE			BACK_FR
+LANG_ENGLISH		"Retour"
+
+REFERENCE			BOX_DOWN_FR
+LANG_ENGLISH		"Boîte"
+
+REFERENCE			BOX2_FR
+LANG_ENGLISH		"Deuxieme boîte"
+
+REFERENCE			BUCKET_FR
+LANG_ENGLISH		"Seau"
+
+REFERENCE			BUCKET_DOWN_FR
+LANG_ENGLISH		"Seau"
+
+REFERENCE			CAMO_FR
+LANG_ENGLISH		"Camo"
+
+REFERENCE			CAMO_BLUETIGER_FR
+LANG_ENGLISH		"Tigre bleu"
+
+REFERENCE			CAMO_BLUETIGER_LVL_FR
+LANG_ENGLISH		"Tigre bleu (VIP)"
+
+REFERENCE			CAMO_DESERT_FR
+LANG_ENGLISH		"Désert"
+
+REFERENCE			CAMO_DESERT_LVL_FR
+LANG_ENGLISH		"Désert (Niveau 25)"
+
+REFERENCE			CAMO_DIGITAL_FR
+LANG_ENGLISH		"Digital"
+
+REFERENCE			CAMO_DIGITAL_LVL_FR
+LANG_ENGLISH		"Digital (Niveau 75)"
+
+REFERENCE			CAMO_REDTIGER_FR
+LANG_ENGLISH		"Tigre rouge"
+
+REFERENCE			CAMO_REDTIGER_LVL_FR
+LANG_ENGLISH		"Tigre rouge (Niveau 100)"
+
+REFERENCE			CAMO_WOODLAND_FR
+LANG_ENGLISH		"Bois"
+
+REFERENCE			CAMO_WOODLAND_LVL_FR
+LANG_ENGLISH		"Bois (Niveau 50)"
+
+REFERENCE			CASE2_FR
+LANG_ENGLISH		"Deuxieme caisse"
+
+REFERENCE			CHALLENGES_FR
+LANG_ENGLISH		"^5Défis"
+
+REFERENCE			CHOOSE_MODEL_FR
+LANG_ENGLISH		"^5Choisir objet"
+
+REFERENCE			COMPS_FR
+LANG_ENGLISH		"Ordinateurs"
+
+REFERENCE			CRATE2_FR
+LANG_ENGLISH		"Deuxieme caisse en bois"
+
+REFERENCE			DEATHFX_FR
+LANG_ENGLISH		"Effet de la mort"
+
+REFERENCE			DEATHFX_BEAR_FR
+LANG_ENGLISH		"Ours en peluche"
+
+REFERENCE			DEATHFX_BEAR_LVL_FR
+LANG_ENGLISH		"Ours en peluche (VIP)"
+
+REFERENCE			DEATHFX_DUST_FR
+LANG_ENGLISH		"Poussiere"
+
+REFERENCE			DEATHFX_DUST_LVL_FR
+LANG_ENGLISH		"Poussiere (Niveau 25)"
+
+REFERENCE			DEATHFX_EXP_FR
+LANG_ENGLISH		"Explosion"
+
+REFERENCE			DEATHFX_EXP_LVL_FR
+LANG_ENGLISH		"Explosion (Niveau 50)"
+
+REFERENCE			DEATHFX_FLOWER_FR
+LANG_ENGLISH		"Fleurs"
+
+REFERENCE			DEATHFX_FLOWER_LVL_FR
+LANG_ENGLISH		"Fleurs (Niveau 75)"
+
+REFERENCE			DEATHFX_MONEY_FR
+LANG_ENGLISH		"Argent"
+
+REFERENCE			DEATHFX_MONEY_LVL_FR
+LANG_ENGLISH		"Argent (Niveau 100)"
+
+REFERENCE			DEATHS_FR
+LANG_ENGLISH		"Morts"
+
+REFERENCE			DEFAULT_FR
+LANG_ENGLISH		"Défaut"
+
+REFERENCE			DOG_FR
+LANG_ENGLISH		"Chien"
+
+REFERENCE			DOG_LVL_FR
+LANG_ENGLISH		"Chien (VIP)"
+
+REFERENCE			EDIT_MODEL_FR
+LANG_ENGLISH		"^5Modifier objet"
+
+REFERENCE			ESC_FR
+LANG_ENGLISH		"ESC: Quitter"
+
+REFERENCE			FASTMODEL_FR
+LANG_ENGLISH		"^32× [Basculer but]^7: Basculer entre le camouflage de chercheur et l'objet"
+
+REFERENCE			FIRE_FR
+LANG_ENGLISH		"Flamboyant"
+
+REFERENCE			FIX_FR
+LANG_ENGLISH		"^3[Utiliser]^7: Fixer les angles de l'objet"
+
+REFERENCE			INFO_FR
+LANG_ENGLISH		"5. Informations"
+
+REFERENCE			KILLS_FR
+LANG_ENGLISH		"Tués"
+
+REFERENCE			KILLSTREAK_FR
+LANG_ENGLISH		"&&1 Tués a la suite!"
+
+REFERENCE			LAST_FR
+LANG_ENGLISH		"Dernier hider"
+
+REFERENCE			LID_FR
+LANG_ENGLISH		"Couvercle"
+
+REFERENCE			LOWBOX_FR
+LANG_ENGLISH		"Boîte"
+
+REFERENCE			M14_LVL_FR
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_FR
+LANG_ENGLISH		"M40A3 (Niveau 50)"
+
+REFERENCE			MUSIC_FR
+LANG_ENGLISH		"4. Musique"
+
+REFERENCE			NEW_LVL_FR
+LANG_ENGLISH		"Nouveau (Niveau 50)"
+
+REFERENCE			NEXT_PAGE_FR
+LANG_ENGLISH		"page suivante"
+
+REFERENCE			OPTIONS_FR
+LANG_ENGLISH		"^5Réglages"
+
+REFERENCE			PAINTCAN_FR
+LANG_ENGLISH		"Pot de peinture"
+
+REFERENCE			PAN_COPPER_FR
+LANG_ENGLISH		"Casserole en cuivre"
+
+REFERENCE			PAN_METAL_FR
+LANG_ENGLISH		"Casserole en métal"
+
+REFERENCE			PLASTICCRATE_FR
+LANG_ENGLISH		"Caisse en plastique"
+
+REFERENCE			PLAY_FR
+LANG_ENGLISH		"^5Jouer!"
+
+REFERENCE			PLAYERMODEL_FR
+LANG_ENGLISH		"Personnage"
+
+REFERENCE			PREV_PAGE_FR
+LANG_ENGLISH		"page précédente"
+
+REFERENCE			PROPANE_FR
+LANG_ENGLISH		"Réservoir de propane"
+
+REFERENCE			PROPANE_DOWN_FR
+LANG_ENGLISH		"Réservoir de propane"
+
+REFERENCE			QUICK_FR
+LANG_ENGLISH		"Menu rapide"
+
+REFERENCE			RADARHACK_FR
+LANG_ENGLISH		"Enlevez votre hack, tricheur..."
+
+REFERENCE			RANKS_FR
+LANG_ENGLISH		"^5Rangs"
+
+REFERENCE			READY_FR
+LANG_ENGLISH		"^3Tenir [Utiliser]^7: État de veille"
+
+REFERENCE			RECON_FR
+LANG_ENGLISH		"Recon"
+
+REFERENCE			RECON_LVL_FR
+LANG_ENGLISH		"Recon (Niveau 75)"
+
+REFERENCE			REMOVE_FR
+LANG_ENGLISH		"^1Rétablir"
+
+REFERENCE			RESET_FR
+LANG_ENGLISH		"3. Réinitialiser les valeurs par défaut"
+
+REFERENCE			RESETMODEL_FR
+LANG_ENGLISH		"^3[Frag]^7: Réinitialiser les angles d'objets"
+
+REFERENCE			ROCKETS_FR
+LANG_ENGLISH		"missiles"
+
+REFERENCE			ROTATE_FR
+LANG_ENGLISH		"Tourner"
+
+REFERENCE			ROTATIONFIXED_FR
+LANG_ENGLISH		"Axe de rotation: ^1Fixé"
+
+REFERENCE			ROTATIONRX_FR
+LANG_ENGLISH		"Axe de rotation: ^1-X"
+
+REFERENCE			ROTATIONRY_FR
+LANG_ENGLISH		"Axe de rotation: ^1-Y"
+
+REFERENCE			ROTATIONX_FR
+LANG_ENGLISH		"Axe de rotation: ^1X"
+
+REFERENCE			ROTATIONY_FR
+LANG_ENGLISH		"Axe de rotation: ^1Y"
+
+REFERENCE			ROTATIONZ_FR
+LANG_ENGLISH		"Axe de rotation: ^1Z"
+
+REFERENCE			RUN_FR
+LANG_ENGLISH		"^3Tenir [Tourner]^7: Exécuter pendant 10 secondes"
+
+REFERENCE			SEEKER_FR
+LANG_ENGLISH		"Chercheur"
+
+REFERENCE			SET_ANG_FR
+LANG_ENGLISH		"2. Angle de la caméra"
+
+REFERENCE			SET_DIS_FR
+LANG_ENGLISH		"1. Distance de la caméra"
+
+REFERENCE			SETS_FR
+LANG_ENGLISH		"4. Réglages HNS"
+
+REFERENCE			SETTINGS_FR
+LANG_ENGLISH		"Réglages HNS"
+
+REFERENCE			SHEEN_FR
+LANG_ENGLISH		"Brillance"
+
+REFERENCE			SNIPER_FR
+LANG_ENGLISH		"Sniper"
+
+REFERENCE			SOUND_FR
+LANG_ENGLISH		"Musique"
+
+REFERENCE			SPECOPS_FR
+LANG_ENGLISH		"SpecOps"
+
+REFERENCE			SPECOPS_LVL_FR
+LANG_ENGLISH		"SpecOps (Niveau 50)"
+
+REFERENCE			SPECTATOR_FR
+LANG_ENGLISH		"Spectateur"
+
+REFERENCE			STATUE_FR
+LANG_ENGLISH		"Statue de lion"
+
+REFERENCE			STREAK_FR
+LANG_ENGLISH		"Série"
+
+REFERENCE			SUPPORT_FR
+LANG_ENGLISH		"Soutient"
+
+REFERENCE			SUPPORT_LVL_FR
+LANG_ENGLISH		"Soutient (Niveau 100)"
+
+REFERENCE			TELEPORT_FR
+LANG_ENGLISH		"^3Maintenir [Utiliser]^7:Téléportation aléatoire"
+
+REFERENCE			THIRDPERSON_FR
+LANG_ENGLISH		"^3Maintenir ^3[Frag]^7: Changer vue a la troisieme personne"
+
+REFERENCE			TIME_FR
+LANG_ENGLISH		"Temps joué"
+
+REFERENCE			TIRE_FR
+LANG_ENGLISH		"Pneu"
+
+REFERENCE			TOOLBOX_FR
+LANG_ENGLISH		"Boîte a outils"
+
+REFERENCE			TRASHBAG_FR
+LANG_ENGLISH		"Sac poubelle"
+
+REFERENCE			TV_FR
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX_FR
+LANG_ENGLISH		"^3[Utiliser]^7: Unfix les angles de l'objet"
+
+REFERENCE			USEROTATE_FR
+LANG_ENGLISH		"^3[Melée]^7: Tourner"
+
+REFERENCE			VIS_POINTS_FR
+LANG_ENGLISH		"points de visibilité"
+
+REFERENCE			VOICES_FR
+LANG_ENGLISH		"5. HNS Voix"
+
+REFERENCE			VOICESOUNDS_FR
+LANG_ENGLISH		"HNS Voix"
+
+REFERENCE			VOTE_FR
+LANG_ENGLISH		"Voter"
+
+REFERENCE			WEAPON_FR
+LANG_ENGLISH		"Arme"
+
+REFERENCE			ABOUT_DE
+LANG_ENGLISH		"Was ist Hide and Seek?"
+
+REFERENCE			APPLY_DE
+LANG_ENGLISH		"^2Anwenden"
+
+REFERENCE			AS_HIDER_DE
+LANG_ENGLISH		"Als Verstecker"
+
+REFERENCE			AS_SEEKER_DE
+LANG_ENGLISH		"Als Sucher"
+
+REFERENCE			ASSAULT_DE
+LANG_ENGLISH		"Sturm"
+
+REFERENCE			ASSAULT_LVL_DE
+LANG_ENGLISH		"Sturm (Level 25)"
+
+REFERENCE			AXIS_DE
+LANG_ENGLISH		"^3[Schiessen]^7: Setze Rotationsachse"
+
+REFERENCE			BACK_DE
+LANG_ENGLISH		"Zurück"
+
+REFERENCE			BOX_DOWN_DE
+LANG_ENGLISH		"Kiste unten"
+
+REFERENCE			BOX2_DE
+LANG_ENGLISH		"zweite Box"
+
+REFERENCE			BUCKET_DE
+LANG_ENGLISH		"Eimer"
+
+REFERENCE			BUCKET_DOWN_DE
+LANG_ENGLISH		"Eimer unten"
+
+REFERENCE			CAMO_DE
+LANG_ENGLISH		"Tarnanzug"
+
+REFERENCE			CAMO_BLUETIGER_DE
+LANG_ENGLISH		"blauer Tiger"
+
+REFERENCE			CAMO_BLUETIGER_LVL_DE
+LANG_ENGLISH		"blauer Tiger (VIP)"
+
+REFERENCE			CAMO_DESERT_DE
+LANG_ENGLISH		"Wüste"
+
+REFERENCE			CAMO_DESERT_LVL_DE
+LANG_ENGLISH		"Wüste (Level 25)"
+
+REFERENCE			CAMO_DIGITAL_DE
+LANG_ENGLISH		"Digital"
+
+REFERENCE			CAMO_DIGITAL_LVL_DE
+LANG_ENGLISH		"Digital (Level 75)"
+
+REFERENCE			CAMO_REDTIGER_DE
+LANG_ENGLISH		"roter Tiger"
+
+REFERENCE			CAMO_REDTIGER_LVL_DE
+LANG_ENGLISH		"roter Tiger (Level 100)"
+
+REFERENCE			CAMO_WOODLAND_DE
+LANG_ENGLISH		"Wald"
+
+REFERENCE			CAMO_WOODLAND_LVL_DE
+LANG_ENGLISH		"Wald (Level 50)"
+
+REFERENCE			CASE2_DE
+LANG_ENGLISH		"zweite Box"
+
+REFERENCE			CHALLENGES_DE
+LANG_ENGLISH		"^5Herausforderungen"
+
+REFERENCE			CHOOSE_MODEL_DE
+LANG_ENGLISH		"^5Wähle Objekt"
+
+REFERENCE			COMPS_DE
+LANG_ENGLISH		"Computer"
+
+REFERENCE			CRATE2_DE
+LANG_ENGLISH		"zweite Kiste"
+
+REFERENCE			DEATHFX_DE
+LANG_ENGLISH		"Todeseffekt"
+
+REFERENCE			DEATHFX_BEAR_DE
+LANG_ENGLISH		"Teddybären"
+
+REFERENCE			DEATHFX_BEAR_LVL_DE
+LANG_ENGLISH		"Teddybären (VIP)"
+
+REFERENCE			DEATHFX_DUST_DE
+LANG_ENGLISH		"Staub"
+
+REFERENCE			DEATHFX_DUST_LVL_DE
+LANG_ENGLISH		"Staub (Level 25)"
+
+REFERENCE			DEATHFX_EXP_DE
+LANG_ENGLISH		"Explosion"
+
+REFERENCE			DEATHFX_EXP_LVL_DE
+LANG_ENGLISH		"Explosion (Level 50)"
+
+REFERENCE			DEATHFX_FLOWER_DE
+LANG_ENGLISH		"Blumen"
+
+REFERENCE			DEATHFX_FLOWER_LVL_DE
+LANG_ENGLISH		"Blumen (Level 75)"
+
+REFERENCE			DEATHFX_MONEY_DE
+LANG_ENGLISH		"Geld"
+
+REFERENCE			DEATHFX_MONEY_LVL_DE
+LANG_ENGLISH		"Geld (Level 100)"
+
+REFERENCE			DEATHS_DE
+LANG_ENGLISH		"Tode"
+
+REFERENCE			DEFAULT_DE
+LANG_ENGLISH		"Standard"
+
+REFERENCE			DOG_DE
+LANG_ENGLISH		"Hund"
+
+REFERENCE			DOG_LVL_DE
+LANG_ENGLISH		"Hund (VIP)"
+
+REFERENCE			EDIT_MODEL_DE
+LANG_ENGLISH		"^5Bearbeite Objekt"
+
+REFERENCE			ESC_DE
+LANG_ENGLISH		"ESC: Verlassen"
+
+REFERENCE			FASTMODEL_DE
+LANG_ENGLISH		"^32× [Zielen]^7: Suchertarnung umschalten"
+
+REFERENCE			FIRE_DE
+LANG_ENGLISH		"Feuer"
+
+REFERENCE			FIX_DE
+LANG_ENGLISH		"^3[Benutzen]^7: Objektwinkel fixieren"
+
+REFERENCE			INFO_DE
+LANG_ENGLISH		"5. Informationen"
+
+REFERENCE			KILLS_DE
+LANG_ENGLISH		"Kills"
+
+REFERENCE			KILLSTREAK_DE
+LANG_ENGLISH		"&&1 Abschussserie!"
+
+REFERENCE			LAST_DE
+LANG_ENGLISH		"Letzter Verstecker"
+
+REFERENCE			LID_DE
+LANG_ENGLISH		"Deckel"
+
+REFERENCE			LOWBOX_DE
+LANG_ENGLISH		"niedrige Box"
+
+REFERENCE			M14_LVL_DE
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_DE
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MUSIC_DE
+LANG_ENGLISH		"4. Musik"
+
+REFERENCE			NEW_LVL_DE
+LANG_ENGLISH		"Neu (Level 50)"
+
+REFERENCE			NEXT_PAGE_DE
+LANG_ENGLISH		"Nächste Seite"
+
+REFERENCE			OPTIONS_DE
+LANG_ENGLISH		"^5Einstellungen"
+
+REFERENCE			PAINTCAN_DE
+LANG_ENGLISH		"Farbdose"
+
+REFERENCE			PAN_COPPER_DE
+LANG_ENGLISH		"Kupferpfanne"
+
+REFERENCE			PAN_METAL_DE
+LANG_ENGLISH		"Metallpfanne"
+
+REFERENCE			PLASTICCRATE_DE
+LANG_ENGLISH		"Plastikkiste"
+
+REFERENCE			PLAY_DE
+LANG_ENGLISH		"^5Spielen!"
+
+REFERENCE			PLAYERMODEL_DE
+LANG_ENGLISH		"Charakter"
+
+REFERENCE			PREV_PAGE_DE
+LANG_ENGLISH		"Vorherige Seite"
+
+REFERENCE			PROPANE_DE
+LANG_ENGLISH		"Propantank"
+
+REFERENCE			PROPANE_DOWN_DE
+LANG_ENGLISH		"Propantank unten"
+
+REFERENCE			QUICK_DE
+LANG_ENGLISH		"Schnelles Menu"
+
+REFERENCE			RADARHACK_DE
+LANG_ENGLISH		"Schalte deinen Radarhack aus, cheater..."
+
+REFERENCE			RANKS_DE
+LANG_ENGLISH		"^5Ränge"
+
+REFERENCE			READY_DE
+LANG_ENGLISH		"^3Halte [Benutzen]^7: Standby status"
+
+REFERENCE			RECON_DE
+LANG_ENGLISH		"Aufklärer"
+
+REFERENCE			RECON_LVL_DE
+LANG_ENGLISH		"Aufklärer (Level 75)"
+
+REFERENCE			REMOVE_DE
+LANG_ENGLISH		"^1Wiederherstellen"
+
+REFERENCE			RESET_DE
+LANG_ENGLISH		"3. Auf Standard zurücksetzen"
+
+REFERENCE			RESETMODEL_DE
+LANG_ENGLISH		"^3[Granate]^7: Objektwinkel zurücksetzen"
+
+REFERENCE			ROCKETS_DE
+LANG_ENGLISH		"Raketen"
+
+REFERENCE			ROTATE_DE
+LANG_ENGLISH		"Drehen"
+
+REFERENCE			ROTATIONFIXED_DE
+LANG_ENGLISH		"Rotationsachse: ^1Fixiert"
+
+REFERENCE			ROTATIONRX_DE
+LANG_ENGLISH		"Rotationsachse: ^1-X"
+
+REFERENCE			ROTATIONRY_DE
+LANG_ENGLISH		"Rotationsachse: ^1-Y"
+
+REFERENCE			ROTATIONX_DE
+LANG_ENGLISH		"Rotationsachse: ^1X"
+
+REFERENCE			ROTATIONY_DE
+LANG_ENGLISH		"Rotationsachse: ^1Y"
+
+REFERENCE			ROTATIONZ_DE
+LANG_ENGLISH		"Rotationsachse: ^1Z"
+
+REFERENCE			RUN_DE
+LANG_ENGLISH		"^3Halte [Schiessen]^7: Rennen für 10 Sekunden"
+
+REFERENCE			SEEKER_DE
+LANG_ENGLISH		"Sucher"
+
+REFERENCE			SET_ANG_DE
+LANG_ENGLISH		"2. Kamerawinkel"
+
+REFERENCE			SET_DIS_DE
+LANG_ENGLISH		"1. Kameraentfernung"
+
+REFERENCE			SETS_DE
+LANG_ENGLISH		"4. HNS Einstellungen"
+
+REFERENCE			SETTINGS_DE
+LANG_ENGLISH		"HNS Einstellungen"
+
+REFERENCE			SHEEN_DE
+LANG_ENGLISH		"Beleuchtung"
+
+REFERENCE			SNIPER_DE
+LANG_ENGLISH		"Sniper"
+
+REFERENCE			SOUND_DE
+LANG_ENGLISH		"Musik"
+
+REFERENCE			SPECOPS_DE
+LANG_ENGLISH		"Spezialeinheit"
+
+REFERENCE			SPECOPS_LVL_DE
+LANG_ENGLISH		"Spezialeinheit (Level 50)"
+
+REFERENCE			SPECTATOR_DE
+LANG_ENGLISH		"Zuschauer"
+
+REFERENCE			STATUE_DE
+LANG_ENGLISH		"Statue"
+
+REFERENCE			STREAK_DE
+LANG_ENGLISH		"Abschuss"
+
+REFERENCE			SUPPORT_DE
+LANG_ENGLISH		"Unterstützung"
+
+REFERENCE			SUPPORT_LVL_DE
+LANG_ENGLISH		"Unterstützung (Level 100)"
+
+REFERENCE			TELEPORT_DE
+LANG_ENGLISH		"^3Halte [Benutzen]^7: Zufälliger Teleport"
+
+REFERENCE			THIRDPERSON_DE
+LANG_ENGLISH		"^3Halte ^3[Granate]^7: Ändere dritte Person Ansicht"
+
+REFERENCE			TIME_DE
+LANG_ENGLISH		"Gespielte Zeit"
+
+REFERENCE			TIRE_DE
+LANG_ENGLISH		"Reifen"
+
+REFERENCE			TOOLBOX_DE
+LANG_ENGLISH		"Werkzeugkasten"
+
+REFERENCE			TRASHBAG_DE
+LANG_ENGLISH		"Müllsack"
+
+REFERENCE			TV_DE
+LANG_ENGLISH		"Fernseher"
+
+REFERENCE			UNFIX_DE
+LANG_ENGLISH		"^3[Benutzen]^7: Objektwinkel lösen"
+
+REFERENCE			USEROTATE_DE
+LANG_ENGLISH		"^3[Messer]^7: Drehen"
+
+REFERENCE			VIS_POINTS_DE
+LANG_ENGLISH		"Sichtbarkeitspunkte"
+
+REFERENCE			VOICES_DE
+LANG_ENGLISH		"5. HNS Stimmen"
+
+REFERENCE			VOICESOUNDS_DE
+LANG_ENGLISH		"HNS Stimmen"
+
+REFERENCE			VOTE_DE
+LANG_ENGLISH		"Abstimmung"
+
+REFERENCE			WEAPON_DE
+LANG_ENGLISH		"Waffe"
+
+REFERENCE			ABOUT_HU
+LANG_ENGLISH		"Mi ez a mod?"
+
+REFERENCE			APPLY_HU
+LANG_ENGLISH		"^2Alkalmaz"
+
+REFERENCE			AS_HIDER_HU
+LANG_ENGLISH		"Bújóként"
+
+REFERENCE			AS_SEEKER_HU
+LANG_ENGLISH		"Keresõként"
+
+REFERENCE			ASSAULT_HU
+LANG_ENGLISH		"Rohamkatona"
+
+REFERENCE			ASSAULT_LVL_HU
+LANG_ENGLISH		"Rohamkatona (25. Szint)"
+
+REFERENCE			AXIS_HU
+LANG_ENGLISH		"^3[Lövés]^7: Forgatástengely állítása"
+
+REFERENCE			BACK_HU
+LANG_ENGLISH		"Vissza"
+
+REFERENCE			BIG_HU
+LANG_ENGLISH		"Nagy"
+
+REFERENCE			BOX_DOWN_HU
+LANG_ENGLISH		"Lenti doboz"
+
+REFERENCE			BOX2_HU
+LANG_ENGLISH		"Második doboz"
+
+REFERENCE			BUCKET_HU
+LANG_ENGLISH		"Vödör"
+
+REFERENCE			BUCKET_DOWN_HU
+LANG_ENGLISH		"Lenti vödör"
+
+REFERENCE			CAMO_HU
+LANG_ENGLISH		"Fegyver festés"
+
+REFERENCE			CAMO_BLUETIGER_HU
+LANG_ENGLISH		"Kék Tigris"
+
+REFERENCE			CAMO_BLUETIGER_LVL_HU
+LANG_ENGLISH		"Kék Tigris (VIP)"
+
+REFERENCE			CAMO_DESERT_HU
+LANG_ENGLISH		"Sivatagi"
+
+REFERENCE			CAMO_DESERT_LVL_HU
+LANG_ENGLISH		"Sivatagi (25. Szint)"
+
+REFERENCE			CAMO_DIGITAL_HU
+LANG_ENGLISH		"Digitális"
+
+REFERENCE			CAMO_DIGITAL_LVL_HU
+LANG_ENGLISH		"Digitális (75. Szint)"
+
+REFERENCE			CAMO_REDTIGER_HU
+LANG_ENGLISH		"Vörös Tigris"
+
+REFERENCE			CAMO_REDTIGER_LVL_HU
+LANG_ENGLISH		"Vörös Tigris (100. Szint)"
+
+REFERENCE			CAMO_WOODLAND_HU
+LANG_ENGLISH		"Rejtõzködõ"
+
+REFERENCE			CAMO_WOODLAND_LVL_HU
+LANG_ENGLISH		"Rejtõzködõ (50. Szint)"
+
+REFERENCE			CASE2_HU
+LANG_ENGLISH		"Második láda"
+
+REFERENCE			CHALLENGES_HU
+LANG_ENGLISH		"^5Kihívások"
+
+REFERENCE			CHOOSE_MODEL_HU
+LANG_ENGLISH		"^5Tárgy választása"
+
+REFERENCE			COMPS_HU
+LANG_ENGLISH		"Számítógépek"
+
+REFERENCE			CRATE2_HU
+LANG_ENGLISH		"Második láda"
+
+REFERENCE			DEATHFX_HU
+LANG_ENGLISH		"Halál effekt"
+
+REFERENCE			DEATHFX_BEAR_HU
+LANG_ENGLISH		"Plüss Macik"
+
+REFERENCE			DEATHFX_BEAR_LVL_HU
+LANG_ENGLISH		"Plüss Macik (VIP)"
+
+REFERENCE			DEATHFX_DUST_HU
+LANG_ENGLISH		"Por"
+
+REFERENCE			DEATHFX_DUST_LVL_HU
+LANG_ENGLISH		"Por (25. Szint)"
+
+REFERENCE			DEATHFX_EXP_HU
+LANG_ENGLISH		"Robbanás"
+
+REFERENCE			DEATHFX_EXP_LVL_HU
+LANG_ENGLISH		"Robbanás (50. Szint)"
+
+REFERENCE			DEATHFX_FLOWER_HU
+LANG_ENGLISH		"Virágok"
+
+REFERENCE			DEATHFX_FLOWER_LVL_HU
+LANG_ENGLISH		"Virágok (75. Szint)"
+
+REFERENCE			DEATHFX_MONEY_HU
+LANG_ENGLISH		"Pénz"
+
+REFERENCE			DEATHFX_MONEY_LVL_HU
+LANG_ENGLISH		"Pénz (100. Szint)"
+
+REFERENCE			DEATHS_HU
+LANG_ENGLISH		"Halálok"
+
+REFERENCE			DEFAULT_HU
+LANG_ENGLISH		"Alapértelmezett"
+
+REFERENCE			DOG_HU
+LANG_ENGLISH		"Kutya"
+
+REFERENCE			DOG_LVL_HU
+LANG_ENGLISH		"Kutya (VIP)"
+
+REFERENCE			EDIT_MODEL_HU
+LANG_ENGLISH		"^5Tárgy szerkesztése"
+
+REFERENCE			ESC_HU
+LANG_ENGLISH		"ESC: Kilépés"
+
+REFERENCE			FASTMODEL_HU
+LANG_ENGLISH		"^32× [Célzás]^7: Keresõ álca váltása"
+
+REFERENCE			FIRE_HU
+LANG_ENGLISH		"Tûz"
+
+REFERENCE			FIX_HU
+LANG_ENGLISH		"^3[Használat]^7: Tárgy rögzítése"
+
+REFERENCE			INFO_HU
+LANG_ENGLISH		"5. Információ"
+
+REFERENCE			KILLS_HU
+LANG_ENGLISH		"Ölések"
+
+REFERENCE			KILLSTREAK_HU
+LANG_ENGLISH		"&&1 Sorozat!"
+
+REFERENCE			LAST_HU
+LANG_ENGLISH		"Utolsó bújó"
+
+REFERENCE			LID_HU
+LANG_ENGLISH		"Fedõ"
+
+REFERENCE			LIGHT_HU
+LANG_ENGLISH		"^5Fény"
+
+REFERENCE			LOWBOX_HU
+LANG_ENGLISH		"Alacsony doboz"
+
+REFERENCE			M14_LVL_HU
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_HU
+LANG_ENGLISH		"M40A3 (50. Szint)"
+
+REFERENCE			MOTHS_HU
+LANG_ENGLISH		"7. Moly effekt"
+
+REFERENCE			MUSIC_HU
+LANG_ENGLISH		"4. Zene"
+
+REFERENCE			NEW_LVL_HU
+LANG_ENGLISH		"Új (50. Szint)"
+
+REFERENCE			NEXT_PAGE_HU
+LANG_ENGLISH		"Következõ oldal"
+
+REFERENCE			NONE_HU
+LANG_ENGLISH		"Nincs"
+
+REFERENCE			OPTIONS_HU
+LANG_ENGLISH		"^5Beállítások"
+
+REFERENCE			PAINTCAN_HU
+LANG_ENGLISH		"Festékes vödör"
+
+REFERENCE			PAN_COPPER_HU
+LANG_ENGLISH		"Réz lábas"
+
+REFERENCE			PAN_METAL_HU
+LANG_ENGLISH		"Fém lábas"
+
+REFERENCE			PLASTICCRATE_HU
+LANG_ENGLISH		"Mûanyag rekesz"
+
+REFERENCE			PLAY_HU
+LANG_ENGLISH		"^5Játék!"
+
+REFERENCE			PLAYERMODEL_HU
+LANG_ENGLISH		"Karakter"
+
+REFERENCE			PREV_PAGE_HU
+LANG_ENGLISH		"Elõzõ oldal"
+
+REFERENCE			PROPANE_HU
+LANG_ENGLISH		"Propán tartály"
+
+REFERENCE			PROPANE_DOWN_HU
+LANG_ENGLISH		"Lenti propán tartály"
+
+REFERENCE			QUICK_HU
+LANG_ENGLISH		"Gyors menü"
+
+REFERENCE			RADARHACK_HU
+LANG_ENGLISH		"Kapcsold ki a radarhacket, csaló..."
+
+REFERENCE			RANKS_HU
+LANG_ENGLISH		"^5Rangok"
+
+REFERENCE			READY_HU
+LANG_ENGLISH		"^3Hosszan [Használat]^7: Készenléti állapot"
+
+REFERENCE			RECON_HU
+LANG_ENGLISH		"Felderítõ"
+
+REFERENCE			RECON_LVL_HU
+LANG_ENGLISH		"Felderítõ (75. Szint)"
+
+REFERENCE			REMOVE_HU
+LANG_ENGLISH		"^1Visszaállítás"
+
+REFERENCE			RESET_HU
+LANG_ENGLISH		"3. Alapértelmezett beállítások"
+
+REFERENCE			RESETMODEL_HU
+LANG_ENGLISH		"^3[Gránát]^7: Tárgy visszaállítása"
+
+REFERENCE			ROCKETS_HU
+LANG_ENGLISH		"Rakéták"
+
+REFERENCE			ROTATE_HU
+LANG_ENGLISH		"Forgatás"
+
+REFERENCE			ROTATIONFIXED_HU
+LANG_ENGLISH		"Forgatási tengely: ^1Rögzített"
+
+REFERENCE			ROTATIONRX_HU
+LANG_ENGLISH		"Forgatási tengely: ^1-X"
+
+REFERENCE			ROTATIONRY_HU
+LANG_ENGLISH		"Forgatási tengely: ^1-Y"
+
+REFERENCE			ROTATIONX_HU
+LANG_ENGLISH		"Forgatási tengely: ^1X"
+
+REFERENCE			ROTATIONY_HU
+LANG_ENGLISH		"Forgatási tengely: ^1Y"
+
+REFERENCE			ROTATIONZ_HU
+LANG_ENGLISH		"Forgatási tengely: ^1Z"
+
+REFERENCE			RUN_HU
+LANG_ENGLISH		"^3Hosszan [Lövés]^7: 10 mp futás"
+
+REFERENCE			SECONDARY_HU
+LANG_ENGLISH		"Másodlagos fegyver"
+
+REFERENCE			SEEKER_HU
+LANG_ENGLISH		"Keresõ"
+
+REFERENCE			SET_ANG_HU
+LANG_ENGLISH		"2. Kamera irány"
+
+REFERENCE			SET_DIS_HU
+LANG_ENGLISH		"1. Kamera távolság"
+
+REFERENCE			SETS_HU
+LANG_ENGLISH		"4. HNS Beállítások"
+
+REFERENCE			SETTINGS_HU
+LANG_ENGLISH		"HNS Beállítások"
+
+REFERENCE			SHEEN_HU
+LANG_ENGLISH		"Ragyogás"
+
+REFERENCE			SMALL_HU
+LANG_ENGLISH		"Kicsi"
+
+REFERENCE			SNIPER_HU
+LANG_ENGLISH		"Mesterlövész"
+
+REFERENCE			SOUND_HU
+LANG_ENGLISH		"Zene"
+
+REFERENCE			SPECOPS_HU
+LANG_ENGLISH		"Kommandós"
+
+REFERENCE			SPECOPS_LVL_HU
+LANG_ENGLISH		"Kommandós (50. Szint)"
+
+REFERENCE			SPECTATOR_HU
+LANG_ENGLISH		"Nézelõdés"
+
+REFERENCE			STATUE_HU
+LANG_ENGLISH		"Oroszlán szobor"
+
+REFERENCE			STREAK_HU
+LANG_ENGLISH		"Sorozat"
+
+REFERENCE			SUPPORT_HU
+LANG_ENGLISH		"Támogató"
+
+REFERENCE			SUPPORT_LVL_HU
+LANG_ENGLISH		"Támogató (100. Szint)"
+
+REFERENCE			TELEPORT_HU
+LANG_ENGLISH		"^3Hosszan [Használat]^7: Véletlenszerû teleport"
+
+REFERENCE			THIRDPERSON_HU
+LANG_ENGLISH		"^3Hosszan ^3[Gránát]^7: E/3 nézet váltása"
+
+REFERENCE			TIME_HU
+LANG_ENGLISH		"Lejátszott idõ"
+
+REFERENCE			TIRE_HU
+LANG_ENGLISH		"Autógumi"
+
+REFERENCE			TOOLBOX_HU
+LANG_ENGLISH		"Szerszámosláda"
+
+REFERENCE			TRASHBAG_HU
+LANG_ENGLISH		"Szemeteszsák"
+
+REFERENCE			TV_HU
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX_HU
+LANG_ENGLISH		"^3[Használat]^7: Tárgy felengedése"
+
+REFERENCE			USEROTATE_HU
+LANG_ENGLISH		"^3[Kés]^7: Forgatás"
+
+REFERENCE			VIS_POINTS_HU
+LANG_ENGLISH		"Láthatósági pontok"
+
+REFERENCE			VOICES_HU
+LANG_ENGLISH		"5. HNS Hangok"
+
+REFERENCE			VOICESOUNDS_HU
+LANG_ENGLISH		"HNS Hangok"
+
+REFERENCE			VOTE_HU
+LANG_ENGLISH		"Szavazás"
+
+REFERENCE			WEAPON_HU
+LANG_ENGLISH		"Fegyver"
+
+REFERENCE			WHITE_HU
+LANG_ENGLISH		"Fehér"
+
+REFERENCE			YELLOW_HU
+LANG_ENGLISH		"Sárga"
+
+REFERENCE			ABOUT_PL
+LANG_ENGLISH		"O czym jest ten mod?"
+
+REFERENCE			APPLY_PL
+LANG_ENGLISH		"^2Akceptuj"
+
+REFERENCE			AS_HIDER_PL
+LANG_ENGLISH		"Jako chowaj¹cy"
+
+REFERENCE			AS_SEEKER_PL
+LANG_ENGLISH		"Jako szukaj¹cy"
+
+REFERENCE			ASSAULT_PL
+LANG_ENGLISH		"Szturmowiec"
+
+REFERENCE			ASSAULT_LVL_PL
+LANG_ENGLISH		"Szturmowiec (Level 25)"
+
+REFERENCE			AXIS_PL
+LANG_ENGLISH		"^3[Strza³]^7: Wybór osi"
+
+REFERENCE			BACK_PL
+LANG_ENGLISH		"Wstecz"
+
+REFERENCE			BOX_DOWN_PL
+LANG_ENGLISH		"Pude³ko"
+
+REFERENCE			BOX2_PL
+LANG_ENGLISH		"Drugie pude³ko"
+
+REFERENCE			BUCKET_PL
+LANG_ENGLISH		"Wiadro"
+
+REFERENCE			BUCKET_DOWN_PL
+LANG_ENGLISH		"Wiadro"
+
+REFERENCE			CAMO_PL
+LANG_ENGLISH		"Moro"
+
+REFERENCE			CAMO_BLUETIGER_PL
+LANG_ENGLISH		"Niebieski Tygrys"
+
+REFERENCE			CAMO_BLUETIGER_LVL_PL
+LANG_ENGLISH		"Niebieski Tygrys (VIP)"
+
+REFERENCE			CAMO_DESERT_PL
+LANG_ENGLISH		"Pustynny"
+
+REFERENCE			CAMO_DESERT_LVL_PL
+LANG_ENGLISH		"Pustynny (Level 25)"
+
+REFERENCE			CAMO_DIGITAL_PL
+LANG_ENGLISH		"Cyfrowy"
+
+REFERENCE			CAMO_DIGITAL_LVL_PL
+LANG_ENGLISH		"Cyfrowy (Level 75)"
+
+REFERENCE			CAMO_REDTIGER_PL
+LANG_ENGLISH		"Czerwony Tygrys"
+
+REFERENCE			CAMO_REDTIGER_LVL_PL
+LANG_ENGLISH		"Czerwony Tygrys (Level 100)"
+
+REFERENCE			CAMO_WOODLAND_PL
+LANG_ENGLISH		"Leœny"
+
+REFERENCE			CAMO_WOODLAND_LVL_PL
+LANG_ENGLISH		"Leœny (Level 50)"
+
+REFERENCE			CASE2_PL
+LANG_ENGLISH		"Drugi pojemnik"
+
+REFERENCE			CHALLENGES_PL
+LANG_ENGLISH		"^5Wyzwania"
+
+REFERENCE			CHOOSE_MODEL_PL
+LANG_ENGLISH		"^5Wybierz objekt"
+
+REFERENCE			COMPS_PL
+LANG_ENGLISH		"Komputery"
+
+REFERENCE			CRATE2_PL
+LANG_ENGLISH		"Drugie pud³o"
+
+REFERENCE			DEATHFX_PL
+LANG_ENGLISH		"Efekt œmierci"
+
+REFERENCE			DEATHFX_BEAR_PL
+LANG_ENGLISH		"Misie Teddy"
+
+REFERENCE			DEATHFX_BEAR_LVL_PL
+LANG_ENGLISH		"Misie Teddy (VIP)"
+
+REFERENCE			DEATHFX_DUST_PL
+LANG_ENGLISH		"Py³"
+
+REFERENCE			DEATHFX_DUST_LVL_PL
+LANG_ENGLISH		"Py³ (Level 25)"
+
+REFERENCE			DEATHFX_EXP_PL
+LANG_ENGLISH		"Wybuch"
+
+REFERENCE			DEATHFX_EXP_LVL_PL
+LANG_ENGLISH		"Wybuch (Level 50)"
+
+REFERENCE			DEATHFX_FLOWER_PL
+LANG_ENGLISH		"Kwiaty"
+
+REFERENCE			DEATHFX_FLOWER_LVL_PL
+LANG_ENGLISH		"Kwiaty (Level 75)"
+
+REFERENCE			DEATHFX_MONEY_PL
+LANG_ENGLISH		"Pieni¹dze"
+
+REFERENCE			DEATHFX_MONEY_LVL_PL
+LANG_ENGLISH		"Pieni¹dze (Level 100)"
+
+REFERENCE			DEATHS_PL
+LANG_ENGLISH		"Zgony"
+
+REFERENCE			DEFAULT_PL
+LANG_ENGLISH		"Domyolne"
+
+REFERENCE			DOG_PL
+LANG_ENGLISH		"Pies"
+
+REFERENCE			DOG_LVL_PL
+LANG_ENGLISH		"Pies (VIP)"
+
+REFERENCE			EDIT_MODEL_PL
+LANG_ENGLISH		"^5Edytuj objekt"
+
+REFERENCE			ESC_PL
+LANG_ENGLISH		"ESC: wyjœcie"
+
+REFERENCE			FASTMODEL_PL
+LANG_ENGLISH		"^32× [Celowanie]^7: Zmiana kamufla¿u: ¿o³nie¿/objekt"
+
+REFERENCE			FIRE_PL
+LANG_ENGLISH		"Ogieñ"
+
+REFERENCE			FIX_PL
+LANG_ENGLISH		"^3[U¿yj]^7: Zmiana k¹ta objektu, którym jesteœ"
+
+REFERENCE			INFO_PL
+LANG_ENGLISH		"5. Informacje"
+
+REFERENCE			KILLS_PL
+LANG_ENGLISH		"Zabicia"
+
+REFERENCE			KILLSTREAK_PL
+LANG_ENGLISH		"&&1Ci¹g ofiar!"
+
+REFERENCE			LAST_PL
+LANG_ENGLISH		"Ostatni chowaj¹cy"
+
+REFERENCE			LID_PL
+LANG_ENGLISH		"Pokrywa"
+
+REFERENCE			LOWBOX_PL
+LANG_ENGLISH		"Ma³e pude³ko"
+
+REFERENCE			M14_LVL_PL
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_PL
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MUSIC_PL
+LANG_ENGLISH		"4. Muzyka"
+
+REFERENCE			NEW_LVL_PL
+LANG_ENGLISH		"Nowy (Level 50)"
+
+REFERENCE			NEXT_PAGE_PL
+LANG_ENGLISH		"Nastêpna strona"
+
+REFERENCE			OPTIONS_PL
+LANG_ENGLISH		"^5Ustawienia"
+
+REFERENCE			PAINTCAN_PL
+LANG_ENGLISH		"Farba"
+
+REFERENCE			PAN_COPPER_PL
+LANG_ENGLISH		"Garnki"
+
+REFERENCE			PAN_METAL_PL
+LANG_ENGLISH		"Garnki metalowe"
+
+REFERENCE			PLASTICCRATE_PL
+LANG_ENGLISH		"Plastikowa skrzynia"
+
+REFERENCE			PLAY_PL
+LANG_ENGLISH		"^5Graj!"
+
+REFERENCE			PLAYERMODEL_PL
+LANG_ENGLISH		"Postaæ"
+
+REFERENCE			PREV_PAGE_PL
+LANG_ENGLISH		"Poprzednia strona"
+
+REFERENCE			PROPANE_PL
+LANG_ENGLISH		"Butla z gazem"
+
+REFERENCE			PROPANE_DOWN_PL
+LANG_ENGLISH		"Wielka butla gazu"
+
+REFERENCE			QUICK_PL
+LANG_ENGLISH		"Szybkie menu"
+
+REFERENCE			RADARHACK_PL
+LANG_ENGLISH		"Wy³¹cz radarhack! Cheater..."
+
+REFERENCE			RANKS_PL
+LANG_ENGLISH		"^5Rangi"
+
+REFERENCE			READY_PL
+LANG_ENGLISH		"^3Hold [U¿yj]^7: Stan czuwania"
+
+REFERENCE			RECON_PL
+LANG_ENGLISH		"Rozpoznanie"
+
+REFERENCE			RECON_LVL_PL
+LANG_ENGLISH		"Rozpoznanie (Level 75)"
+
+REFERENCE			REMOVE_PL
+LANG_ENGLISH		"^1Przywróæ"
+
+REFERENCE			RESET_PL
+LANG_ENGLISH		"3. Reset ustawieñ kamery"
+
+REFERENCE			RESETMODEL_PL
+LANG_ENGLISH		"^3[Granat]^7: Reset k¹ta objektu, którym jesteœ"
+
+REFERENCE			ROCKETS_PL
+LANG_ENGLISH		"Rakiety"
+
+REFERENCE			ROTATE_PL
+LANG_ENGLISH		"Pozycja"
+
+REFERENCE			ROTATIONFIXED_PL
+LANG_ENGLISH		"Pozyjca osi: ^1Ustalona"
+
+REFERENCE			ROTATIONRX_PL
+LANG_ENGLISH		"Pozyjca osi: ^1-X"
+
+REFERENCE			ROTATIONRY_PL
+LANG_ENGLISH		"Pozyjca osi: ^1-Y"
+
+REFERENCE			ROTATIONX_PL
+LANG_ENGLISH		"Pozyjca osi: ^1X"
+
+REFERENCE			ROTATIONY_PL
+LANG_ENGLISH		"Pozyjca osi: ^1Y"
+
+REFERENCE			ROTATIONZ_PL
+LANG_ENGLISH		"Pozyjca osi: ^1Z"
+
+REFERENCE			RUN_PL
+LANG_ENGLISH		"^3Hold [Strza³]^7: Bieg przez 10 sekund"
+
+REFERENCE			SEEKER_PL
+LANG_ENGLISH		"Szukaj¹cy"
+
+REFERENCE			SET_ANG_PL
+LANG_ENGLISH		"2. Pozycja kamery"
+
+REFERENCE			SET_DIS_PL
+LANG_ENGLISH		"1. Odleg³oœæ kamery"
+
+REFERENCE			SETS_PL
+LANG_ENGLISH		"4. HNS ustawienia"
+
+REFERENCE			SETTINGS_PL
+LANG_ENGLISH		"HNS ustawienia"
+
+REFERENCE			SHEEN_PL
+LANG_ENGLISH		"Blask"
+
+REFERENCE			SNIPER_PL
+LANG_ENGLISH		"Snajper"
+
+REFERENCE			SOUND_PL
+LANG_ENGLISH		"Muzyka"
+
+REFERENCE			SPECOPS_PL
+LANG_ENGLISH		"Taktyk"
+
+REFERENCE			SPECOPS_LVL_PL
+LANG_ENGLISH		"Taktyk (Level 50)"
+
+REFERENCE			SPECTATOR_PL
+LANG_ENGLISH		"Widz"
+
+REFERENCE			STATUE_PL
+LANG_ENGLISH		"Pos¹g lwa"
+
+REFERENCE			STREAK_PL
+LANG_ENGLISH		"Ci¹g"
+
+REFERENCE			SUPPORT_PL
+LANG_ENGLISH		"Wsparcie"
+
+REFERENCE			SUPPORT_LVL_PL
+LANG_ENGLISH		"Wsparcie (Level 100)"
+
+REFERENCE			TELEPORT_PL
+LANG_ENGLISH		"^3Przytrzymanie klawisza [U¿yj]^7: Losowy teleport"
+
+REFERENCE			THIRDPERSON_PL
+LANG_ENGLISH		"^3Hold ^3[Granat]^7: Kamera 3-cio osobowa"
+
+REFERENCE			TIME_PL
+LANG_ENGLISH		"Czas gry"
+
+REFERENCE			TIRE_PL
+LANG_ENGLISH		"Opony"
+
+REFERENCE			TOOLBOX_PL
+LANG_ENGLISH		"Skrzynka z narzêdziami"
+
+REFERENCE			TRASHBAG_PL
+LANG_ENGLISH		"Œmieci"
+
+REFERENCE			TV_PL
+LANG_ENGLISH		"Telewizor"
+
+REFERENCE			UNFIX_PL
+LANG_ENGLISH		"^3[U¿yj]^7: Blokada zmiany k¹ta objektu, którym jesteœ"
+
+REFERENCE			USEROTATE_PL
+LANG_ENGLISH		"^3[Nó¿]^7: Pozycja"
+
+REFERENCE			VIS_POINTS_PL
+LANG_ENGLISH		"Punkty widocznoœci"
+
+REFERENCE			VOICES_PL
+LANG_ENGLISH		"5. HNS G³osy"
+
+REFERENCE			VOICESOUNDS_PL
+LANG_ENGLISH		"HNS G³osy"
+
+REFERENCE			VOTE_PL
+LANG_ENGLISH		"G³osowanie"
+
+REFERENCE			WEAPON_PL
+LANG_ENGLISH		"Broñ"
+
+REFERENCE			ABOUT_RU
+LANG_ENGLISH		"O chem etot mod?"
+
+REFERENCE			APPLY_RU
+LANG_ENGLISH		"^2Primenit' "
+
+REFERENCE			AS_HIDER_RU
+LANG_ENGLISH		"Za haidera"
+
+REFERENCE			AS_SEEKER_RU
+LANG_ENGLISH		"Za sikera"
+
+REFERENCE			ASSAULT_RU
+LANG_ENGLISH		"Shturmovik"
+
+REFERENCE			ASSAULT_LVL_RU
+LANG_ENGLISH		"Shturmovik (Level 25)"
+
+REFERENCE			AXIS_RU
+LANG_ENGLISH		"^3[Shoot]^7: Ustanovite osi vrashcheniya"
+
+REFERENCE			BACK_RU
+LANG_ENGLISH		"Nazad"
+
+REFERENCE			BOX_DOWN_RU
+LANG_ENGLISH		"Korobku"
+
+REFERENCE			BOX2_RU
+LANG_ENGLISH		"Vtoraya korobka"
+
+REFERENCE			BUCKET_RU
+LANG_ENGLISH		"Korzina"
+
+REFERENCE			BUCKET_DOWN_RU
+LANG_ENGLISH		"Korzinu"
+
+REFERENCE			CAMO_RU
+LANG_ENGLISH		"Kamuflyazh"
+
+REFERENCE			CAMO_BLUETIGER_RU
+LANG_ENGLISH		"Goluboi tigr"
+
+REFERENCE			CAMO_BLUETIGER_LVL_RU
+LANG_ENGLISH		"Goluboi tigr (VIP)"
+
+REFERENCE			CAMO_DESERT_RU
+LANG_ENGLISH		"Pustinniy"
+
+REFERENCE			CAMO_DESERT_LVL_RU
+LANG_ENGLISH		"Pustinniy (Level 25)"
+
+REFERENCE			CAMO_DIGITAL_RU
+LANG_ENGLISH		"Cifrovoy"
+
+REFERENCE			CAMO_DIGITAL_LVL_RU
+LANG_ENGLISH		"Cifrovoyl (Level 75)"
+
+REFERENCE			CAMO_REDTIGER_RU
+LANG_ENGLISH		"Krasniy tigr"
+
+REFERENCE			CAMO_REDTIGER_LVL_RU
+LANG_ENGLISH		"Krasniy tigr (Level 100)"
+
+REFERENCE			CAMO_WOODLAND_RU
+LANG_ENGLISH		"Lesnoi"
+
+REFERENCE			CAMO_WOODLAND_LVL_RU
+LANG_ENGLISH		"Lesnoi (Level 50)"
+
+REFERENCE			CASE2_RU
+LANG_ENGLISH		"Vtoroy sluchay"
+
+REFERENCE			CHALLENGES_RU
+LANG_ENGLISH		"^5Ispitaniya"
+
+REFERENCE			CHOOSE_MODEL_RU
+LANG_ENGLISH		"^5Viberite ob'ekt"
+
+REFERENCE			COMPS_RU
+LANG_ENGLISH		"Komp'uteri"
+
+REFERENCE			CRATE2_RU
+LANG_ENGLISH		"Vtoroy yashchik"
+
+REFERENCE			DEATHFX_RU
+LANG_ENGLISH		"Effekt smerti"
+
+REFERENCE			DEATHFX_BEAR_RU
+LANG_ENGLISH		"Mishki"
+
+REFERENCE			DEATHFX_BEAR_LVL_RU
+LANG_ENGLISH		"Mishki(VIP)"
+
+REFERENCE			DEATHFX_DUST_RU
+LANG_ENGLISH		"Pil' "
+
+REFERENCE			DEATHFX_DUST_LVL_RU
+LANG_ENGLISH		"Pil'(Level 25)"
+
+REFERENCE			DEATHFX_EXP_RU
+LANG_ENGLISH		"Vzriv"
+
+REFERENCE			DEATHFX_EXP_LVL_RU
+LANG_ENGLISH		"Vzriv (Level 50)"
+
+REFERENCE			DEATHFX_FLOWER_RU
+LANG_ENGLISH		"Cveti"
+
+REFERENCE			DEATHFX_FLOWER_LVL_RU
+LANG_ENGLISH		"Cveti (Level 75)"
+
+REFERENCE			DEATHFX_MONEY_RU
+LANG_ENGLISH		"Den'gi"
+
+REFERENCE			DEATHFX_MONEY_LVL_RU
+LANG_ENGLISH		"Den'gi (Level 100)"
+
+REFERENCE			DEATHS_RU
+LANG_ENGLISH		"Smerti"
+
+REFERENCE			DEFAULT_RU
+LANG_ENGLISH		"Standartnoe"
+
+REFERENCE			DOG_RU
+LANG_ENGLISH		"Sobaka"
+
+REFERENCE			DOG_LVL_RU
+LANG_ENGLISH		"Sobaka(vip)"
+
+REFERENCE			EDIT_MODEL_RU
+LANG_ENGLISH		"^5Redaktirovat' ob'ekt"
+
+REFERENCE			ESC_RU
+LANG_ENGLISH		"ESC: vihod"
+
+REFERENCE			FASTMODEL_RU
+LANG_ENGLISH		"^32×[Pereklyuchit' tsel']^7: Pereklyucheniye kamuflyazha Seeker'a"
+
+REFERENCE			FIRE_RU
+LANG_ENGLISH		"Ogon' "
+
+REFERENCE			FIX_RU
+LANG_ENGLISH		"^3[ispol'zovaniye]^7: Nastroit' ugli ob'yekta"
+
+REFERENCE			INFO_RU
+LANG_ENGLISH		"5. Informaciya"
+
+REFERENCE			KILLS_RU
+LANG_ENGLISH		"Ubiystva"
+
+REFERENCE			KILLSTREAK_RU
+LANG_ENGLISH		"&&1 Kombo!"
+
+REFERENCE			LAST_RU
+LANG_ENGLISH		"Posledniy Hider"
+
+REFERENCE			LID_RU
+LANG_ENGLISH		"Krishka"
+
+REFERENCE			LOWBOX_RU
+LANG_ENGLISH		"Nizkiy yashchik"
+
+REFERENCE			M14_LVL_RU
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_RU
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MUSIC_RU
+LANG_ENGLISH		"4. Music"
+
+REFERENCE			NEW_LVL_RU
+LANG_ENGLISH		"Novinka (Level 50)"
+
+REFERENCE			NEXT_PAGE_RU
+LANG_ENGLISH		"Sledyushaya stranica"
+
+REFERENCE			OPTIONS_RU
+LANG_ENGLISH		"^5Nastroyki"
+
+REFERENCE			PAINTCAN_RU
+LANG_ENGLISH		"Balonchik s kraskoi"
+
+REFERENCE			PAN_COPPER_RU
+LANG_ENGLISH		"Medniy taz"
+
+REFERENCE			PAN_METAL_RU
+LANG_ENGLISH		"Poddon iz metalla"
+
+REFERENCE			PLASTICCRATE_RU
+LANG_ENGLISH		"Plastikovyy yashchik"
+
+REFERENCE			PLAY_RU
+LANG_ENGLISH		"^5Igrat'!"
+
+REFERENCE			PLAYERMODEL_RU
+LANG_ENGLISH		"Personazh"
+
+REFERENCE			PREV_PAGE_RU
+LANG_ENGLISH		"Predudyshyaa stranica "
+
+REFERENCE			PROPANE_RU
+LANG_ENGLISH		"Ballon s propanom"
+
+REFERENCE			PROPANE_DOWN_RU
+LANG_ENGLISH		"Ballon s propanom pustoy"
+
+REFERENCE			QUICK_RU
+LANG_ENGLISH		"Bistroe menu"
+
+REFERENCE			RADARHACK_RU
+LANG_ENGLISH		"Vikluchi radarhack, yebak ..."
+
+REFERENCE			RANKS_RU
+LANG_ENGLISH		"^5Rangi"
+
+REFERENCE			READY_RU
+LANG_ENGLISH		"^3Uderzhivayte [Use]^7: Rezervnoye sostoyaniye"
+
+REFERENCE			RECON_RU
+LANG_ENGLISH		"Razvedchik"
+
+REFERENCE			RECON_LVL_RU
+LANG_ENGLISH		"Razvedchik (Level 75)"
+
+REFERENCE			REMOVE_RU
+LANG_ENGLISH		"^1Vosstanovlenie"
+
+REFERENCE			RESET_RU
+LANG_ENGLISH		"3. Sbrosit' nastroyki"
+
+REFERENCE			RESETMODEL_RU
+LANG_ENGLISH		"^3[Frag]^7: Sbros uglov ob'ekta"
+
+REFERENCE			ROCKETS_RU
+LANG_ENGLISH		"Raketi"
+
+REFERENCE			ROTATE_RU
+LANG_ENGLISH		"Vrashat' "
+
+REFERENCE			ROTATIONFIXED_RU
+LANG_ENGLISH		"Os' vrashcheniya: ^1Zakreplena"
+
+REFERENCE			ROTATIONRX_RU
+LANG_ENGLISH		"Os' vrashcheniya : ^1-X"
+
+REFERENCE			ROTATIONRY_RU
+LANG_ENGLISH		"Os' vrashcheniya : ^1-Y"
+
+REFERENCE			ROTATIONX_RU
+LANG_ENGLISH		"Os' vrashcheniya : ^1X"
+
+REFERENCE			ROTATIONY_RU
+LANG_ENGLISH		"Os' vrashcheniya : ^1Y"
+
+REFERENCE			ROTATIONZ_RU
+LANG_ENGLISH		"Os' vrashcheniya : ^1Z"
+
+REFERENCE			RUN_RU
+LANG_ENGLISH		"^3Uderzhivayte [Shoot]^7: Bezhat' v techenii 10 sekund"
+
+REFERENCE			SEEKER_RU
+LANG_ENGLISH		"Seeker"
+
+REFERENCE			SET_ANG_RU
+LANG_ENGLISH		"2. Ugol zreniya kamery"
+
+REFERENCE			SET_DIS_RU
+LANG_ENGLISH		"1. Rasstoyanie kamery"
+
+REFERENCE			SETS_RU
+LANG_ENGLISH		"4. HNS Nastroyki"
+
+REFERENCE			SETTINGS_RU
+LANG_ENGLISH		"HNS Nastroyki"
+
+REFERENCE			SHEEN_RU
+LANG_ENGLISH		"Svecheniye"
+
+REFERENCE			SNIPER_RU
+LANG_ENGLISH		"Sniper"
+
+REFERENCE			SOUND_RU
+LANG_ENGLISH		"Music"
+
+REFERENCE			SPECOPS_RU
+LANG_ENGLISH		"Specnaz"
+
+REFERENCE			SPECOPS_LVL_RU
+LANG_ENGLISH		"Specnaz (Level 50)"
+
+REFERENCE			SPECTATOR_RU
+LANG_ENGLISH		"Nabludatel' "
+
+REFERENCE			STATUE_RU
+LANG_ENGLISH		"Statuya l'va"
+
+REFERENCE			STREAK_RU
+LANG_ENGLISH		"Polosa"
+
+REFERENCE			SUPPORT_RU
+LANG_ENGLISH		"Podderzhka"
+
+REFERENCE			SUPPORT_LVL_RU
+LANG_ENGLISH		"Podderzhka (Level 100)"
+
+REFERENCE			TELEPORT_RU
+LANG_ENGLISH		"^3Uderzhivayte [Use]^7: Sluchyniy teleport"
+
+REFERENCE			THIRDPERSON_RU
+LANG_ENGLISH		"^3uderzhivayte ^3[Frag]^7: Izmenit' vid ot tret'yego lica"
+
+REFERENCE			TIME_RU
+LANG_ENGLISH		"Vremya igri"
+
+REFERENCE			TIRE_RU
+LANG_ENGLISH		"Shina"
+
+REFERENCE			TOOLBOX_RU
+LANG_ENGLISH		"Yashik s instrumentami"
+
+REFERENCE			TRASHBAG_RU
+LANG_ENGLISH		"Meshok dlya musora"
+
+REFERENCE			TV_RU
+LANG_ENGLISH		"Televizor"
+
+REFERENCE			UNFIX_RU
+LANG_ENGLISH		"^3[Use]^7: Rasfiksiruyte ugly ob'yekta"
+
+REFERENCE			USEROTATE_RU
+LANG_ENGLISH		"^3[Melee]^7: izmenit' "
+
+REFERENCE			VIS_POINTS_RU
+LANG_ENGLISH		"Ochki vidimosti"
+
+REFERENCE			VOICES_RU
+LANG_ENGLISH		"5. HNS Golosa"
+
+REFERENCE			VOICESOUNDS_RU
+LANG_ENGLISH		"HNS Golosa"
+
+REFERENCE			VOTE_RU
+LANG_ENGLISH		"Golosovanie"
+
+REFERENCE			WEAPON_RU
+LANG_ENGLISH		"Oruzhie"
+
+REFERENCE			ABOUT_ES
+LANG_ENGLISH		"?De que trata este mod?"
+
+REFERENCE			APPLY_ES
+LANG_ENGLISH		"^2Aplicar"
+
+REFERENCE			AS_HIDER_ES
+LANG_ENGLISH		"Como Hider"
+
+REFERENCE			AS_SEEKER_ES
+LANG_ENGLISH		"Como Buscador"
+
+REFERENCE			ASSAULT_ES
+LANG_ENGLISH		"Asalto"
+
+REFERENCE			ASSAULT_LVL_ES
+LANG_ENGLISH		"Asalto (Nivel 25)"
+
+REFERENCE			AXIS_ES
+LANG_ENGLISH		"^3[Disparo]^7: Rotacion del Eje"
+
+REFERENCE			BACK_ES
+LANG_ENGLISH		"Volver"
+
+REFERENCE			BOX_DOWN_ES
+LANG_ENGLISH		"Caja Caida"
+
+REFERENCE			BOX2_ES
+LANG_ENGLISH		"Segunda Caja"
+
+REFERENCE			BUCKET_ES
+LANG_ENGLISH		"Cubo"
+
+REFERENCE			BUCKET_DOWN_ES
+LANG_ENGLISH		"Cubo Caido"
+
+REFERENCE			CAMO_ES
+LANG_ENGLISH		"Camuflaje"
+
+REFERENCE			CAMO_BLUETIGER_ES
+LANG_ENGLISH		"Tigre Azul"
+
+REFERENCE			CAMO_BLUETIGER_LVL_ES
+LANG_ENGLISH		"Tigre Azul (VIP)"
+
+REFERENCE			CAMO_DESERT_ES
+LANG_ENGLISH		"Desierto"
+
+REFERENCE			CAMO_DESERT_LVL_ES
+LANG_ENGLISH		"Desierto (Nivel 25)"
+
+REFERENCE			CAMO_DIGITAL_ES
+LANG_ENGLISH		"Digital"
+
+REFERENCE			CAMO_DIGITAL_LVL_ES
+LANG_ENGLISH		"Digital (Nivel 75)"
+
+REFERENCE			CAMO_REDTIGER_ES
+LANG_ENGLISH		"Tigre Rojo"
+
+REFERENCE			CAMO_REDTIGER_LVL_ES
+LANG_ENGLISH		"Tigre Rojo (Nivel 100)"
+
+REFERENCE			CAMO_WOODLAND_ES
+LANG_ENGLISH		"Bosque"
+
+REFERENCE			CAMO_WOODLAND_LVL_ES
+LANG_ENGLISH		"Bosque (Nivel 50)"
+
+REFERENCE			CASE2_ES
+LANG_ENGLISH		"Segunda Caja"
+
+REFERENCE			CHALLENGES_ES
+LANG_ENGLISH		"^5Desafíos"
+
+REFERENCE			CHOOSE_MODEL_ES
+LANG_ENGLISH		"^5Seleccione Objeto"
+
+REFERENCE			COMPS_ES
+LANG_ENGLISH		"Computadoras"
+
+REFERENCE			CRATE2_ES
+LANG_ENGLISH		"Segunda Caja"
+
+REFERENCE			DEATHFX_ES
+LANG_ENGLISH		"Efecto de la Muerte"
+
+REFERENCE			DEATHFX_BEAR_ES
+LANG_ENGLISH		"Ositos Teddy"
+
+REFERENCE			DEATHFX_BEAR_LVL_ES
+LANG_ENGLISH		"Osito Teddy (VIP)"
+
+REFERENCE			DEATHFX_DUST_ES
+LANG_ENGLISH		"Polvo"
+
+REFERENCE			DEATHFX_DUST_LVL_ES
+LANG_ENGLISH		"Polvo (Nivel 25)"
+
+REFERENCE			DEATHFX_EXP_ES
+LANG_ENGLISH		"Exploción"
+
+REFERENCE			DEATHFX_EXP_LVL_ES
+LANG_ENGLISH		"Exploción (Nivel 50)"
+
+REFERENCE			DEATHFX_FLOWER_ES
+LANG_ENGLISH		"Flores"
+
+REFERENCE			DEATHFX_FLOWER_LVL_ES
+LANG_ENGLISH		"Flores (Nivel 75)"
+
+REFERENCE			DEATHFX_MONEY_ES
+LANG_ENGLISH		"Dinero"
+
+REFERENCE			DEATHFX_MONEY_LVL_ES
+LANG_ENGLISH		"Dinero (Nivel 100)"
+
+REFERENCE			DEATHS_ES
+LANG_ENGLISH		"Muertes"
+
+REFERENCE			DEFAULT_ES
+LANG_ENGLISH		"Defecto"
+
+REFERENCE			DOG_ES
+LANG_ENGLISH		"Perro"
+
+REFERENCE			DOG_LVL_ES
+LANG_ENGLISH		"Perro (Vip)"
+
+REFERENCE			EDIT_MODEL_ES
+LANG_ENGLISH		"^5Editar Objeto"
+
+REFERENCE			ESC_ES
+LANG_ENGLISH		"ESC: Salir"
+
+REFERENCE			FASTMODEL_ES
+LANG_ENGLISH		"^32× [Fijar aim]^7: Fijar Camuflaje de Seeker"
+
+REFERENCE			FIRE_ES
+LANG_ENGLISH		"Fuego"
+
+REFERENCE			FIX_ES
+LANG_ENGLISH		"^3[Use]^7 Fije los ángulos del objeto"
+
+REFERENCE			INFO_ES
+LANG_ENGLISH		"5. Información"
+
+REFERENCE			KILLS_ES
+LANG_ENGLISH		"Bajas"
+
+REFERENCE			KILLSTREAK_ES
+LANG_ENGLISH		"&&1 Racha de Baja!"
+
+REFERENCE			LAST_ES
+LANG_ENGLISH		"Ultimo Hider"
+
+REFERENCE			LID_ES
+LANG_ENGLISH		"Tapa"
+
+REFERENCE			LOWBOX_ES
+LANG_ENGLISH		"Caja Baja"
+
+REFERENCE			M14_LVL_ES
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_ES
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MUSIC_ES
+LANG_ENGLISH		"4. Musica"
+
+REFERENCE			NEW_LVL_ES
+LANG_ENGLISH		"Nuevo (Nivel 50)"
+
+REFERENCE			NEXT_PAGE_ES
+LANG_ENGLISH		"Next page"
+
+REFERENCE			OPTIONS_ES
+LANG_ENGLISH		"^5Configuraciones"
+
+REFERENCE			PAINTCAN_ES
+LANG_ENGLISH		"Lata de pintura"
+
+REFERENCE			PAN_COPPER_ES
+LANG_ENGLISH		"Cacerola de Cobre"
+
+REFERENCE			PAN_METAL_ES
+LANG_ENGLISH		"Cacerola de Metal"
+
+REFERENCE			PLASTICCRATE_ES
+LANG_ENGLISH		"Caja de plastico"
+
+REFERENCE			PLAY_ES
+LANG_ENGLISH		"^5Juega!"
+
+REFERENCE			PLAYERMODEL_ES
+LANG_ENGLISH		"Personaje"
+
+REFERENCE			PREV_PAGE_ES
+LANG_ENGLISH		"Previous page"
+
+REFERENCE			PROPANE_ES
+LANG_ENGLISH		"Tanque de Propano"
+
+REFERENCE			PROPANE_DOWN_ES
+LANG_ENGLISH		"Tanque de propano caido"
+
+REFERENCE			QUICK_ES
+LANG_ENGLISH		"Menú rapido"
+
+REFERENCE			RADARHACK_ES
+LANG_ENGLISH		"Apaga el radarhack, Chitero..."
+
+REFERENCE			RANKS_ES
+LANG_ENGLISH		"^5Clasificaciones"
+
+REFERENCE			READY_ES
+LANG_ENGLISH		"^3Mantenga [Use]^7: Estado de espera"
+
+REFERENCE			RECON_ES
+LANG_ENGLISH		"Reconocimiento"
+
+REFERENCE			RECON_LVL_ES
+LANG_ENGLISH		"Reconocimiento (Nivel 75)"
+
+REFERENCE			REMOVE_ES
+LANG_ENGLISH		"^1Restaurar"
+
+REFERENCE			RESET_ES
+LANG_ENGLISH		"3. Restaurar a Defecto"
+
+REFERENCE			RESETMODEL_ES
+LANG_ENGLISH		"^3[Frag]^7: Restaurar Angulos de objeto"
+
+REFERENCE			ROCKETS_ES
+LANG_ENGLISH		"Rockets"
+
+REFERENCE			ROTATE_ES
+LANG_ENGLISH		"Rotar"
+
+REFERENCE			ROTATIONFIXED_ES
+LANG_ENGLISH		"Rotación Eje: ^1Fijo"
+
+REFERENCE			ROTATIONRX_ES
+LANG_ENGLISH		"Rotación Eje: ^1-X"
+
+REFERENCE			ROTATIONRY_ES
+LANG_ENGLISH		"Rotación Eje: ^1-Y"
+
+REFERENCE			ROTATIONX_ES
+LANG_ENGLISH		"Rotación Eje: ^1X"
+
+REFERENCE			ROTATIONY_ES
+LANG_ENGLISH		"Rotación Eje: ^1Y"
+
+REFERENCE			ROTATIONZ_ES
+LANG_ENGLISH		"Rotación Eje: ^1Z"
+
+REFERENCE			RUN_ES
+LANG_ENGLISH		"^3Mantiene [Shoot]^7: Corre por 10 Segundos"
+
+REFERENCE			SEEKER_ES
+LANG_ENGLISH		"Seeker"
+
+REFERENCE			SET_ANG_ES
+LANG_ENGLISH		"2. Angulo de camara"
+
+REFERENCE			SET_DIS_ES
+LANG_ENGLISH		"1. Distancia de camara"
+
+REFERENCE			SETS_ES
+LANG_ENGLISH		"4. HNS Configuraciones"
+
+REFERENCE			SETTINGS_ES
+LANG_ENGLISH		"HNS configuraciones"
+
+REFERENCE			SHEEN_ES
+LANG_ENGLISH		"Brillo"
+
+REFERENCE			SNIPER_ES
+LANG_ENGLISH		"Francotirador"
+
+REFERENCE			SOUND_ES
+LANG_ENGLISH		"Musica"
+
+REFERENCE			SPECOPS_ES
+LANG_ENGLISH		"SpecOps"
+
+REFERENCE			SPECOPS_LVL_ES
+LANG_ENGLISH		"SpecOps (Level 50)"
+
+REFERENCE			SPECTATOR_ES
+LANG_ENGLISH		"Espectador"
+
+REFERENCE			STATUE_ES
+LANG_ENGLISH		"Estatua de Leon"
+
+REFERENCE			STREAK_ES
+LANG_ENGLISH		"Racha"
+
+REFERENCE			SUPPORT_ES
+LANG_ENGLISH		"Soporte"
+
+REFERENCE			SUPPORT_LVL_ES
+LANG_ENGLISH		"Soporte (Nivel 100)"
+
+REFERENCE			TELEPORT_ES
+LANG_ENGLISH		"^3Mantiene [Use]^7: Alteraría Teletransportación"
+
+REFERENCE			THIRDPERSON_ES
+LANG_ENGLISH		"^3Mantiene ^3[Frag]^7: Cambiar a 3ra persona"
+
+REFERENCE			TIME_ES
+LANG_ENGLISH		"Tiempo jugado"
+
+REFERENCE			TIRE_ES
+LANG_ENGLISH		"Neumatico"
+
+REFERENCE			TOOLBOX_ES
+LANG_ENGLISH		"Caja de Herramientas"
+
+REFERENCE			TRASHBAG_ES
+LANG_ENGLISH		"Bolsa de basura"
+
+REFERENCE			TV_ES
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX_ES
+LANG_ENGLISH		"^3[Use]^7: Desfijar los ángulos del objeto"
+
+REFERENCE			USEROTATE_ES
+LANG_ENGLISH		"^3[Melee]^7: Rotar"
+
+REFERENCE			VIS_POINTS_ES
+LANG_ENGLISH		"Visibility points"
+
+REFERENCE			VOICES_ES
+LANG_ENGLISH		"5. HNS Voces"
+
+REFERENCE			VOICESOUNDS_ES
+LANG_ENGLISH		"HNS Voces"
+
+REFERENCE			VOTE_ES
+LANG_ENGLISH		"Votar"
+
+REFERENCE			WEAPON_ES
+LANG_ENGLISH		"Arma"
+
+REFERENCE			ABOUT_SK
+LANG_ENGLISH		"O com je tento mód?"
+
+REFERENCE			APPLY_SK
+LANG_ENGLISH		"^2Pouzit"
+
+REFERENCE			AS_HIDER_SK
+LANG_ENGLISH		"Ako skryty"
+
+REFERENCE			AS_SEEKER_SK
+LANG_ENGLISH		"Ako hladjúci"
+
+REFERENCE			ASSAULT_SK
+LANG_ENGLISH		"Útocník"
+
+REFERENCE			ASSAULT_LVL_SK
+LANG_ENGLISH		"Útocník (Level 25)"
+
+REFERENCE			AXIS_SK
+LANG_ENGLISH		"^3[Strelba]^7: Urcit os otácania"
+
+REFERENCE			BACK_SK
+LANG_ENGLISH		"Spät"
+
+REFERENCE			BOX_DOWN_SK
+LANG_ENGLISH		"Spodná krabica"
+
+REFERENCE			BOX2_SK
+LANG_ENGLISH		"Druhá krabica"
+
+REFERENCE			BUCKET_SK
+LANG_ENGLISH		"Vedro"
+
+REFERENCE			BUCKET_DOWN_SK
+LANG_ENGLISH		"Spodné vedro"
+
+REFERENCE			CAMO_SK
+LANG_ENGLISH		"Kamufláz"
+
+REFERENCE			CAMO_BLUETIGER_SK
+LANG_ENGLISH		"Modrá pásikavá"
+
+REFERENCE			CAMO_BLUETIGER_LVL_SK
+LANG_ENGLISH		"Modrá pásikavá (VIP)"
+
+REFERENCE			CAMO_DESERT_SK
+LANG_ENGLISH		"Pústna"
+
+REFERENCE			CAMO_DESERT_LVL_SK
+LANG_ENGLISH		"Pústná (Level 25)"
+
+REFERENCE			CAMO_DIGITAL_SK
+LANG_ENGLISH		"Digitálna"
+
+REFERENCE			CAMO_DIGITAL_LVL_SK
+LANG_ENGLISH		"Digitálna (Level 75)"
+
+REFERENCE			CAMO_REDTIGER_SK
+LANG_ENGLISH		"Cervená pásikavá"
+
+REFERENCE			CAMO_REDTIGER_LVL_SK
+LANG_ENGLISH		"Cervená pásikavá (Level 100)"
+
+REFERENCE			CAMO_WOODLAND_SK
+LANG_ENGLISH		"Lesná"
+
+REFERENCE			CAMO_WOODLAND_LVL_SK
+LANG_ENGLISH		"Lesná (Level 50)"
+
+REFERENCE			CASE2_SK
+LANG_ENGLISH		"Druhy kufor"
+
+REFERENCE			CHALLENGES_SK
+LANG_ENGLISH		"^5Vyzvy"
+
+REFERENCE			CHOOSE_MODEL_SK
+LANG_ENGLISH		"^5Vybrat objekt"
+
+REFERENCE			COMPS_SK
+LANG_ENGLISH		"Pocítace"
+
+REFERENCE			CRATE2_SK
+LANG_ENGLISH		"Druhá debna"
+
+REFERENCE			DEATHFX_SK
+LANG_ENGLISH		"Efekt smrti"
+
+REFERENCE			DEATHFX_BEAR_SK
+LANG_ENGLISH		"Plysoví macíkovia"
+
+REFERENCE			DEATHFX_BEAR_LVL_SK
+LANG_ENGLISH		"Plysoví macíkovia (VIP)"
+
+REFERENCE			DEATHFX_DUST_SK
+LANG_ENGLISH		"Prach"
+
+REFERENCE			DEATHFX_DUST_LVL_SK
+LANG_ENGLISH		"Prach (Level 25)"
+
+REFERENCE			DEATHFX_EXP_SK
+LANG_ENGLISH		"Vybuch"
+
+REFERENCE			DEATHFX_EXP_LVL_SK
+LANG_ENGLISH		"Vybuch (Level 50)"
+
+REFERENCE			DEATHFX_FLOWER_SK
+LANG_ENGLISH		"Kvetiny"
+
+REFERENCE			DEATHFX_FLOWER_LVL_SK
+LANG_ENGLISH		"Kvetiny (Level 75)"
+
+REFERENCE			DEATHFX_MONEY_SK
+LANG_ENGLISH		"Doláre"
+
+REFERENCE			DEATHFX_MONEY_LVL_SK
+LANG_ENGLISH		"Doláre (Level 100)"
+
+REFERENCE			DEATHS_SK
+LANG_ENGLISH		"Úmrtia"
+
+REFERENCE			DEFAULT_SK
+LANG_ENGLISH		"Predvolené"
+
+REFERENCE			DOG_SK
+LANG_ENGLISH		"Pes"
+
+REFERENCE			DOG_LVL_SK
+LANG_ENGLISH		"Pes (VIP)"
+
+REFERENCE			EDIT_MODEL_SK
+LANG_ENGLISH		"^5Editovat objekt"
+
+REFERENCE			ESC_SK
+LANG_ENGLISH		"ESC: Zatvorit"
+
+REFERENCE			FASTMODEL_SK
+LANG_ENGLISH		"^32× [Zamierit]^7: Prepnút kamufláz skrytého"
+
+REFERENCE			FIRE_SK
+LANG_ENGLISH		"Ohen"
+
+REFERENCE			FIX_SK
+LANG_ENGLISH		"^3[Pouzit]^7: Zafixovat uhly objektu"
+
+REFERENCE			INFO_SK
+LANG_ENGLISH		"5. Informácie"
+
+REFERENCE			KILLS_SK
+LANG_ENGLISH		"Zabitia"
+
+REFERENCE			KILLSTREAK_SK
+LANG_ENGLISH		"&&1 Séria zabití!"
+
+REFERENCE			LAST_SK
+LANG_ENGLISH		"Posledny skryty"
+
+REFERENCE			LID_SK
+LANG_ENGLISH		"Pokrievka"
+
+REFERENCE			LOWBOX_SK
+LANG_ENGLISH		"Spodná krabica"
+
+REFERENCE			M14_LVL_SK
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_SK
+LANG_ENGLISH		"M40A3 (Level 50)"
+
+REFERENCE			MUSIC_SK
+LANG_ENGLISH		"4. Hudba"
+
+REFERENCE			NEW_LVL_SK
+LANG_ENGLISH		"Nová hudba (Level 50)"
+
+REFERENCE			NEXT_PAGE_SK
+LANG_ENGLISH		"Dalsia strana"
+
+REFERENCE			OPTIONS_SK
+LANG_ENGLISH		"^5Nastavenia"
+
+REFERENCE			PAINTCAN_SK
+LANG_ENGLISH		"Farba"
+
+REFERENCE			PAN_COPPER_SK
+LANG_ENGLISH		"Bronová panvica"
+
+REFERENCE			PAN_METAL_SK
+LANG_ENGLISH		"Kovová panvica"
+
+REFERENCE			PLASTICCRATE_SK
+LANG_ENGLISH		"Plastová bednièka"
+
+REFERENCE			PLAY_SK
+LANG_ENGLISH		"^5Hrat!"
+
+REFERENCE			PLAYERMODEL_SK
+LANG_ENGLISH		"Hrácsky model"
+
+REFERENCE			PREV_PAGE_SK
+LANG_ENGLISH		"Predchádzajúca strana"
+
+REFERENCE			PROPANE_SK
+LANG_ENGLISH		"Plynová nádrz"
+
+REFERENCE			PROPANE_DOWN_SK
+LANG_ENGLISH		"Plynová flasa"
+
+REFERENCE			QUICK_SK
+LANG_ENGLISH		"Rychle menu"
+
+REFERENCE			RADARHACK_SK
+LANG_ENGLISH		"Vypni si radarhack ty podvodník!"
+
+REFERENCE			RANKS_SK
+LANG_ENGLISH		"^5Hodnosti"
+
+REFERENCE			READY_SK
+LANG_ENGLISH		"^3Podrz [Pouzit]^7: Náhodné premiestnenie"
+
+REFERENCE			RECON_SK
+LANG_ENGLISH		"Prieskumník"
+
+REFERENCE			RECON_LVL_SK
+LANG_ENGLISH		"Prieskumník (Level 75)"
+
+REFERENCE			REMOVE_SK
+LANG_ENGLISH		"^1Obnovit"
+
+REFERENCE			RESET_SK
+LANG_ENGLISH		"3. Obnovit predvolené"
+
+REFERENCE			RESETMODEL_SK
+LANG_ENGLISH		"^3[Granat]^7: Obnovit natocenie objektu"
+
+REFERENCE			ROCKETS_SK
+LANG_ENGLISH		"Rakety"
+
+REFERENCE			ROTATE_SK
+LANG_ENGLISH		"Otocit"
+
+REFERENCE			ROTATIONFIXED_SK
+LANG_ENGLISH		"Os otácania: ^1Zafixovaná"
+
+REFERENCE			ROTATIONRX_SK
+LANG_ENGLISH		"Os otácania: ^1-X"
+
+REFERENCE			ROTATIONRY_SK
+LANG_ENGLISH		"Os otácania: ^1-Y"
+
+REFERENCE			ROTATIONX_SK
+LANG_ENGLISH		"Os otácania: ^1X"
+
+REFERENCE			ROTATIONY_SK
+LANG_ENGLISH		"Os otácania: ^1Y"
+
+REFERENCE			ROTATIONZ_SK
+LANG_ENGLISH		"Os otácania: ^1Z"
+
+REFERENCE			RUN_SK
+LANG_ENGLISH		"^3Podrz [Stre¾ba]^7: Beh na 10 sekúnd"
+
+REFERENCE			SEEKER_SK
+LANG_ENGLISH		"Hladajúci"
+
+REFERENCE			SET_ANG_SK
+LANG_ENGLISH		"2. Uhol kamery"
+
+REFERENCE			SET_DIS_SK
+LANG_ENGLISH		"1. Vzdialenost kamery"
+
+REFERENCE			SETS_SK
+LANG_ENGLISH		"4. HNS Nastavenia"
+
+REFERENCE			SETTINGS_SK
+LANG_ENGLISH		"HNS Nastavenia"
+
+REFERENCE			SHEEN_SK
+LANG_ENGLISH		"Lesk"
+
+REFERENCE			SNIPER_SK
+LANG_ENGLISH		"Ostrelovac"
+
+REFERENCE			SOUND_SK
+LANG_ENGLISH		"Hudba"
+
+REFERENCE			SPECOPS_SK
+LANG_ENGLISH		"Speciálna jednotka"
+
+REFERENCE			SPECOPS_LVL_SK
+LANG_ENGLISH		"Speciálna jednotka (Level 50)"
+
+REFERENCE			SPECTATOR_SK
+LANG_ENGLISH		"Pozorovate¾"
+
+REFERENCE			STATUE_SK
+LANG_ENGLISH		"Socha leva"
+
+REFERENCE			STREAK_SK
+LANG_ENGLISH		"Séria"
+
+REFERENCE			SUPPORT_SK
+LANG_ENGLISH		"Podpora"
+
+REFERENCE			SUPPORT_LVL_SK
+LANG_ENGLISH		"Podpora (Level 100)"
+
+REFERENCE			TELEPORT_SK
+LANG_ENGLISH		"^3Podrz [Pouzit]^7: Náhodné premiestnenie"
+
+REFERENCE			THIRDPERSON_SK
+LANG_ENGLISH		"^3Podrž ^3[Granát]^7: Zmenit na pohlad tretej osoby"
+
+REFERENCE			TIME_SK
+LANG_ENGLISH		"Odohraty èas"
+
+REFERENCE			TIRE_SK
+LANG_ENGLISH		"Pneumatika"
+
+REFERENCE			TOOLBOX_SK
+LANG_ENGLISH		"Krabica s náradím"
+
+REFERENCE			TRASHBAG_SK
+LANG_ENGLISH		"Smetie"
+
+REFERENCE			TV_SK
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX_SK
+LANG_ENGLISH		"^3[Pouzit]^7: Odfixovat uhly objektu"
+
+REFERENCE			USEROTATE_SK
+LANG_ENGLISH		"^3[Nožík]^7: Otocit"
+
+REFERENCE			VIS_POINTS_SK
+LANG_ENGLISH		"Body viditelnosti"
+
+REFERENCE			VOICES_SK
+LANG_ENGLISH		"5. HNS Frázy"
+
+REFERENCE			VOICESOUNDS_SK
+LANG_ENGLISH		"HNS Frázy"
+
+REFERENCE			VOTE_SK
+LANG_ENGLISH		"Volba"
+
+REFERENCE			WEAPON_SK
+LANG_ENGLISH		"Zbran"
+
+REFERENCE			ABOUT_SL
+LANG_ENGLISH		"Opis te modifikacije"
+
+REFERENCE			APPLY_SL
+LANG_ENGLISH		"^1Uporabi"
+
+REFERENCE			AS_HIDER_SL
+LANG_ENGLISH		"Kot skrivalec"
+
+REFERENCE			AS_SEEKER_SL
+LANG_ENGLISH		"Kot iskalec"
+
+REFERENCE			ASSAULT_SL
+LANG_ENGLISH		"Jurisnii vojak"
+
+REFERENCE			ASSAULT_LVL_SL
+LANG_ENGLISH		"Jurisni vojak (Stopnja 25)"
+
+REFERENCE			AXIS_SL
+LANG_ENGLISH		"^3[Ustreli]^7: Nastavi os obracanja"
+
+REFERENCE			BACK_SL
+LANG_ENGLISH		"Nazaj"
+
+REFERENCE			BOX_DOWN_SL
+LANG_ENGLISH		"Skatla spodaj"
+
+REFERENCE			BOX2_SL
+LANG_ENGLISH		"Druga skatla"
+
+REFERENCE			BUCKET_SL
+LANG_ENGLISH		"Vedro"
+
+REFERENCE			BUCKET_DOWN_SL
+LANG_ENGLISH		"Vedro spodaj"
+
+REFERENCE			CAMO_SL
+LANG_ENGLISH		"Kamuflaza"
+
+REFERENCE			CAMO_BLUETIGER_SL
+LANG_ENGLISH		"Modri Tiger"
+
+REFERENCE			CAMO_BLUETIGER_LVL_SL
+LANG_ENGLISH		"Modri Tiger (VIP)"
+
+REFERENCE			CAMO_DESERT_SL
+LANG_ENGLISH		"Puscavna"
+
+REFERENCE			CAMO_DESERT_LVL_SL
+LANG_ENGLISH		"Puscavna (Stopnja 25)"
+
+REFERENCE			CAMO_DIGITAL_SL
+LANG_ENGLISH		"Digitalna"
+
+REFERENCE			CAMO_DIGITAL_LVL_SL
+LANG_ENGLISH		"Digitalna (Stopnja 25)"
+
+REFERENCE			CAMO_REDTIGER_SL
+LANG_ENGLISH		"Rdeci Tiger"
+
+REFERENCE			CAMO_REDTIGER_LVL_SL
+LANG_ENGLISH		"Rdeci Tiger (Stopnja 100)"
+
+REFERENCE			CAMO_WOODLAND_SL
+LANG_ENGLISH		"Gozdna"
+
+REFERENCE			CAMO_WOODLAND_LVL_SL
+LANG_ENGLISH		"Gozdna (Stopnja 50)"
+
+REFERENCE			CASE2_SL
+LANG_ENGLISH		"Druga skatla"
+
+REFERENCE			CHALLENGES_SL
+LANG_ENGLISH		"^5Izzivi"
+
+REFERENCE			CHOOSE_MODEL_SL
+LANG_ENGLISH		"^5Izberi objekt"
+
+REFERENCE			COMPS_SL
+LANG_ENGLISH		"Racunalniki"
+
+REFERENCE			CRATE2_SL
+LANG_ENGLISH		"Drugi zaboj"
+
+REFERENCE			DEATHFX_SL
+LANG_ENGLISH		"Efekt ob smrti"
+
+REFERENCE			DEATHFX_BEAR_SL
+LANG_ENGLISH		"Plisasti medvedki"
+
+REFERENCE			DEATHFX_BEAR_LVL_SL
+LANG_ENGLISH		"Plisasti medvedki (VIP)"
+
+REFERENCE			DEATHFX_DUST_SL
+LANG_ENGLISH		"Prah"
+
+REFERENCE			DEATHFX_DUST_LVL_SL
+LANG_ENGLISH		"Prah (Stopnja 25)"
+
+REFERENCE			DEATHFX_EXP_SL
+LANG_ENGLISH		"Eksplozija"
+
+REFERENCE			DEATHFX_EXP_LVL_SL
+LANG_ENGLISH		"Eksplozija (Stopnja 50)"
+
+REFERENCE			DEATHFX_FLOWER_SL
+LANG_ENGLISH		"Roze"
+
+REFERENCE			DEATHFX_FLOWER_LVL_SL
+LANG_ENGLISH		"Roze (Stopnja 75)"
+
+REFERENCE			DEATHFX_MONEY_SL
+LANG_ENGLISH		"Denar"
+
+REFERENCE			DEATHFX_MONEY_LVL_SL
+LANG_ENGLISH		"Denar (Stopnja 100)"
+
+REFERENCE			DEATHS_SL
+LANG_ENGLISH		"Smrti"
+
+REFERENCE			DEFAULT_SL
+LANG_ENGLISH		"Privzeto"
+
+REFERENCE			DOG_SL
+LANG_ENGLISH		"Pes"
+
+REFERENCE			DOG_LVL_SL
+LANG_ENGLISH		"Pes (VIP)"
+
+REFERENCE			EDIT_MODEL_SL
+LANG_ENGLISH		"^5Uredi objekt"
+
+REFERENCE			ESC_SL
+LANG_ENGLISH		"ESC: Izhod"
+
+REFERENCE			FASTMODEL_SL
+LANG_ENGLISH		"^32× [Pomeri]^7: Aktiviraj kamuflazo iskalca"
+
+REFERENCE			FIRE_SL
+LANG_ENGLISH		"Ogenj"
+
+REFERENCE			FIX_SL
+LANG_ENGLISH		"^3[Uporabi]^7: Fiksiraj kot objekta"
+
+REFERENCE			INFO_SL
+LANG_ENGLISH		"5. Informacija"
+
+REFERENCE			KILLS_SL
+LANG_ENGLISH		"Ubojev"
+
+REFERENCE			KILLSTREAK_SL
+LANG_ENGLISH		"&&1 zaporedje ubojev!"
+
+REFERENCE			LAST_SL
+LANG_ENGLISH		"Zadnji skrivalec"
+
+REFERENCE			LID_SL
+LANG_ENGLISH		"Pokrov"
+
+REFERENCE			LOWBOX_SL
+LANG_ENGLISH		"Nizka skatla"
+
+REFERENCE			M14_LVL_SL
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_SL
+LANG_ENGLISH		"M40A3 (Stopnja 50)"
+
+REFERENCE			MUSIC_SL
+LANG_ENGLISH		"4. Glasba"
+
+REFERENCE			NEW_LVL_SL
+LANG_ENGLISH		"Novo (Stopnja 50)"
+
+REFERENCE			NEXT_PAGE_SL
+LANG_ENGLISH		"Naslednja stran"
+
+REFERENCE			OPTIONS_SL
+LANG_ENGLISH		"^5Nastavitve"
+
+REFERENCE			PAINTCAN_SL
+LANG_ENGLISH		"Vedro barve"
+
+REFERENCE			PAN_COPPER_SL
+LANG_ENGLISH		"Bakrena ponev"
+
+REFERENCE			PAN_METAL_SL
+LANG_ENGLISH		"Jeklena ponev"
+
+REFERENCE			PLASTICCRATE_SL
+LANG_ENGLISH		"Plasticen zaboj"
+
+REFERENCE			PLAY_SL
+LANG_ENGLISH		"^5Igraj!"
+
+REFERENCE			PLAYERMODEL_SL
+LANG_ENGLISH		"Lik"
+
+REFERENCE			PREV_PAGE_SL
+LANG_ENGLISH		"Prejsnja stran"
+
+REFERENCE			PROPANE_SL
+LANG_ENGLISH		"Tank propana"
+
+REFERENCE			PROPANE_DOWN_SL
+LANG_ENGLISH		"Tank propana spodaj"
+
+REFERENCE			QUICK_SL
+LANG_ENGLISH		"Hitri meni"
+
+REFERENCE			RADARHACK_SL
+LANG_ENGLISH		"Izklopi radar hack, goljuf..."
+
+REFERENCE			RANKS_SL
+LANG_ENGLISH		"^5Cini"
+
+REFERENCE			READY_SL
+LANG_ENGLISH		"^3Drzi [Uporabi]^7: Status cakanja"
+
+REFERENCE			RECON_SL
+LANG_ENGLISH		"Izvidnik"
+
+REFERENCE			RECON_LVL_SL
+LANG_ENGLISH		"Izvidnik (Stopnja 75)"
+
+REFERENCE			REMOVE_SL
+LANG_ENGLISH		"^1Obnovi"
+
+REFERENCE			RESET_SL
+LANG_ENGLISH		"3. Povrni na privzeto"
+
+REFERENCE			RESETMODEL_SL
+LANG_ENGLISH		"^3[Grenata]^7:Ponastavi kot objekta"
+
+REFERENCE			ROCKETS_SL
+LANG_ENGLISH		"Rakete"
+
+REFERENCE			ROTATE_SL
+LANG_ENGLISH		"Rotiraj"
+
+REFERENCE			ROTATIONFIXED_SL
+LANG_ENGLISH		"Rotacijska os: ^1Fiksirano"
+
+REFERENCE			ROTATIONRX_SL
+LANG_ENGLISH		"Rotacijska os: ^1-X"
+
+REFERENCE			ROTATIONRY_SL
+LANG_ENGLISH		"Rotacijska os: ^1-Y"
+
+REFERENCE			ROTATIONX_SL
+LANG_ENGLISH		"Rotacijska os: ^1X"
+
+REFERENCE			ROTATIONY_SL
+LANG_ENGLISH		"Rotacijska os: ^1Y"
+
+REFERENCE			ROTATIONZ_SL
+LANG_ENGLISH		"Rotacijska os: ^1Z"
+
+REFERENCE			RUN_SL
+LANG_ENGLISH		"^3Drzi [Ustreli]^7: Teci 10 sekund"
+
+REFERENCE			SEEKER_SL
+LANG_ENGLISH		"Iskalec"
+
+REFERENCE			SET_ANG_SL
+LANG_ENGLISH		"2. Kot kamere"
+
+REFERENCE			SET_DIS_SL
+LANG_ENGLISH		"1. Oddaljenost kamere"
+
+REFERENCE			SETS_SL
+LANG_ENGLISH		"4. Nastavitve HNS"
+
+REFERENCE			SETTINGS_SL
+LANG_ENGLISH		"Nastavitve HNS"
+
+REFERENCE			SHEEN_SL
+LANG_ENGLISH		"Sijaj"
+
+REFERENCE			SNIPER_SL
+LANG_ENGLISH		"Ostrostrelec"
+
+REFERENCE			SOUND_SL
+LANG_ENGLISH		"Glasba"
+
+REFERENCE			SPECOPS_SL
+LANG_ENGLISH		"Posebna enota"
+
+REFERENCE			SPECOPS_LVL_SL
+LANG_ENGLISH		"Posebna enota (Stopnja 50)"
+
+REFERENCE			SPECTATOR_SL
+LANG_ENGLISH		"Gledalec"
+
+REFERENCE			STATUE_SL
+LANG_ENGLISH		"Levji kip"
+
+REFERENCE			STREAK_SL
+LANG_ENGLISH		"Serija"
+
+REFERENCE			SUPPORT_SL
+LANG_ENGLISH		"Podpora"
+
+REFERENCE			SUPPORT_LVL_SL
+LANG_ENGLISH		"Podpora (Stopnja 100)"
+
+REFERENCE			TELEPORT_SL
+LANG_ENGLISH		"^3Drzi [Uporabi]^7: Nakljucni teleport"
+
+REFERENCE			THIRDPERSON_SL
+LANG_ENGLISH		"^3Drzi ^3[Granata]^7: Spremeni v tretjeosebni pogled"
+
+REFERENCE			TIME_SL
+LANG_ENGLISH		"Cas igranja"
+
+REFERENCE			TIRE_SL
+LANG_ENGLISH		"Guma"
+
+REFERENCE			TOOLBOX_SL
+LANG_ENGLISH		"Skatla z orodji"
+
+REFERENCE			TRASHBAG_SL
+LANG_ENGLISH		"Vrecka smeti"
+
+REFERENCE			TV_SL
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX_SL
+LANG_ENGLISH		"^3[Uporabi]^7: Odfiksiraj kote objekta"
+
+REFERENCE			USEROTATE_SL
+LANG_ENGLISH		"^3[Noz]^7: Rotiraj"
+
+REFERENCE			VIS_POINTS_SL
+LANG_ENGLISH		"Vidnostne tocke"
+
+REFERENCE			VOICES_SL
+LANG_ENGLISH		"5. HNS Glasovi"
+
+REFERENCE			VOICESOUNDS_SL
+LANG_ENGLISH		"HNS Glasovi"
+
+REFERENCE			VOTE_SL
+LANG_ENGLISH		"Glasovanje"
+
+REFERENCE			WEAPON_SL
+LANG_ENGLISH		"Orozje"
+
+REFERENCE			ABOUT_TR
+LANG_ENGLISH		"Mod ne hakkinda?"
+
+REFERENCE			APPLY_TR
+LANG_ENGLISH		"^2Uygula"
+
+REFERENCE			AS_HIDER_TR
+LANG_ENGLISH		"Saklanan olarak"
+
+REFERENCE			AS_SEEKER_TR
+LANG_ENGLISH		"Arayici olarak"
+
+REFERENCE			ASSAULT_TR
+LANG_ENGLISH		"Saldiri"
+
+REFERENCE			ASSAULT_LVL_TR
+LANG_ENGLISH		"Saldiri (Seviye 25)"
+
+REFERENCE			AXIS_TR
+LANG_ENGLISH		"^3[Ates]^7: Döndürme eksenini ayarla"
+
+REFERENCE			BACK_TR
+LANG_ENGLISH		"Geri"
+
+REFERENCE			BOX_DOWN_TR
+LANG_ENGLISH		"Kutu"
+
+REFERENCE			BOX2_TR
+LANG_ENGLISH		"Ikinci kutu"
+
+REFERENCE			BUCKET_TR
+LANG_ENGLISH		"Kova"
+
+REFERENCE			BUCKET_DOWN_TR
+LANG_ENGLISH		"Kova"
+
+REFERENCE			CAMO_TR
+LANG_ENGLISH		"Kamuflaj"
+
+REFERENCE			CAMO_BLUETIGER_TR
+LANG_ENGLISH		"Mavi Kaplan"
+
+REFERENCE			CAMO_BLUETIGER_LVL_TR
+LANG_ENGLISH		"Mavi Kaplan (VIP)"
+
+REFERENCE			CAMO_DESERT_TR
+LANG_ENGLISH		"Çöl"
+
+REFERENCE			CAMO_DESERT_LVL_TR
+LANG_ENGLISH		"Çöl (Seviye 25)"
+
+REFERENCE			CAMO_DIGITAL_TR
+LANG_ENGLISH		"Dijital"
+
+REFERENCE			CAMO_DIGITAL_LVL_TR
+LANG_ENGLISH		"Dijital (Seviye 75)"
+
+REFERENCE			CAMO_REDTIGER_TR
+LANG_ENGLISH		"Kizil Kaplan"
+
+REFERENCE			CAMO_REDTIGER_LVL_TR
+LANG_ENGLISH		"Kizil Kaplan (Seviye 100)"
+
+REFERENCE			CAMO_WOODLAND_TR
+LANG_ENGLISH		"Agaçlik"
+
+REFERENCE			CAMO_WOODLAND_LVL_TR
+LANG_ENGLISH		"Agaçlik (Seviye 50)"
+
+REFERENCE			CASE2_TR
+LANG_ENGLISH		"Ikinci kafes"
+
+REFERENCE			CHALLENGES_TR
+LANG_ENGLISH		"^5Görevler"
+
+REFERENCE			CHOOSE_MODEL_TR
+LANG_ENGLISH		"^5Nesne seç"
+
+REFERENCE			COMPS_TR
+LANG_ENGLISH		"Bilgisayarlar"
+
+REFERENCE			CRATE2_TR
+LANG_ENGLISH		"Ikinci kutu"
+
+REFERENCE			DEATHFX_TR
+LANG_ENGLISH		"Ölüm Efekti"
+
+REFERENCE			DEATHFX_BEAR_TR
+LANG_ENGLISH		"Oyuncak Ayilar"
+
+REFERENCE			DEATHFX_BEAR_LVL_TR
+LANG_ENGLISH		"Oyuncak Ayilar (VIP)"
+
+REFERENCE			DEATHFX_DUST_TR
+LANG_ENGLISH		"Toz"
+
+REFERENCE			DEATHFX_DUST_LVL_TR
+LANG_ENGLISH		"Toz (Seviye 25)"
+
+REFERENCE			DEATHFX_EXP_TR
+LANG_ENGLISH		"Patlama"
+
+REFERENCE			DEATHFX_EXP_LVL_TR
+LANG_ENGLISH		"Patlama (Seviye 50)"
+
+REFERENCE			DEATHFX_FLOWER_TR
+LANG_ENGLISH		"Çiçekler"
+
+REFERENCE			DEATHFX_FLOWER_LVL_TR
+LANG_ENGLISH		"Çiçekler (Seviye 75)"
+
+REFERENCE			DEATHFX_MONEY_TR
+LANG_ENGLISH		"Para"
+
+REFERENCE			DEATHFX_MONEY_LVL_TR
+LANG_ENGLISH		"Para (Seviye 100)"
+
+REFERENCE			DEATHS_TR
+LANG_ENGLISH		"Ölümler"
+
+REFERENCE			DEFAULT_TR
+LANG_ENGLISH		"Varsayilan"
+
+REFERENCE			DOG_TR
+LANG_ENGLISH		"Köpek"
+
+REFERENCE			DOG_LVL_TR
+LANG_ENGLISH		"Köpek (VIP)"
+
+REFERENCE			EDIT_MODEL_TR
+LANG_ENGLISH		"^5Nesne düzenle"
+
+REFERENCE			ESC_TR
+LANG_ENGLISH		"ESC: Çikis"
+
+REFERENCE			FASTMODEL_TR
+LANG_ENGLISH		"^32× [Nisan al]^7: Arayici kamuflaji"
+
+REFERENCE			FIRE_TR
+LANG_ENGLISH		"ATES"
+
+REFERENCE			FIX_TR
+LANG_ENGLISH		"^3[Kullan]^7: Nesne açisini sabitle"
+
+REFERENCE			INFO_TR
+LANG_ENGLISH		"5. Bilgilendirme"
+
+REFERENCE			KILLS_TR
+LANG_ENGLISH		"Vuruslar"
+
+REFERENCE			KILLSTREAK_TR
+LANG_ENGLISH		"&&1 Vurus art arda!"
+
+REFERENCE			LAST_TR
+LANG_ENGLISH		"Son saklanan"
+
+REFERENCE			LID_TR
+LANG_ENGLISH		"Kapak"
+
+REFERENCE			LOWBOX_TR
+LANG_ENGLISH		"Kutu"
+
+REFERENCE			M14_LVL_TR
+LANG_ENGLISH		"M14 (VIP)"
+
+REFERENCE			M40A3_LVL_TR
+LANG_ENGLISH		"M40A3 (Seviye 50)"
+
+REFERENCE			MUSIC_TR
+LANG_ENGLISH		"4. Müzik"
+
+REFERENCE			NEW_LVL_TR
+LANG_ENGLISH		"Yeni (Seviye 50)"
+
+REFERENCE			NEXT_PAGE_TR
+LANG_ENGLISH		"Sonraki Sayfa"
+
+REFERENCE			OPTIONS_TR
+LANG_ENGLISH		"^5Ayarlar"
+
+REFERENCE			PAINTCAN_TR
+LANG_ENGLISH		"Boya kutusu"
+
+REFERENCE			PAN_COPPER_TR
+LANG_ENGLISH		"Bakir tava"
+
+REFERENCE			PAN_METAL_TR
+LANG_ENGLISH		"Metal tava"
+
+REFERENCE			PLASTICCRATE_TR
+LANG_ENGLISH		"Plastik kutu"
+
+REFERENCE			PLAY_TR
+LANG_ENGLISH		"^5Oyna!"
+
+REFERENCE			PLAYERMODEL_TR
+LANG_ENGLISH		"Karakter"
+
+REFERENCE			PREV_PAGE_TR
+LANG_ENGLISH		"Önceki Sayfa"
+
+REFERENCE			PROPANE_TR
+LANG_ENGLISH		"Propan tanki"
+
+REFERENCE			PROPANE_DOWN_TR
+LANG_ENGLISH		"Propan"
+
+REFERENCE			QUICK_TR
+LANG_ENGLISH		"Hizli Menü"
+
+REFERENCE			RADARHACK_TR
+LANG_ENGLISH		"Radar hileni kapat, hileci..."
+
+REFERENCE			RANKS_TR
+LANG_ENGLISH		"^5Rütbeler"
+
+REFERENCE			READY_TR
+LANG_ENGLISH		"^3Basili tut [Kullan]^7: Bekleme durumu"
+
+REFERENCE			RECON_TR
+LANG_ENGLISH		"Gözcü"
+
+REFERENCE			RECON_LVL_TR
+LANG_ENGLISH		"Gözcü (Seviye 75)"
+
+REFERENCE			REMOVE_TR
+LANG_ENGLISH		"^1Temizle"
+
+REFERENCE			RESET_TR
+LANG_ENGLISH		"3. Varsayilanlari ayarla"
+
+REFERENCE			RESETMODEL_TR
+LANG_ENGLISH		"^3[Bomba]^7: Nesne açisini sifirla"
+
+REFERENCE			ROCKETS_TR
+LANG_ENGLISH		"Roketler"
+
+REFERENCE			ROTATE_TR
+LANG_ENGLISH		"Döndür"
+
+REFERENCE			ROTATIONFIXED_TR
+LANG_ENGLISH		"Döndürme ekseni: ^1Sabit"
+
+REFERENCE			ROTATIONRX_TR
+LANG_ENGLISH		"Döndürme ekseni: ^1-X"
+
+REFERENCE			ROTATIONRY_TR
+LANG_ENGLISH		"Döndürme ekseni: ^1-Y"
+
+REFERENCE			ROTATIONX_TR
+LANG_ENGLISH		"Döndürme ekseni: ^1X"
+
+REFERENCE			ROTATIONY_TR
+LANG_ENGLISH		"Döndürme ekseni: ^1Y"
+
+REFERENCE			ROTATIONZ_TR
+LANG_ENGLISH		"Döndürme ekseni: ^1Z"
+
+REFERENCE			RUN_TR
+LANG_ENGLISH		"^3Basili tut [Ates]^7: 10 saniyeligine kos"
+
+REFERENCE			SEEKER_TR
+LANG_ENGLISH		"Arayici"
+
+REFERENCE			SET_ANG_TR
+LANG_ENGLISH		"2. Kamera açisi"
+
+REFERENCE			SET_DIS_TR
+LANG_ENGLISH		"1. Kamera uzakligi"
+
+REFERENCE			SETS_TR
+LANG_ENGLISH		"4. HNS Ayarlari"
+
+REFERENCE			SETTINGS_TR
+LANG_ENGLISH		"HNS Ayarlari"
+
+REFERENCE			SHEEN_TR
+LANG_ENGLISH		"Parilti"
+
+REFERENCE			SNIPER_TR
+LANG_ENGLISH		"Nisanci"
+
+REFERENCE			SOUND_TR
+LANG_ENGLISH		"Müzik"
+
+REFERENCE			SPECOPS_TR
+LANG_ENGLISH		"ÖzelKuvvet"
+
+REFERENCE			SPECOPS_LVL_TR
+LANG_ENGLISH		"ÖzelKuvvet (Seviye 50)"
+
+REFERENCE			SPECTATOR_TR
+LANG_ENGLISH		"Izleyici"
+
+REFERENCE			STATUE_TR
+LANG_ENGLISH		"Aslan heykeli"
+
+REFERENCE			STREAK_TR
+LANG_ENGLISH		"Streak"
+
+REFERENCE			SUPPORT_TR
+LANG_ENGLISH		"Destek"
+
+REFERENCE			SUPPORT_LVL_TR
+LANG_ENGLISH		"Destek (Seviye 100)"
+
+REFERENCE			TELEPORT_TR
+LANG_ENGLISH		"^3Basili Tut [Kullan]^7: Rastgele isinlanma"
+
+REFERENCE			THIRDPERSON_TR
+LANG_ENGLISH		"^3Basili tut ^3[Bomba]^7: Üçüncül bakis"
+
+REFERENCE			TIME_TR
+LANG_ENGLISH		"Oynanan süre"
+
+REFERENCE			TIRE_TR
+LANG_ENGLISH		"Tekerlek"
+
+REFERENCE			TOOLBOX_TR
+LANG_ENGLISH		"Alet kutusu"
+
+REFERENCE			TRASHBAG_TR
+LANG_ENGLISH		"Çöp poseti"
+
+REFERENCE			TV_TR
+LANG_ENGLISH		"TV"
+
+REFERENCE			UNFIX_TR
+LANG_ENGLISH		"^3[Kullan]^7: Nesne açisini serbest birak"
+
+REFERENCE			USEROTATE_TR
+LANG_ENGLISH		"^3[Biçak]^7: Döndür"
+
+REFERENCE			VIS_POINTS_TR
+LANG_ENGLISH		"Gorunurluk Puani"
+
+REFERENCE			VOICES_TR
+LANG_ENGLISH		"5. HNS Sesler"
+
+REFERENCE			VOICESOUNDS_TR
+LANG_ENGLISH		"HNS Sesler"
+
+REFERENCE			VOTE_TR
+LANG_ENGLISH		"Oyla"
+
+REFERENCE			WEAPON_TR
+LANG_ENGLISH		"Silah"
+
+ENDMARKER

@@ -1,0 +1,48 @@
+Info.txt
+---------------------
+Since 1.7x build 3238, you can also use our HNS plugin (made by dioda), which tries to set up the hiding objects for new maps automatically. To use it, be sure that you have the required version of Ninja's serverfile, uncomment the plugin load command on the bottom of the server config file, and rename maps/_plugin.hns to maps/_plugin.gsx.
+
+_main.gsc
+---------------------
+#include maps\_plugin;
+
+if (!level.models.size)
+{
+	// HNS auto-setup plugin for maps
+	models = getModels();
+	s = models.size;
+	if (s)
+	{
+		for (i = 0; i < models.size; i++)
+		{
+			if (isDefined(level.modelName[models[i]]))
+			{
+				addObj(models[i]);
+			}
+		}
+
+		// Global models
+		addObj("com_pallet_stack");
+		addObj("vehicle_80s_sedan1_brn");
+		addObj("vehicle_80s_hatch1_brn_destroyed");
+		addObj("com_cardboardbox01");
+		addObj("cargocontainer_20ft_red");
+		addObj("mil_sandbag_desert_long");
+		addObj("me_corrugated_metal8x8");
+		addObj("com_tv2");
+	}
+	else
+	{
+		error("Models for " + level.script + " are not configured!");
+	}
+}
+
+mod.csv
+---------------------
+rawfile,maps/_plugin.gsc
+
+server.cfg
+---------------------
+// HNS plugin
+// Only for 1.7x build >= 3238
+//loadplugin hns

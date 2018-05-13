@@ -1,0 +1,195 @@
+#include "ui_mp/attachments.inc"
+{
+	menuDef
+	{
+		name			"attachments2"
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		onEsc 
+		{
+			scriptMenuResponse "back";
+		}
+
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.75 //0 0.05 0.15 0.5
+			visible			1
+			decoration
+		}
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name			"shelf"
+			style			WINDOW_STYLE_SHADER
+			rect			300 150 128 256 // 425 125 128 256
+			background		"shelf"
+			dvartest		"model"
+			showDvar
+			{
+				"com_restaurantstainlessteelshelf_01";
+				"com_restaurantstainlessteelshelf_02";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"sink"
+			style			WINDOW_STYLE_SHADER
+			rect			375 125 256 128
+			background		"sink"
+			dvartest		"model"
+			showDvar
+			{
+				"com_restaurantsink_2comps";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"sink2"
+			style			WINDOW_STYLE_SHADER
+			rect			375 125 256 128
+			background		"sink2"
+			dvartest		"model"
+			showDvar
+			{
+				"com_restaurantsink_2comps";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"tv"
+			style			WINDOW_STYLE_SHADER
+			rect			375 125 128 128
+			background		"tv"
+			dvartest		"model"
+			showDvar
+			{
+				"tvs_cubicle_round_1";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"comps"
+			style			WINDOW_STYLE_SHADER
+			rect			311 125 256 256
+			background		"comps"
+			dvartest		"model"
+			showDvar
+			{
+				"tvs_cubicle_round_1";
+			}
+			visible			0
+			decoration
+		}
+
+		itemDef
+		{
+			name			"box"
+			style			WINDOW_STYLE_SHADER
+			rect			425 125 128 256
+			background		"box"
+			dvartest		"model"
+			showDvar
+			{
+				"com_cardboardbox01";
+			}
+			visible			0
+			decoration
+		}
+
+		// ------------------ TREE TITLE ------------------
+
+		CHOICE_MENU_TITLE("@MENUS_EDIT_MODEL" + dvarString("lang"))
+
+		// ------------------ buttons ---------------------
+		#define BACK_OPEN;
+		#include "ui_mp/navcontrols.inc"
+
+		CHOICE_SECTION_TITLE(1, dvarString(dvarString("modelid") + "_title"))
+
+		//title("SHELF", "com_restaurantstainlessteelshelf_02")
+		list(2, "TOOLBOX", "toolbox", a b c d e f g h, "com_restaurantstainlessteelshelf_02", "shelf")
+		rotate(3, "toolbox", "com_restaurantstainlessteelshelf_02", "shelf")
+		list(5, "PAINTCAN", "paintcan", a b c d e f g h, "com_restaurantstainlessteelshelf_02", "shelf")
+		rotate(6, "paintcan", "com_restaurantstainlessteelshelf_02", "shelf")
+		list(8, "PLASTICCRATE", "plasticcrate2", a b c d e f g h, "com_restaurantstainlessteelshelf_02", "shelf")
+		rotate(9, "plasticcrate2", "com_restaurantstainlessteelshelf_02", "shelf")
+		list(11, "LOWBOX", "lowbox", a b c d e f g h, "com_restaurantstainlessteelshelf_02", "shelf")
+		rotate(12, "lowbox", "com_restaurantstainlessteelshelf_02", "shelf")
+		list(22, "TIRE", "tire", a b c d e f g h, "com_restaurantstainlessteelshelf_02", "shelf")
+		rotate(23, "tire", "com_restaurantstainlessteelshelf_02", "shelf")
+
+		//title("SHELF", "com_restaurantstainlessteelshelf_01")
+		list(2, "TOOLBOX", "toolbox", a b c d e f g h, "com_restaurantstainlessteelshelf_01", "shelf")
+		rotate(3, "toolbox", "com_restaurantstainlessteelshelf_01", "shelf")
+		list(5, "PAINTCAN", "paintcan", a b c d e f g h, "com_restaurantstainlessteelshelf_01", "shelf")
+		rotate(6, "paintcan", "com_restaurantstainlessteelshelf_01", "shelf")
+		list(8, "PLASTICCRATE", "plasticcrate2", a b c d e f g h, "com_restaurantstainlessteelshelf_01", "shelf")
+		rotate(9, "plasticcrate2", "com_restaurantstainlessteelshelf_01", "shelf")
+		list(11, "LOWBOX", "lowbox", a b c d e f g h, "com_restaurantstainlessteelshelf_01", "shelf")
+		rotate(12, "lowbox", "com_restaurantstainlessteelshelf_01", "shelf")
+		list(22, "TIRE", "tire", a b c d e f g h, "com_restaurantstainlessteelshelf_01", "shelf")
+		rotate(23, "tire", "com_restaurantstainlessteelshelf_01", "shelf")
+
+		//title("SINK", "com_restaurantsink_2comps")
+		list(2, "PAINTCAN", "paintcan3", a b, "com_restaurantsink_2comps", "sink")
+		rotate(3, "paintcan3", "com_restaurantsink_2comps", "sink")
+		list(5, "BUCKET", "bucket", a b, "com_restaurantsink_2comps", "sink")
+		rotate(6, "bucket", "com_restaurantsink_2comps", "sink")
+		list(8, "BUCKET_DOWN", "bucket2", a b, "com_restaurantsink_2comps", "sink2")
+		rotate(9, "bucket2", "com_restaurantsink_2comps", "sink2")
+
+		//title("TV_TABLE", "tvs_cubicle_round_1")
+		list(2, "COMPS", "comps", a, "tvs_cubicle_round_1", "comps")
+		list_map(4, "TV", "tv", a, "tvs_cubicle_round_1", "tv", "mp_broadcast")
+		rotate_map(5, "tv", "tvs_cubicle_round_1", "tv", "mp_broadcast")
+
+		//title("BOX", "com_cardboardbox01")
+		list(2, "BOX2", "box", a, "com_cardboardbox01", "box")
+		rotate(3, "box", "com_cardboardbox01", "box")
+
+		//title("BARREL_BURNT", "com_barrel_fire")
+		list(2, "FIRE", "fire", a, "com_barrel_fire", "")
+
+		list(2, "SHEEN", "glow", a, "ct_street_lamp_on", "")
+
+		CHOICE_BUTTON_VIS(34, "@MENUS_APPLY" + dvarString("lang"), close self; scriptMenuResponse "apply", when (allowedModel))
+		CHOICE_BUTTON_VIS(35, "@MENUS_REMOVE" + dvarString("lang"), close self; scriptMenuResponse "remove", when (allowedModel))
+	}
+}

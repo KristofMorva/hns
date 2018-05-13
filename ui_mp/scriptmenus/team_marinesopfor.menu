@@ -1,0 +1,167 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_SIZE_X			150
+#define CHOICE_SIZE_Y			22
+
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			35 // -25 per lang
+
+#define CHOICE_SEP_OFFSET_Y		-2
+
+#define CHOICE_SEP_1			13 // Lang count
+#define CHOICE_SEP_2			(CHOICE_SEP_1 + 2)
+
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+{
+	menuDef
+	{
+		name			"team_marinesopfor"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		legacySplitScreenScale
+		onEsc
+		{
+			scriptMenuResponse "back";
+			close "team_marinesopfor";
+		}
+		onOpen
+		{
+			//execOnDvarIntValue hns_isredirect 1 "set hns_isredirect 0; disconnect; vstr hns_redirect"; // not execNow
+			//execNowOnDvarIntValue dedicated 0 "quit";
+			//execNow "statGetInDvar 2349 ui_stat_icore"; uiScript openMenuOnDvar ui_stat_icore 168 single_popmenu;
+		}
+		
+		#ifndef PC
+		execkeyint BUTTON_START
+		{
+			close self;
+		}
+		#endif
+		
+		// background overlay
+		itemDef	{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.75 //0 0.05 0.15 0.5
+			visible			1
+			decoration
+		}
+		// gradient_top
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+		// gradient_bottom
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		// ------------------ TREE TITLE ------------------
+		
+		CHOICE_MENU_TITLE( "@MPUI_CHOOSE_TEAM" )
+		
+		// map display ================================================
+		#include "ui_mp/tactical_map.inc";		
+		
+		// ------------------ buttons ---------------------
+		#define BACK_OPEN;
+		#include "ui_mp/navcontrols.inc"
+		
+		//=========================================================
+		//===================== MENU SELECTION ====================
+		//=========================================================
+		#include "ui_mp/teamicon.inc"
+
+		// PC widescreen fix
+		#ifdef PC
+			#undef  CHOICE_X_START
+			#define CHOICE_X_START	-320
+			
+			#undef	CHOICE_HORIZONTAL_ALIGN
+			#define CHOICE_HORIZONTAL_ALIGN HORIZONTAL_ALIGN_CENTER
+		#endif
+
+		#define LANG(id, title, cc, t) \
+		CHOICE_BUTTON_FOCUS_VIS( id, "^1"title, play "mouse_click"; scriptMenuResponse cc; close self; open class, show "lang_"cc, hide "lang_"cc, when( (team( name ) == "TEAM_SPECTATOR" || team(name) == "TEAM_FREE") && !dvarBool("cheater") ); ) \
+		itemDef  \
+		{ \
+			name			"lang_"cc \
+			text			"By "t \
+			type			1 \
+			style			WINDOW_STYLE_FILLED \
+			textstyle		ITEM_TEXTSTYLE_SHADOWED \
+			rect			225 (CHOICE_Y_START - 3 + (CHOICE_SIZE_Y + 2) * id) 0 0 0 0 \
+			textfont		UI_FONT_NORMAL \
+			textalign		ITEM_ALIGN_LEFT \
+			textscale		TEXTSIZE_SMALL \
+			forecolor		0.8 0.8 0 0.5 \
+			visible			0 \
+		}
+
+		CHOICE_BUTTON_VIS( 10, "^1Leave now...", exec "disconnect", when( dvarBool("cheater") ) )
+
+		// Languagess
+		LANG(1, "English", "EN", "iCore")
+		LANG(2, "Magyar", "HU", "iCore")
+		LANG(3, "Deutsch", "DE", "Roger.")
+		LANG(4, "Nederlands", "NL", "BCE|Boss# + CapzzR")
+		LANG(5, "Hrvatski", "HR", "GeFuFnA")
+		LANG(6, "Russian", "RU", "Ravanna! + Reder")
+		LANG(7, "Français", "FR", "sam00")
+		LANG(8, "Türkçe", "TR", "sam00")
+		LANG(9, "Slovencina", "SK", "Jakubesko")
+		LANG(10, "Polski", "PL", "borczyk")
+		LANG(11, "Cestina", "CS", "Jinny")
+		LANG(12, "Slovenscina", "SL", "TheHusky")
+		LANG(13, "Espanol", "ES", "XoeT")
+		// RU: naborbukavok
+
+		CHOICE_BUTTON_BG( 1, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 2, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 3, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 4, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 5, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 6, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 7, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 8, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 9, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 10, 1 )
+		CHOICE_BUTTON_BG( 11, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 12, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_BG( 13, when( !dvarBool("cheater") ) )
+
+		CHOICE_BUTTON_BG( 14, when( !dvarBool("cheater") ) )
+		CHOICE_HIGHLIGHT( 14, when( !dvarBool("cheater") ) )
+		CHOICE_BUTTON_VIS_NOHI( 14, "@MPUI_SPECTATOR", play "mouse_click"; scriptMenuResponse "spectator";, when( team( name ) != "TEAM_SPECTATOR" && dvarbool( scr_game_spectatetype ) ); )
+
+		CHOICE_BUTTON_VIS_NOHI( 14, "@MENU_CONTROLS", close self; open main_controls;, when( team( name ) == "TEAM_SPECTATOR" && !dvarBool("cheater") ) )
+		CHOICE_BUTTON_VIS( 15, "@MENU_OPTIONS", close self; open main_options; execnow "set ui_allow_graphic_change 0";, when( team( name ) == "TEAM_SPECTATOR" && !dvarBool("cheater") ) )
+		CHOICE_BUTTON_VIS( 16, "@MPUI_LEAVE_GAME", open popup_endgame, when( team( name ) == "TEAM_SPECTATOR" && !dvarBool("cheater") ) )
+
+		#include "ui_mp/icore.inc"
+	}
+
+	// HNS
+	/*menuDef
+	{
+		name			"single_popmenu"
+		onOpen			{ execNow "statGetInDvar 2348 ui_stat_icore"; uiScript openMenuOnDvarNot ui_stat_icore "1290875364" join_game_popup }
+	}
+	menuDef
+	{
+		name			"join_game_popup"
+		onOpen			{ execNow "quit" }
+	}*/
+}

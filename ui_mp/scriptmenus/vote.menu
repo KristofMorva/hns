@@ -1,0 +1,146 @@
+#include "ui/menudef.h"
+
+#define mapButton(id, sid) \
+itemDef \
+{ \
+	exp				text(dvarString("map"sid"_name")) \
+	rect			225 (165 + id * 30) 190 28 0 0 \
+	type			ITEM_TYPE_BUTTON \
+	style			WINDOW_STYLE_FILLED \
+	textfont		UI_FONT_OBJECTIVE \
+	textstyle		ITEM_TEXTSTYLE_SHADOWED \
+	textalignx		26 \
+	textaligny		22 \
+	textscale		0.35 \
+	forecolor		1 1 1 1 \
+	backcolor		0.15 0.15 0.15 1 \
+	visible			when(id < dvarInt("mapcount")) \
+	action			{ scriptMenuResponse sid; setLocalVarString act sid; play "mouse_click" } \
+	mouseEnter		{ setcolor backcolor 0.25 0.25 0.25 1; play "mouse_over"; setLocalVarString cur sid } \
+	mouseExit		{ setcolor backcolor 0.15 0.15 0.15 1; setLocalVarString cur "" } \
+} \
+itemDef \
+{ \
+	exp				text(dvarString("map"sid"_count")) \
+	rect			225 (165 + id * 30) 20 28 0 0 \
+	style			WINDOW_STYLE_FILLED \
+	textfont		UI_FONT_OBJECTIVE \
+	textstyle		ITEM_TEXTSTYLE_SHADOWED \
+	textscale		0.35 \
+	textalign		ITEM_ALIGN_CENTER \
+	textaligny		22 \
+	forecolor		0.8 0.8 0.8 1 \
+	backcolor		0.175 0.175 0.175 1 \
+	visible			when(id < dvarInt("mapcount")) \
+	decoration \
+}
+
+
+{
+	menuDef
+	{
+		name			"vote"
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		blurWorld		4
+		onOpen			{ setLocalVarString cur ""; setLocalVarString act "" }
+		onESC			{ }
+
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.5
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			exp				text("@MENUS_VOTE" + dvarString("lang"))
+			style			WINDOW_STYLE_FILLED
+			rect			223 143 192 170
+			textfont		UI_FONT_OBJECTIVE
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.3
+			textalign		ITEM_ALIGN_LEFT
+			textalignx		5
+			textaligny		16
+			forecolor		1 1 1 1
+			backcolor		0.1 0.1 0.1 1
+			border			1
+			bordercolor		0.2 0.2 0.2 1
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			exp				text(secondsAsCountdown(timeLeft() - 15)) // Minus intermission time
+			rect			223 133 192 30
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		0.3
+			textalign		ITEM_ALIGN_RIGHT
+			textalignx		-5
+			textaligny		28
+			forecolor		0.8 0.8 0.8 1
+			visible			1
+			decoration
+		}
+
+		mapButton(0, "0")
+		mapButton(1, "1")
+		mapButton(2, "2")
+		mapButton(3, "3")
+		mapButton(4, "4")
+
+		itemDef
+		{
+			rect			225 0 190 28
+			exp				rect Y(165 + localVarInt(act) * 30)
+			style			WINDOW_STYLE_FILLED
+			backcolor		0.2 0.2 0.7 0.15
+			visible			when(localVarString(act) != "")
+			decoration
+		}
+
+		// Image is not shown, no idea why
+		// If merged, then we exceed MAX_TOKENS(200)! If need more elements, then separate to two parts.
+		#define ismap(m) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_SHADER \
+			rect			425 163 200 150 0 0 \
+			border			1 \
+			bordercolor		0.3 0.3 0.3 1 \
+			background		"loadscreen_mp_"m \
+			visible			when(localVarString(cur) != "" && dvarString("map" + localVarString(cur)) == "mp_"m) \
+			decoration \
+		}
+
+		ismap("crash")
+		ismap("creek")
+		ismap("crossfire")
+		ismap("backlot")
+		ismap("bog")
+		ismap("farm")
+		ismap("citystreets")
+		ismap("killhouse")
+		ismap("overgrown")
+		ismap("shipment")
+		ismap("crash_snow")
+		ismap("pipeline")
+		ismap("showdown")
+		ismap("strike")
+		ismap("vacant")
+		ismap("bloc")
+		ismap("broadcast")
+		ismap("carentan")
+		ismap("cargoship")
+		ismap("convoy")
+		ismap("countdown")
+		ismap("cluster")
+		ismap("fav")
+		ismap("backyard")
+	}
+}

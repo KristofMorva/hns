@@ -1,0 +1,1 @@
+More info at [ModDB](http://www.moddb.com/mods/hide-n-seek-mod).

@@ -1,0 +1,44 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+# HNS
+main,,main.mp3,,,ambience,,,,,ambient,streamed,,,,all_mp,,,,,,,,,,
+main2,,main2.mp3,,,ambience,,,,,ambient,streamed,,,,all_mp,,,,,,,,,,
+schnappi,,schnappi.mp3,,,ambience,,,,,ambient,streamed,,,,all_mp,,,,,,,,,,
+splat,,splat.wav,,,,,,,,,,,,,all_mp,,,,,,,,,,,,,
+start,,start.wav,,,,,,,,,,,,,all_mp,,,,,,,,,,,,,
+sensor,,sensor.wav,,,max,,,,,auto2d,,,,,all_mp,,,,,,,nowetlevel fulldrylevel,,,,,,
+jammer1,,jammer.wav,,,,,,,,announcer,,,,master,all_mp,,,,,,radio,nowetlevel,,0.1
+jammer2,,jammer2.wav,,,,,,,,announcer,,,,master,all_mp,,,,,,radio,nowetlevel,,0.1
+jammer_enemy1,,jammer_enemy.wav,,,,,,,,announcer,,,,master,all_mp,,,,,,radio,nowetlevel,,0.1
+jammer_enemy2,,jammer_enemy2.wav,,,,,,,,announcer,,,,master,all_mp,,,,,,radio,nowetlevel,,0.1
+bark,,bark.wav,0.95,1,max,1,1.1,,3600,autodog,,,,,all_mp,,,,helicopter1
+maxlevel,,maxlevel.mp3,,,ambience,,,,,ambient,streamed,,,,all_mp,,,,,,,,,,
+voice1,1,voice1.wav,,,,,,360,600,voice,streamed,,,master,all_mp,,,,,,,,,0.1
+voice2,1,voice2.wav,,,,,,360,600,voice,streamed,,,master,all_mp,,,,,,,,,0.1
+voice3,1,voice3.wav,,,,,,360,600,voice,streamed,,,master,all_mp,,,,,,,,,0.1
+voice4,1,voice4.wav,,,,,,360,600,voice,streamed,,,master,all_mp,,,,,,,,,0.1
+voice5,1,voice5.wav,,,,,,360,600,voice,streamed,,,master,all_mp,,,,,,,,,0.1
+voice6,1,voice6.wav,,,,,,360,600,voice,streamed,,,master,all_mp,,,,,,,,,0.1
+
+# Console error fixes
+phy_cargocontainer_default,,null.wav,,,,,,,,,,,,,,,,,,,,,
+weap_c4detpack_trigger_npc,,null.wav,,,,,,,,,,,,,,,,,,,,,
+weap_c4detpack_safetyoff_npc,,null.wav,,,,,,,,,,,,,,,,,,,,,
+weap_c4detpack_safety_npc,,null.wav,,,,,,,,,,,,,,,,,,,,,
+emt_christmas_heli_radio,,amb_emitters/amb_seaknight_radio1.wav,0.95,,emitter,,,7,1000,voice,streamed,,looping,,all_mp,,,,weapon2,,,,,,,,,
+
+# Use these barks if we can get the wav files from the FastFile!
+#anml_dog_bark,1,animal/anml_dog_bark_alt01v4.wav,0.95,1,max,1,1.1,60,3600,autodog,,,,,!all_mp,,,anml_dog_bark_collar,helicopter1
+#anml_dog_bark,2,animal/anml_dog_bark_alt02v4.wav,0.95,1,max,1,1.1,60,3600,autodog,,,,,!all_mp,,,anml_dog_bark_collar,helicopter1
+#anml_dog_bark,3,animal/anml_dog_bark_alt03v4.wav,0.95,1,max,1,1.1,60,3600,autodog,,,,,!all_mp,,,anml_dog_bark_collar,helicopter1
+#anml_dog_bark,4,animal/anml_dog_bark_alt04v4.wav,0.95,1,max,1,1.1,60,3600,autodog,,,,,!all_mp,,,anml_dog_bark_collar,helicopter1
+#anml_dog_bark,5,animal/anml_dog_bark_alt05v4.wav,0.95,1,max,1,1.1,60,3600,autodog,,,,,!all_mp,,,anml_dog_bark_collar,helicopter1
+#anml_dog_bark,6,animal/anml_dog_bark_alt06v4.wav,0.95,1,max,1,1.1,60,3600,autodog,,,,,!all_mp,,,anml_dog_bark_collar,helicopter1
+#anml_dog_bark,7,animal/anml_dog_bark_alt07v4.wav,0.95,1,max,1,1.1,60,3600,autodog,,,,,!all_mp,,,anml_dog_bark_collar,helicopter1
+#anml_dog_bark,8,animal/anml_dog_bark_alt08v4.wav,0.95,1,max,1,1.1,60,3600,autodog,,,,,!all_mp,,,anml_dog_bark_collar,helicopter1,
+#anml_dog_bark_collar,1,animal/anml_dog_collar_short01.wav,0.7,0.8,na,0.95,1.05,10,1500,auto,,,,,!all_mp,,,,helicopter1,250
+#anml_dog_bark_collar,2,animal/anml_dog_collar_short02.wav,0.7,0.8,na,0.95,1.05,10,1500,auto,,,,,!all_mp,,,,helicopter1,250
+#anml_dog_bark_collar,3,animal/anml_dog_collar_short03.wav,0.7,0.8,na,0.95,1.05,10,1500,auto,,,,,!all_mp,,,,helicopter1,250
+#anml_dog_bark_collar,4,animal/anml_dog_collar_short04.wav,0.7,0.8,na,0.95,1.05,10,1500,auto,,,,,!all_mp,,,,helicopter1,250
+#anml_dog_bark_collar,5,animal/anml_dog_collar_short05.wav,0.7,0.8,na,0.95,1.05,10,1500,auto,,,,,!all_mp,,,,helicopter1,250
+#anml_dog_bark_collar,6,animal/anml_dog_collar_short06.wav,0.7,0.8,na,0.95,1.05,10,1500,auto,,,,,!all_mp,,,,helicopter1,250

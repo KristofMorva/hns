@@ -1,0 +1,127 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define SELECT_COLOR 1 1 0 1
+
+#define CHOICE_GROUP	"class"
+#define CHOICE_SEP_1	3
+#define CHOICE_SEP_2	CHOICE_SEP_1 + 2
+
+#define STYLE_PC	1
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X	150
+
+#undef CHOICE_X_START
+#define CHOICE_X_START	10
+
+#undef CHOICE_Y_START
+#define CHOICE_Y_START	10
+
+#define scrollbutton(id, xoffset, title, response) \
+itemDef  \
+{ \
+	exp text		(title) \
+	type			ITEM_TYPE_BUTTON \
+	style			WINDOW_STYLE_FILLED \
+	textstyle		ITEM_TEXTSTYLE_SHADOWED \
+	rect			(CHOICE_X(id) + xoffset) CHOICE_Y(id) 20 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+	textfont		UI_FONT_NORMAL \
+	textalign		ITEM_ALIGN_CENTER \
+	textaligny		16 \
+	textscale		0.25 \
+	forecolor		1 1 1 1 \
+	backcolor		0.3 0.3 0.3 0.5 \
+	visible			1 \
+	mouseEnter		{ setcolor backcolor 0.5 0.5 0.5 0.5 } \
+	mouseExit		{ setcolor backcolor 0.3 0.3 0.3 0.5 } \
+	action			{ scriptMenuResponse response } \
+}
+
+#define scroll(id, title, response) \
+itemDef  \
+{ \
+	exp text		(title) \
+	textstyle		ITEM_TEXTSTYLE_SHADOWED \
+	rect			0 CHOICE_Y(id) 128 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+	textfont		UI_FONT_NORMAL \
+	textalign		ITEM_ALIGN_CENTER \
+	textaligny		16 \
+	textscale		0.25 \
+	forecolor		1 1 1 1 \
+	visible			1 \
+	decoration \
+} \
+scrollbutton(id, 0, "<<", "-"response) \
+scrollbutton(id, 88, ">>", "+"response)
+
+{
+	menuDef
+	{
+		name			"light"
+		rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		onOpen			{ scriptMenuResponse "color_none"; setLocalVarBool selected 0; setitemcolor option forecolor CHOICE_TEXTCOLOR; setitemcolor default forecolor SELECT_COLOR; }
+		onEsc			{ scriptMenuResponse "back"; }
+
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 128 480
+			backcolor		0 0 0 0.75
+			visible			1
+			decoration
+		}
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 128 75
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 128 75
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		// Lights
+		#define SWITCH_COLOR setitemcolor color forecolor CHOICE_TEXTCOLOR; setcolor forecolor SELECT_COLOR; setLocalVarBool selected 1
+		CHOICE_BUTTON_EX(1, locString("@MENUS_NONE" + dvarString("lang")), scriptMenuResponse "color_none"; close light; SWITCH_COLOR, group color; name default)
+		CHOICE_BUTTON_EX(2, locString("@MENUS_WHITE" + dvarString("lang")), scriptMenuResponse "color_white"; SWITCH_COLOR, group color; name option)
+		CHOICE_BUTTON_EX(3, locString("@MENUS_YELLOW" + dvarString("lang")), scriptMenuResponse "color_yellow"; SWITCH_COLOR, group color; name option)
+		CHOICE_SEPARATOR(3);
+
+		// Size
+		#define SWITCH_SIZE setitemcolor size forecolor CHOICE_TEXTCOLOR; setcolor forecolor SELECT_COLOR
+		CHOICE_BUTTON_EX_ADV(4, locString("@MENUS_SMALL" + dvarString("lang")), scriptMenuResponse "size_small"; SWITCH_SIZE, group size; name default, when(localvarBool(selected)))
+		CHOICE_DBUTTON_VIS(4, locString("@MENUS_SMALL" + dvarString("lang")), when(!localvarBool(selected)))
+		CHOICE_BUTTON_EX_ADV(5, locString("@MENUS_BIG" + dvarString("lang")), scriptMenuResponse "size_big"; SWITCH_SIZE, group size; name option, when(localvarBool(selected)))
+		CHOICE_DBUTTON_VIS(5, locString("@MENUS_BIG" + dvarString("lang")), when(!localvarBool(selected)))
+		//CHOICE_SEPARATOR(5)
+
+		// Positions
+		#undef CHOICE_SIZE_X
+		#define CHOICE_SIZE_X	20
+		scroll(6, "X", "x")
+		scroll(7, "Y", "y")
+		scroll(8, "Z", "z")
+
+		// Navigation
+		#undef CHOICE_SIZE_X
+		#define CHOICE_SIZE_X	150
+		CHOICE_BUTTON(18, locString("@MENUS_BACK" + dvarString("lang")), scriptMenuResponse "back")
+	}
+}

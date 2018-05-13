@@ -1,0 +1,655 @@
+#include "ui/menudef.h"
+//#include "ui_mp/common_macro.inc"
+
+//#define CHOICE_X_START			175
+//#define CHOICE_Y_START			60
+
+#define CURPAGE 0
+#define NEXT_ENABLE 1
+
+#define STYLE_PC	1
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+//#undef CHOICE_SIZE_X
+//#define CHOICE_SIZE_X			180
+
+#define COLOR_BUTTON 0.3 0.3 0.3 1
+#define COLOR_DEFAULT 1 1 1 0.2
+#define COLOR_OVER 1 1 1 0.3
+
+#define BORDERCOLOR_DEFAULT 0.4 0.4 0.4 0.8
+#define BORDERCOLOR_OVER 0.5 0.5 0.0.3 1
+
+{
+	menuDef
+	{
+		name			"model"
+		rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		5
+		onOpen
+		{
+			setLocalVarBool nextpage 0;
+			//setLocalVarString img "";
+			setitemcolor buttons backcolor COLOR_DEFAULT;
+		}
+		onClose
+		{
+			setLocalVarBool nextpage 0;
+			//setLocalVarString img "";
+		}
+		onEsc
+		{
+			scriptMenuResponse "back";
+		}
+
+		#define MASKCOLOR 0.5 0.5 0.5 1
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480
+			backcolor		MASKCOLOR
+			visible			1
+			decoration
+		}
+
+		/*itemDef
+		{
+			text			"x"
+			style			WINDOW_STYLE_FILLED
+			type			ITEM_TYPE_BUTTON
+			rect			613 8 20 20
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_CENTER
+			textalignx		-1
+			textaligny		15
+			textscale		0.3
+			border			1
+			bordercolor		0.1 0.1 0.1 0.6
+			forecolor		1 1 1 1
+			backcolor		0.9 0.9 0.9 1
+			background		"buttonbg"
+			visible			when((dvarInt("vis") + "") != dvarString("vis"))
+			action
+			{
+				scriptMenuResponse "reset";
+				play "mouse_click";
+			}
+			mouseEnter
+			{
+				setcolor backcolor 1 1 1 1;
+				setcolor bordercolor 0 0 0 0.6;
+				play "mouse_submenu_over";
+			}
+			mouseExit
+			{
+				setcolor backcolor 0.9 0.9 0.9 1;
+				setcolor bordercolor 0.1 0.1 0.1 0.6;
+			}
+		}*/
+
+		//CHOICE_BUTTON_FOCUS_VIS(1, "@MENUS_SEEKER" + dvarString("lang"), close self; scriptMenuResponse "seeker", setLocalVarString img "seeker", setLocalVarString img "", when(localVarBool(nextpage) == CURPAGE))
+
+		//CHOICE_BUTTON_FOCUS_VIS(id, dvarString("model"index"_title"), close self; scriptMenuResponse index, setLocalVarString img index, setLocalVarString img "", when(index < dvarInt("model_count") && localVarBool(nextpage) == CURPAGE))
+
+		#define BTN_BG_GLOBAL(id, imageid, cond) \
+		itemDef \
+		{ \
+			exp				text() \
+			style			WINDOW_STYLE_SHADER \
+			rect			0 (49 + (id % 12) * 32) 112 28 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			exp				rect X ((4 + ((id - (id % 12)) / 12) * 159) - (imageid % 4) * 28) \
+			exp				material("xmodels_" + (int(imageid / 4) + 1)) \
+			visible			when(cond) \
+			decoration \
+		} \
+
+		#define BTN_BG(id, index) \
+		BTN_BG_GLOBAL(id, dvarInt("model"index), index < dvarInt("model_count") && localVarBool(nextpage) == CURPAGE)
+
+		#define BTN_GLOBAL(id, title, index, cond) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_FILLED \
+			rect			(32 + ((id - (id % 12)) / 12) * 159) (49 + (id % 12) * 32) 128 28 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			backcolor		COLOR_BUTTON \
+			visible			when(cond) \
+			decoration \
+		} \
+		itemDef \
+		{ \
+			group			buttons \
+			exp				text(title) \
+			type			ITEM_TYPE_BUTTON \
+			style			WINDOW_STYLE_FILLED \
+			rect			(2 + ((id - (id % 12)) / 12) * 159) (47 + (id % 12) * 32) 157 30 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			border			WINDOW_BORDER_RAISED \
+			background		"gradient_top" \
+			bordercolor		BORDERCOLOR_DEFAULT \
+			textfont		UI_FONT_DEFAULT \
+			textstyle		ITEM_TEXTSTYLE_SHADOWED \
+			textalign		ITEM_ALIGN_RIGHT \
+			textalignx		-5 /* -4 */ \
+			textaligny		21 \
+			textscale		0.3 \
+			forecolor		1 1 1 1 \
+			visible			when(cond) \
+			action \
+			{ \
+				close self; \
+				scriptMenuResponse index; \
+			} \
+			mouseEnter \
+			{ \
+				/*setLocalVarString img index;*/ \
+				setcolor backcolor COLOR_OVER; \
+				setcolor bordercolor BORDERCOLOR_OVER; \
+				play "mouse_over"; \
+			} \
+			mouseExit \
+			{ \
+				/*setLocalVarString img "";*/ \
+				setcolor backcolor COLOR_DEFAULT; \
+				setcolor bordercolor BORDERCOLOR_DEFAULT; \
+			} \
+		}
+/*
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_SHADER \
+			rect			(4 + ((id - (id % 12)) / 12) * 159) (49 + (id % 12) * 32) 28 28 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			exp				material(image) \
+			visible			when(cond) \
+			decoration \
+		}
+*/
+		#define BTN(id, index) \
+		BTN_GLOBAL(id, dvarString("model"index"_title"), index, index < dvarInt("model_count") && localVarBool(nextpage) == CURPAGE)
+
+		BTN_BG_GLOBAL(0, dvarInt("seekerid"), localVarBool(nextpage) == CURPAGE)
+		BTN_BG(1, "0")
+		BTN_BG(2, "1")
+		BTN_BG(3, "2")
+		BTN_BG(4, "3")
+		BTN_BG(5, "4")
+		BTN_BG(6, "5")
+		BTN_BG(7, "6")
+		BTN_BG(8, "7")
+		BTN_BG(9, "8")
+		BTN_BG(10, "9")
+		BTN_BG(11, "10")
+		BTN_BG(12, "11")
+		BTN_BG(13, "12")
+		BTN_BG(14, "13")
+		BTN_BG(15, "14")
+		BTN_BG(16, "15")
+		BTN_BG(17, "16")
+		BTN_BG(18, "17")
+		BTN_BG(19, "18")
+		BTN_BG(20, "19")
+		BTN_BG(21, "20")
+		BTN_BG(22, "21")
+		BTN_BG(23, "22")
+		BTN_BG(24, "23")
+		BTN_BG(25, "24")
+		BTN_BG(26, "25")
+		BTN_BG(27, "26")
+		BTN_BG(28, "27")
+		BTN_BG(29, "28")
+		BTN_BG(30, "29")
+		BTN_BG(31, "30")
+		BTN_BG(32, "31")
+		BTN_BG(33, "32")
+		BTN_BG(34, "33")
+		BTN_BG(35, "34")
+		BTN_BG(36, "35")
+		BTN_BG(37, "36")
+		BTN_BG(38, "37")
+		BTN_BG(39, "38")
+		BTN_BG(40, "39")
+		BTN_BG(41, "40")
+		BTN_BG(42, "41")
+		BTN_BG(43, "42")
+		BTN_BG(44, "43")
+		//BTN_BG(45, "44")
+		//BTN_BG(46, "45") // (Menu element limit, should save some)
+		//BTN_BG(47, "46")
+
+		BTN_GLOBAL(0, "@MENUS_SEEKER" + dvarString("lang"), "seeker", localVarBool(nextpage) == CURPAGE)
+		BTN(1, "0")
+		BTN(2, "1")
+		BTN(3, "2")
+		BTN(4, "3")
+		BTN(5, "4")
+		BTN(6, "5")
+		BTN(7, "6")
+		BTN(8, "7")
+		BTN(9, "8")
+		BTN(10, "9")
+		BTN(11, "10")
+		BTN(12, "11")
+		BTN(13, "12")
+		BTN(14, "13")
+		BTN(15, "14")
+		BTN(16, "15")
+		BTN(17, "16")
+		BTN(18, "17")
+		BTN(19, "18")
+		BTN(20, "19")
+		BTN(21, "20")
+		BTN(22, "21")
+		BTN(23, "22")
+		BTN(24, "23")
+		BTN(25, "24")
+		BTN(26, "25")
+		BTN(27, "26")
+		BTN(28, "27")
+		BTN(29, "28")
+		BTN(30, "29")
+		BTN(31, "30")
+		BTN(32, "31")
+		BTN(33, "32")
+		BTN(34, "33")
+		BTN(35, "34")
+		BTN(36, "35")
+		BTN(37, "36")
+		BTN(38, "37")
+		BTN(39, "38")
+		BTN(40, "39")
+		BTN(41, "40")
+		BTN(42, "41")
+		BTN(43, "42")
+		BTN(44, "43")
+		//BTN(45, "44")
+		//BTN(46, "45")
+		//BTN(47, "46")
+
+		// Masks
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 3 480
+			backcolor		MASKCOLOR
+			visible			when(localVarBool(nextpage) == CURPAGE)
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			160 0 2 480
+			backcolor		MASKCOLOR
+			visible			when(localVarBool(nextpage) == CURPAGE)
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			319 0 2 480
+			backcolor		MASKCOLOR
+			visible			when(localVarBool(nextpage) == CURPAGE)
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			478 0 2 480
+			backcolor		MASKCOLOR
+			visible			when(localVarBool(nextpage) == CURPAGE)
+			decoration
+		}
+
+		#undef CURPAGE
+		#define CURPAGE 1
+
+		#define EXTBTN_BG(id, index) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_SHADER \
+			rect			0 (49 + (id % 7) * 55) 196 49 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			exp				rect X ((4 + ((id - (id % 7)) / 7) * 212) - (dvarInt("extmodel"index) % 4) * 49) \
+			exp				material("xmodels_" + (int(dvarInt("extmodel"index) / 4) + 1)) \
+			visible			when(index < dvarInt("extmodel_count") && localVarBool(nextpage) == CURPAGE) \
+			decoration \
+		} \
+
+		#define EXTBTN(id, index) \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_FILLED \
+			rect			(52 + ((id - (id % 7)) / 7) * 212) (48 + (id % 7) * 55) 161 51 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			backcolor		COLOR_BUTTON \
+			visible			when(index < dvarInt("extmodel_count") && localVarBool(nextpage) == CURPAGE) \
+			decoration \
+		} \
+		itemDef \
+		{ \
+			exp				text(locString("@MENUS_VIS_POINTS" + dvarString("lang")) + ": " + dvarString("extmodel"index"_price")) \
+			style			WINDOW_STYLE_FILLED \
+			type			ITEM_TYPE_BUTTON \
+			rect			(3 + ((id - (id % 7)) / 7) * 212) (48 + (id % 7) * 55) 210 51 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			textfont		UI_FONT_DEFAULT \
+			textstyle		ITEM_TEXTSTYLE_SHADOWED \
+			textalign		ITEM_ALIGN_RIGHT \
+			textalignx		-29 \
+			textaligny		44 \
+			textscale		0.275 \
+			forecolor		0.8 0.7 0.7 0.8 \
+			backcolor		0 0 0 0.6 \
+			visible			when(index < dvarInt("extmodel_count") && localVarBool(nextpage) == CURPAGE && dvarBool("extmodel"index"_buy")) \
+		} \
+		itemDef \
+		{ \
+			group			buttons \
+			exp				text(dvarString("extmodel"index"_title")) \
+			type			ITEM_TYPE_BUTTON \
+			style			WINDOW_STYLE_FILLED \
+			rect			(2 + ((id - (id % 7)) / 7) * 212) (47 + (id % 7) * 55) 210 51 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			border			1 \
+			background		"gradient_top" \
+			bordercolor		BORDERCOLOR_DEFAULT \
+			textfont		UI_FONT_DEFAULT \
+			textstyle		ITEM_TEXTSTYLE_SHADOWED \
+			textalign		ITEM_ALIGN_RIGHT \
+			textalignx		-5 \
+			textaligny		19 \
+			textscale		0.3 \
+			forecolor		1 1 1 1 \
+			backcolor		COLOR_DEFAULT \
+			visible			when(index < dvarInt("extmodel_count") && localVarBool(nextpage) == CURPAGE) \
+			action \
+			{ \
+				scriptMenuResponse "ext:"index; \
+				close self; \
+			} \
+			mouseEnter \
+			{ \
+				setLocalVarString img index; \
+				setcolor backcolor COLOR_OVER; \
+				setcolor bordercolor BORDERCOLOR_OVER; \
+				play "mouse_over"; \
+			} \
+			mouseExit \
+			{ \
+				setLocalVarString img ""; \
+				setcolor backcolor COLOR_DEFAULT; \
+				setcolor bordercolor BORDERCOLOR_DEFAULT; \
+			} \
+		} \
+		itemDef \
+		{ \
+			text			"$" \
+			style			WINDOW_STYLE_FILLED \
+			type			ITEM_TYPE_BUTTON \
+			rect			(190 + ((id - (id % 7)) / 7) * 212) (75 + (id % 7) * 55) 20 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			textfont		UI_FONT_DEFAULT \
+			textstyle		ITEM_TEXTSTYLE_SHADOWED \
+			textalign		ITEM_ALIGN_CENTER \
+			textaligny		15 \
+			textscale		0.25 \
+			border			1 \
+			bordercolor		0.5 0.5 0.5 0.6 \
+			forecolor		1 1 1 1 \
+			backcolor		0.8 0.8 0.8 1 \
+			background		"buttonbg" \
+			visible			when(index < dvarInt("extmodel_count") && localVarBool(nextpage) == CURPAGE && dvarBool("extmodel"index"_buy")) \
+			action \
+			{ \
+				scriptMenuResponse "buy:"index; \
+				play "mouse_click"; \
+			} \
+			mouseEnter \
+			{ \
+				setcolor backcolor 1 1 1 1; \
+				setcolor bordercolor 0.5 0.5 0.5 0.6; \
+				play "mouse_submenu_over"; \
+			} \
+			mouseExit \
+			{ \
+				setcolor backcolor 0.8 0.8 0.8 0.6; \
+				setcolor bordercolor 0.6 0.6 0.6 0.6; \
+			} \
+		} \
+		itemDef \
+		{ \
+			style			WINDOW_STYLE_FILLED \
+			type			ITEM_TYPE_BUTTON \
+			rect			(191 + ((id - (id % 7)) / 7) * 212) (76 + (id % 7) * 55) 20 20 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN \
+			backcolor		1 0 0 0.2 \
+			visible			when(index < dvarInt("extmodel_count") && localVarBool(nextpage) == CURPAGE && dvarBool("extmodel"index"_buy") && dvarInt("vis") < dvarInt("extmodel"index"_price")) \
+		}
+
+		EXTBTN_BG(0, "0")
+		EXTBTN_BG(1, "1")
+		EXTBTN_BG(2, "2")
+		EXTBTN_BG(3, "3")
+		EXTBTN_BG(4, "4")
+		EXTBTN_BG(5, "5")
+		EXTBTN_BG(6, "6")
+		EXTBTN_BG(7, "7")
+		EXTBTN_BG(8, "8")
+		EXTBTN_BG(9, "9")
+		EXTBTN_BG(10, "10")
+		EXTBTN_BG(11, "11")
+		EXTBTN_BG(12, "12")
+		EXTBTN_BG(13, "13")
+		EXTBTN_BG(14, "14")
+		EXTBTN_BG(15, "15")
+		//EXTBTN_BG(16, "16")
+		//EXTBTN_BG(17, "17")
+
+		EXTBTN(0, "0")
+		EXTBTN(1, "1")
+		EXTBTN(2, "2")
+		EXTBTN(3, "3")
+		EXTBTN(4, "4")
+		EXTBTN(5, "5")
+		EXTBTN(6, "6")
+		EXTBTN(7, "7")
+		EXTBTN(8, "8")
+		EXTBTN(9, "9")
+		EXTBTN(10, "10")
+		EXTBTN(11, "11")
+		EXTBTN(12, "12")
+		EXTBTN(13, "13")
+		EXTBTN(14, "14")
+		EXTBTN(15, "15")
+		//EXTBTN(16, "16")
+		//EXTBTN(17, "17")
+
+		// Ext masks
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 3 480
+			backcolor		MASKCOLOR
+			visible			when(localVarBool(nextpage) == CURPAGE)
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			213 0 2 480
+			backcolor		MASKCOLOR
+			visible			when(localVarBool(nextpage) == CURPAGE)
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			425 0 2 480
+			backcolor		MASKCOLOR
+			visible			when(localVarBool(nextpage) == CURPAGE)
+			decoration
+		}
+
+		// Mask filler when none is selected
+		/*itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			515 336 92 92
+			backcolor		MASKCOLOR
+			visible			1
+			decoration
+		}
+
+		// Seeker
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 1472 1472
+			exp				rect X(515 - (dvarInt("seekerid") % 16) * 92)
+			exp				rect Y(336 - int(dvarInt("seekerid") / 16) * 92)
+			border			1
+			bordercolor		0.3 0.3 0.3 1
+			background		"xmodels"
+			visible			when(dvarInt("model_count") < 45 && localVarBool(nextpage) == 0 && localVarString(img) == "seeker")
+			decoration
+		}
+
+		// Built-in model
+		#define MODELID dvarInt("model" + localVarString(img))
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 1472 1472
+			exp				rect X(515 - (MODELID % 16) * 92)
+			exp				rect Y(336 - int(MODELID / 16) * 92)
+			background		"xmodels"
+			visible			when(dvarInt("model_count") < 45 && localVarBool(nextpage) == 0 && localVarString(img) != "seeker" && localVarString(img) != "" && MODELID > 0)
+			decoration
+		}
+
+		// Unique model
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			515 336 92 92
+			border			1
+			bordercolor		0.3 0.3 0.3 1
+			exp				material(dvarString("model" + localVarString(img)))
+			visible			when(dvarInt("model_count") < 45 && localVarBool(nextpage) == 0 && localVarString(img) != "seeker" && localVarString(img) != "" && MODELID == 0)
+			decoration
+		}
+
+		// Built-in extra model
+		#define EXTMODELID dvarInt("extmodel" + localVarString(img))
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 1472 1472
+			exp				rect X(515 - (EXTMODELID % 16) * 92)
+			exp				rect Y(336 - int(EXTMODELID / 16) * 92)
+			background		"xmodels"
+			visible			when(dvarInt("model_count") < 45 && localVarBool(nextpage) != 0 && localVarString(img) != "seeker" && localVarString(img) != "" && EXTMODELID > 0)
+			decoration
+		}
+
+		// Unique extra model
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			515 336 92 92
+			border			1
+			bordercolor		0.3 0.3 0.3 1
+			exp				material(dvarString("extmodel" + localVarString(img)))
+			visible			when(dvarInt("model_count") < 45 && localVarBool(nextpage) != 0 && localVarString(img) != "seeker" && localVarString(img) != "" && EXTMODELID == 0)
+			decoration
+		}
+
+		// Xmodel image Mask
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 336 // Top
+			backcolor		MASKCOLOR
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 515 480 // Left
+			backcolor		MASKCOLOR
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			607 336 33 144 // Right
+			backcolor		MASKCOLOR
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			515 428 125 52 // Bottom
+			backcolor		MASKCOLOR
+			visible			1
+			decoration
+		}*/
+
+		// Gradient top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// Gradient bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		CHOICE_MENU_TITLE("@MENUS_CHOOSE_MODEL" + dvarString("lang"))	
+
+		itemDef
+		{
+			exp				text("WARNING: There is no more space to save your visibility points on this server.\nPlease contact iCore (Steam: jk3editor) in order to fix this issue.") // "@MENUS_VIS_ERROR" + dvarString("lang")
+			style			WINDOW_STYLE_FILLED
+			rect			276 3 361 30
+			border			1
+			bordersize		1
+			bordercolor		0.6 0.3 0.3 0.8
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_LEFT
+			textalignx		3
+			textaligny		14
+			textscale		0.2
+			forecolor		1 0.8 0.8 0.8
+			backcolor		0.2 0.2 0.2 0.8
+			visible			when(dvarString("vis") == "ERROR") // (dvarInt("vis") + "") != dvarString("vis")
+			decoration
+		}
+
+		itemDef
+		{
+			exp				text(locString("@MENUS_VIS_POINTS" + dvarString("lang")) + ": " + dvarString("vis_total"))
+			rect			280 27 360 30
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWEDMORE
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.4
+			forecolor		1 0.75 1 1
+			visible			when(dvarString("vis") != "ERROR")
+			decoration
+		}
+
+		// Navigation
+		#define BACK_OPEN;
+		#include "ui_mp/navcontrols.inc"
+	}
+}

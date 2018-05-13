@@ -1,0 +1,389 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_SIZE_X			150
+#define CHOICE_SIZE_Y			22
+
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			100 // 110
+
+#define CHOICE_GROUP			"class"
+#define CHOICE_SEP_1			1
+#define CHOICE_SEP_2			3
+#define CHOICE_SEP_3			6
+#define CHOICE_SEP_4			7
+#define CHOICE_SEP_5			8
+
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+#define ORIGIN_DESCRIPTION		(CHOICE_X_START + 15) 190
+
+{
+	menuDef
+	{
+		name			"class"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+		onClose			{ close about }
+		onOpen
+		{
+			focusFirst;
+		}
+		onEsc 
+		{
+			scriptMenuResponse "back";
+		}
+		
+		#ifndef PC
+		execkeyint BUTTON_START
+		{
+			scriptMenuResponse "back";
+		}
+		#endif
+		
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.75 //0 0.05 0.15 0.5
+			visible			1
+			decoration
+		}
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+		
+		// map display ================================================
+		#include "ui_mp/tactical_map.inc";
+		#define ORIGIN_BANNER		108 48
+
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			ORIGIN_BANNER 400 0.5
+			background		"line_horizontal"
+			forecolor		1 1 1 0.85
+			visible			1	decoration	}
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			ORIGIN_BANNER 340 10
+			origin			30 1
+			background		"line_horizontal"
+			forecolor		OBJECTIVE_COLOR_MARINES
+			visible			1
+			decoration	}
+		itemDef	{
+			style			WINDOW_STYLE_SHADER
+			rect			ORIGIN_BANNER 400 0.5
+			origin			0 12
+			background		"line_horizontal"
+			forecolor		1 1 1 0.85
+			visible			1	decoration	}
+			
+		itemDef	{
+			rect			-400 64 800 0 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		TEXTSIZE_TITLE
+			textalign		ITEM_ALIGN_CENTER
+			forecolor		1 1 1 0.85
+			exp text ( gametypename() );
+			visible			1	decoration	}
+		itemDef	{
+			rect			-250 84 500 60 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		TEXTSIZE_SMALL
+			textalign		ITEM_ALIGN_CENTER
+			forecolor		1 1 1 0.75
+			exp text( dvarString("motd") );
+			autowrapped
+			visible			when(dvarString("motd") != "")	decoration	}
+		itemDef	{
+			rect			-250 84 500 60 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_TOP
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textscale		TEXTSIZE_SMALL
+			textalign		ITEM_ALIGN_CENTER
+			forecolor		1 1 1 0.75
+			exp text( gametypedescription() );
+			autowrapped
+			visible			when(dvarString("motd") == "")	decoration	}
+
+		// ------------------ TREE TITLE ------------------
+		
+		CHOICE_MENU_TITLE("@MENUS_PLAY" + dvarString("lang"))
+		
+		// ------------------ buttons ---------------------
+		#define BACK_OPEN;
+		#include "ui_mp/navcontrols.inc"
+
+		//=========================================================
+		//===================== MENU SELECTION ====================
+		//=========================================================
+		#include "ui_mp/teamicon.inc"
+
+		// PC widescreen fix
+		#undef  CHOICE_X_START
+		#define CHOICE_X_START	-300
+		
+		#undef	CHOICE_HORIZONTAL_ALIGN
+		#define CHOICE_HORIZONTAL_ALIGN HORIZONTAL_ALIGN_CENTER
+
+		#define LOCAL_UNLOCK_COLOR 		0.31 0.31 0.33 0.55
+
+		#define	model	dvarString("model")
+		#define	mapname	dvarString("mapname")
+
+		// We had to separate the attachments to more segment, because
+		// 1) Item limits in menu... it doesn't write it, but after a given amount of them (255), we get random syntax errors
+		// 2) We couldn't read variable into { }
+		// EDIT: I can merge them but I just won't.
+		CHOICE_BUTTON( 1, "^2" + locString("@MENUS_ABOUT" + dvarString("lang")), open about )
+		CHOICE_BUTTON_VIS( 2, "@MENUS_EDIT_MODEL" + dvarString("lang"), close self; open attachments, when(team(name) == "TEAM_ALLIES" && (model == "bc_militarytent_wood_table" || model == "ch_crate32x48" || model == "ch_crate64x64" || model == "ch_crate48x64" || model == "com_plasticcase_beige_big" || model == "com_stove" || model == "com_trashcan_metal_with_trash" || model == "com_trashcan_metal" || model == "ct_statue_chineselionstonebase" || model == "ch_missle_rack")) )
+		CHOICE_BUTTON_VIS( 2, "@MENUS_EDIT_MODEL" + dvarString("lang"), close self; open attachments2, when(team(name) == "TEAM_ALLIES" && (model == "com_restaurantstainlessteelshelf_01" || model == "com_restaurantstainlessteelshelf_02" || model == "com_restaurantsink_2comps" || model == "tvs_cubicle_round_1" || model == "com_cardboardbox01" || model == "com_barrel_fire" || model == "ct_street_lamp_on")) )
+		CHOICE_BUTTON_VIS( 3, "@MENUS_LIGHT" + dvarString("lang"), close self; open light, when(team(name) == "TEAM_ALLIES" && model != "seeker") )
+		CHOICE_BUTTON_VIS( 4, "@MENUS_CHOOSE_MODEL" + dvarString("lang"), close self; open "model" /*scriptMenuResponse "model"*/, when(team(name) == "TEAM_ALLIES") )
+		CHOICE_BUTTON_VIS( 5, "@MENUS_RANKS" + dvarString("lang"), close self; open ranks, when(team(name) != "TEAM_SPECTATOR") )
+		CHOICE_BUTTON_VIS( 6, "@MENUS_CHALLENGES" + dvarString("lang"), close self; open challenges, when(team(name) != "TEAM_SPECTATOR") )
+		//CHOICE_BUTTON_VIS( 6, "@MENUS_TASKS" + dvarString("lang"), close self; open tasks, when(team(name) != "TEAM_SPECTATOR") )
+		CHOICE_BUTTON_VIS( 7, "@MENUS_OPTIONS" + dvarString("lang"), close self; open settings, when(team(name) != "TEAM_SPECTATOR") )
+		
+		CHOICE_BUTTON_BG( 8, 1 )
+		CHOICE_HIGHLIGHT( 8, 1 )
+		CHOICE_BUTTON_VIS_NOHI( 8, "@MENUS_PLAY" + dvarString("lang"), play "mouse_click"; close self; exec "bind F1 openScriptmenu ingame yes; bind F2 openScriptMenu ingame no"; execNow "setfromdvar a r_fullbright; setfromdvar b r_lodscalerigid; setfromdvar c r_lodscaleskinned"; scriptMenuResponse "join";, when(team(name) == "TEAM_SPECTATOR") )
+		CHOICE_BUTTON_VIS_NOHI( 8, "@MENUS_SPECTATOR" + dvarString("lang"), play "mouse_click"; scriptMenuResponse "spectator";, when(team(name) == "TEAM_AXIS" && dvarbool(scr_game_spectatetype) ) )
+		CHOICE_BUTTON_VIS_NOHI( 8, "@MENUS_SPECTATOR" + dvarString("lang"), ;, when(team(name) == "TEAM_ALLIES" || !dvarbool(scr_game_spectatetype)); forecolor LOCAL_UNLOCK_COLOR)
+		CHOICE_BUTTON( 9, "^6" + locString("@MENU_ADD_TO_FAVORITES"), uiScript CreateFavorite; )
+		CHOICE_BUTTON( 10, "@MENU_CONTROLS", close self; open main_controls )
+		CHOICE_BUTTON( 11, "@MENU_OPTIONS", close self; open main_options; execnow "set ui_allow_graphic_change 0"; )
+		CHOICE_BUTTON( 12, "@MPUI_MUTE_PLAYERS", open muteplayer; close self; )
+		
+		CHOICE_BUTTON_BG( 13, 1 )
+		CHOICE_HIGHLIGHT( 13, 1 )
+		CHOICE_BUTTON_VIS_NOHI( 13, "@MENU_LEAVE_GAME", open popup_endgame, when( dvarbool( sv_running ) ) )
+		CHOICE_BUTTON_VIS_NOHI( 13, "@MENU_LEAVE_GAME", open popup_leavegame, when( !dvarbool( sv_running ) ) )
+
+		#include "ui_mp/icore.inc"
+
+		#include "ui/safearea.menu"
+	}
+
+	// About
+	menuDef
+	{
+		name			"about"
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		onOpen			{ setLocalVarInt page 1; setDvar anim 0; }
+		onESC			{ close about }
+
+		// Background + button blocker
+		itemDef
+		{
+			name			"background"
+			type			ITEM_TYPE_BUTTON
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.95
+			visible			1
+		}
+
+		CHOICE_MENU_TITLE("@MENUS_ABOUT" + dvarString("lang"))
+
+		#define TUT_COUNT 5 // Button must be added to navcontrols.inc too!
+		#define NEXT_TUT 1
+		#include "ui_mp/navcontrols.inc"
+
+		// Don't try to save brackets here! CoD4 menu compiler totally ignores every existent mathematical theorem, human logic, operator precedences, and everything!
+		#define FLOAT_TIME 500
+		#define PASSED (milliseconds() - dvarInt("anim"))
+		#define FLOATING(tutid) ((localVarInt(page) == tutid && (PASSED / FLOAT_TIME < 1)) * (640 - PASSED * (640 / FLOAT_TIME)) - (localVarInt(page) == tutid + 1) * (PASSED * (640 / FLOAT_TIME)))
+		#define TUT_VISIBLE(tutid) localVarInt(page) == tutid || localVarInt(page) == tutid + 1
+
+		#define tut(tutid, tutindex) \
+		itemDef \
+		{ \
+			name			"body" \
+			group			"tut"tutindex \
+			rect			0 40 620 240 0 0 \
+			exp				rect X(10 + FLOATING(tutid)) \
+			style			WINDOW_STYLE_FILLED \
+			border			1 \
+			bordercolor		0.5 0.5 0.5 0.65 \
+			backcolor		0.3 0.3 0.3 0.65 \
+			visible			when(TUT_VISIBLE(tutid)) \
+			decoration \
+		} \
+		itemDef \
+		{ \
+			exp				text(tutindex" / " + TUT_COUNT) \
+			name			"head" \
+			group			"tut"tutindex \
+			rect			0 42 618 25 0 0 \
+			exp				rect X(11 + FLOATING(tutid)) \
+			textfont		UI_FONT_OBJECTIVE \
+			textstyle		ITEM_TEXTSTYLE_SHADOWED \
+			textalign		ITEM_ALIGN_LEFT \
+			textscale		0.3 \
+			textalignx		3 \
+			textaligny		18 \
+			forecolor		0.8 0.8 0.8 1 \
+			style			WINDOW_STYLE_FILLED \
+			backcolor		0 0 0 0.65 \
+			visible			when(TUT_VISIBLE(tutid)) \
+			decoration \
+		} \
+		itemDef \
+		{ \
+			name			"text" \
+			group			"tut"tutindex \
+			exp				text("@MENUS_TUT"tutindex) \
+			rect			0 65 612 215 0 0 \
+			exp				rect X(14 + FLOATING(tutid)) \
+			textfont		UI_FONT_DEFAULT \
+			textstyle		ITEM_TEXTSTYLE_SHADOWED \
+			textalign		ITEM_ALIGN_LEFT \
+			textscale		0.3 \
+			textaligny		18 \
+			forecolor		1 1 1 1 \
+			visible			when(TUT_VISIBLE(tutid)) \
+			autowrapped \
+			decoration \
+		} \
+		itemDef \
+		{ \
+			name			"image" \
+			group			"tut"tutindex \
+			style			WINDOW_STYLE_SHADER \
+			rect			0 300 512 128 0 0 \
+			exp				rect X((640 - 512) / 2 + FLOATING(tutid)) \
+			background		"tut"tutindex \
+			visible			when(TUT_VISIBLE(tutid)) \
+			decoration \
+		}
+
+		tut(1, "1")
+		tut(2, "2")
+		tut(3, "3")
+		tut(4, "4")
+		tut(5, "5")
+
+		/*itemDef
+		{
+			name			"text"
+			group			tut2
+			exp				text("@MENUS_TUT1")
+			rect			14 40 612 250
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.3
+			textaligny		18
+			forecolor		1 1 1 1
+			visible			when(localVarInt(page) == 1)
+			autowrapped
+			decoration
+		}
+		itemDef
+		{
+			name			"image"
+			group			tut2
+			style			WINDOW_STYLE_SHADER
+			rect			64 300 512 128
+			background		"tut1"
+			border			1
+			bordercolor		0.5 0.5 0.5 0.65
+			visible			when(localVarInt(page) == 1)
+			decoration
+		}*/
+
+		/*itemDef
+		{
+			type			ITEM_TYPE_BUTTON
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.65
+			visible			1
+		}
+
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			158 78 322 322
+			border			1
+			bordercolor		0.3 0.3 0.3 1
+			backcolor		0.2 0.2 0.2 1
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			exp				text("@MENUS_ABOUT" + dvarString("lang"))
+			style			WINDOW_STYLE_FILLED
+			rect			160 80 320 20
+			textfont		UI_FONT_OBJECTIVE
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_NORMAL
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.35
+			textalignx		5
+			textaligny		18
+			forecolor		1 1 1 1
+			backcolor		0 0 0 1
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			exp				text("@MENUS_ABOUT_DESC" + dvarString("lang"))
+			rect			165 105 310 270
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_LEFT
+			textscale		0.3
+			textaligny		14
+			forecolor		1 1 1 1
+			visible			1
+			autowrapped
+			decoration
+		}
+		itemDef
+		{
+			text			"OK"
+			type			ITEM_TYPE_BUTTON
+			style			WINDOW_STYLE_FILLED
+			rect			355 375 120 20
+			textfont		UI_FONT_DEFAULT
+			style			WINDOW_STYLE_FILLED
+			textstyle		ITEM_TEXTSTYLE_NORMAL
+			textalign		ITEM_ALIGN_CENTER
+			textscale		0.35
+			textaligny		18
+			forecolor		0.8 0.8 0.8 1
+			backcolor		0.3 0.3 0.2 1
+			visible			1
+			action			{ close about }
+			mouseEnter		{ setcolor backcolor 0.4 0.4 0.2 1 }
+			mouseExit		{ setcolor backcolor 0.3 0.3 0.2 1 }
+		}*/
+	}
+}

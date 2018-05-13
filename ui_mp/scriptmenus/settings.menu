@@ -1,0 +1,120 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_X_START			32
+#define CHOICE_Y_START			38
+
+#define LOCAL_UNLOCK_COLOR 		0.31 0.31 0.33 0.55
+#define LOCAL_SELECTED_COLOR 	0.8 0.8 0.3 1
+
+#define STYLE_PC	1
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#define title(id, caption) \
+CHOICE_SECTION_TITLE(id, "@MENUS_"caption + dvarString("lang"))
+
+#define set_const(id, caption, const, response, statid, value, rank) \
+	CHOICE_HIGHLIGHT(id, 1) \
+	CHOICE_BUTTON_VIS_NOHI(id, const, scriptMenuResponse response, when (stat(statid) != value && (stat(252) >= rank || (rank == 999 && dvarBool("vip"))))) \
+	CHOICE_BUTTON_VIS_NOHI(id, const, ;, when ((rank != 999 && stat(252) < rank) || (rank == 999 && !dvarBool("vip"))); forecolor LOCAL_UNLOCK_COLOR) \
+	CHOICE_BUTTON_VIS_NOHI(id, const, ;, when (stat(statid) == value); forecolor LOCAL_SELECTED_COLOR) \
+	CHOICE_BUTTON_BG(id, 1)
+
+#define set(id, caption, response, statid, value, rank) \
+set_const(id, caption, "@MENUS_"caption + dvarString("lang"), response, statid, value, rank)
+
+#define setc(id, caption, response, statid, value, rank) \
+set_const(id, caption, caption, response, statid, value, rank)
+{
+	menuDef
+	{
+		name			"settings"
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_EMPTY
+		blurWorld		7.0
+
+		onESC 
+		{
+			close self;
+		}
+
+		// background overlay
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.75 //0 0.05 0.15 0.5
+			visible			1
+			decoration
+		}
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 405 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		// ------------------ TREE TITLE ------------------
+
+		CHOICE_MENU_TITLE( "@MENUS_OPTIONS" + dvarString("lang") )	
+
+		// ------------------ buttons ---------------------
+		#define BACK_OPEN;
+		#include "ui_mp/navcontrols.inc"
+
+		title(1, "DEATHFX")
+		set(2, "DEFAULT", "set:death:0", 3171, 0, 0)
+		set(3, "DEATHFX_DUST", "set:death:1", 3171, 1, 24)
+		set(4, "DEATHFX_EXP", "set:death:2", 3171, 2, 49)
+		set(5, "DEATHFX_FLOWER", "set:death:3", 3171, 3, 74)
+		set(6, "DEATHFX_MONEY", "set:death:4", 3171, 4, 99)
+		set(7, "DEATHFX_BEAR", "set:death:5", 3171, 5, 999)
+
+		title(8, "PLAYERMODEL")
+		set(9, "SNIPER", "set:model:0", 3173, 0, 0)
+		set(10, "ASSAULT", "set:model:1", 3173, 1, 24)
+		set(11, "SPECOPS", "set:model:2", 3173, 2, 49)
+		set(12, "RECON", "set:model:3", 3173, 3, 74)
+		set(13, "SUPPORT", "set:model:4", 3173, 4, 99)
+		set(14, "DOG", "set:model:5", 3173, 5, 999)
+
+		title(15, "SOUND")
+		setc(16, "#1", "set:music:0", 3174, 0, 0)
+		setc(17, "#2", "set:music:1", 3174, 1, 49)
+
+		title(21, "WEAPON")
+		setc(22, "R700", "set:weapon:0", 3172, 0, 0)
+		setc(23, "M40A3", "set:weapon:1", 3172, 1, 49)
+		setc(24, "M14", "set:weapon:2", 3172, 2, 999)
+
+		title(25, "SECONDARY")
+		set(26, "NONE", "set:secondary:0", 3169, 0, 0)
+		setc(27, "W1200", "set:secondary:1", 3169, 1, 49)
+		setc(28, "M1014", "set:secondary:2", 3169, 2, 111)
+		setc(29, "Desert Eagle", "set:secondary:3", 3169, 3, 115)
+
+		title(30, "CAMO")
+		set(31, "DEFAULT", "set:camo:0", 3176, 0, 0)
+		set(32, "CAMO_DESERT", "set:camo:1", 3176, 1, 24)
+		set(33, "CAMO_WOODLAND", "set:camo:2", 3176, 2, 49)
+		set(34, "CAMO_DIGITAL", "set:camo:3", 3176, 3, 74)
+		set(35, "CAMO_REDTIGER", "set:camo:4", 3176, 4, 99)
+		set(36, "CAMO_BLUETIGER", "set:camo:5", 3176, 5, 999)
+	}
+}
