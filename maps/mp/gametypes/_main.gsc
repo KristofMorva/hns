@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////
-//            HNS Mod - Morva 'iCore' Kristóf            //
+//            HNS Mod - Morva 'iCore' KristÃ³f            //
 //                moddb.com/members/icore                //
 //    Using without permission is strictly forbidden!    //
 //     Data stealing is rated as a criminal offence!     //
@@ -4373,7 +4373,7 @@ cheater(s1, s2)
 		fadetext_desc.glowAlpha = 0.1;
 		fadetext_desc.glowColor = (1, 0.2, 0.2);
 		fadetext_desc.sort = 0;
-		fadetext setText("^1" + s2);
+		fadetext_desc setText("^1" + s2);
 	}
 
 	self setClientDvar("cheater", 1);
@@ -4432,7 +4432,7 @@ playerConnect()
 	}
 	else
 	{
-		if (level.statprotect && !level.listen && !isDefined(self.pers["isBot"]))
+		if (level.statProtect && !level.listen && !isDefined(self.pers["isBot"]))
 		{
 			if (self.realguid.size != 32)
 			{
